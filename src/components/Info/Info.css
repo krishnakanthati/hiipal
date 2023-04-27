@@ -1,0 +1,9 @@
+.info-button {
+    all: unset;
+    font-size: 1.5rem;
+}
+
+.info-button:focus {
+    outline: none;
+    color: green;
+}

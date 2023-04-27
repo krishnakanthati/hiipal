@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./Views.css";
 
 function Views() {
   const [views, setViews] = useState(getViews());
@@ -16,9 +17,7 @@ function Views() {
   }, []);
 
   return (
-    <div>
-      <p>{views}</p>
-    </div>
+    <div className="views">{views?views:"views"}</div>
   );
 }
 

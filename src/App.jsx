@@ -1,11 +1,12 @@
 import React from 'react'
 import Views from './components/Views/Views'
+import Info from './components/Info/Info'
 import './App.css'
 
 function App() {
   return (
     <>
-    <h1>Hii pal!</h1>
+    <Info/>
     <Views />
     </>
   )
