@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
-function Home() {
+function NavigationLayout() {
   return (
     <div>
-      <h1>Hii Pal!</h1>
       <Link to="/page">
         <button>page</button>
       </Link>
@@ -14,8 +13,9 @@ function Home() {
       <Link to={"/page/2"}>
         <button>page 2</button>
       </Link>
+      <Outlet />
     </div>
   );
 }
 
-export default Home;
+export default NavigationLayout;
