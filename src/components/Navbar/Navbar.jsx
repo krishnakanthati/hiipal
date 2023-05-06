@@ -31,7 +31,7 @@ function Navbar() {
               <img
                 src="../../eth.svg"
                 className="nav-icon"
-                min-height={"0.75rem"}
+                height={"0.75rem"}
                 title="Hii"
                 onMouseEnter={() => {
                   setHovered(!hovered);

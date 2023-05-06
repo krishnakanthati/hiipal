@@ -60,10 +60,30 @@ main {
     color: blue;
 }
 
-/* .navbar:hover {
-    width: 10rem;
-} */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 3rem;
+    }
 
-/* .navbar:hover .nav-link-text {
-    display: block;
-} */
+    .navbar-ul {
+        flex-direction: row;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    main {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+        top: 0;
+        width: 3rem;
+        height: 100vh;
+    }
+}
