@@ -32,6 +32,14 @@ body {
   min-height: 100vh;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #646cff;
+}
+
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
