@@ -59,8 +59,8 @@ function Navbar() {
         </ul>
       </nav>
       <main>
-        <h1>Hii pal!</h1>
-        <p>
+        <h1 className="logo">Hii pal!</h1>
+        <p className="content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate
           ut pharetra sit amet aliquam id diam maecenas. Neque sodales ut etiam
