@@ -14,12 +14,16 @@ function Navbar() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const colors = ["red", "blue", "green"];
+      const colors = ["blue", "black"];
       const nextIndex = (colors.indexOf(logoColor) + 1) % colors.length;
       setLogoColor(colors[nextIndex]);
+      document.body.classList.add("black");
     }, 1000 * 60);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      document.body.classList.remove(`${logoColor}`);
+    };
   }, [logoColor]);
 
   return (
@@ -74,6 +78,7 @@ function Navbar() {
         <h1 className="logo" style={{ color: logoColor }}>
           Hii pal!
         </h1>
+
         <p className="content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate
