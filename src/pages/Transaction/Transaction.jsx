@@ -1,14 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 
-function Home() {
+function Transaction() {
   return (
     <>
       <Navbar />
-      <div className="main-container">Home</div>
+      <div className="main-container">Transaction</div>
     </>
   );
 }
 
-export default Home;
+export default Transaction;

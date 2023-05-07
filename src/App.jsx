@@ -6,12 +6,20 @@ import Features from "./pages/Features/Features";
 import Page from "./pages/Page/Page";
 import NotFound from "./pages/NotFound/NotFound";
 import NavigationLayout from "./components/NavigationLayout/NavigationLayout";
+import Search from "./pages/Search/Search";
+import Notifications from "./pages/Notifications/Notifications";
+import Message from "./pages/Message/Message";
+import Transaction from "./pages/Transaction/Transaction";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/search" element={<Search />} />
+        <Route path="/notifications" element={<Notifications />} />
+        <Route path="/message" element={<Message />} />
+        <Route path="/transaction" element={<Transaction />} />
         <Route path="/features" element={<Features />} />
         <Route path="/page" element={<NavigationLayout />}>
           <Route index element={<Page />} />

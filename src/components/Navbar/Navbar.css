@@ -7,29 +7,33 @@
     padding: 0;
 }
 
-main {
+.logo-container {
     margin-top: 0;
     margin-left: 3rem;
     padding: 1rem;
-    /* border: 1px solid red; */
+    border: 1px solid brown;
 }
 
 .logo {
-    margin: 0;
+    margin-top: 0;
     font-size: 1.5rem;
-    position: fixed;
     background-color: white;
+    position: fixed;
+    cursor: pointer;
 }
 
-.content {
+.slogan {
     margin-top: 2rem;
+    margin-bottom: 0;
+    font-weight: 500;
+    /* position: fixed; */
 }
 
 .navbar {
     width: 3rem;
     height: 100vh;
     position: fixed;
-    /* border: 1px solid black; */
+    border-right: .01rem solid black;
     background-color: white;
     transition: width 200ms ease;
 }
@@ -57,7 +61,6 @@ main {
     align-items: center;
     height: 3.5rem;
     text-decoration: none;
-    /* border: 1px solid green; */
 }
 
 .nav-link-text {
@@ -66,14 +69,17 @@ main {
 
 .nav-icon {
     min-width: 1.75rem;
-    margin: 0rem 0.7rem;
+    margin: 0rem 0.62rem;
     min-height: 1.75rem;
     color: black;
-    /* border: 1px solid black; */
 }
 
 .nav-icon:hover {
     color: blue;
+}
+
+.nav-icon.icon-clicked {
+    color: orangered;
 }
 
 @media only screen and (max-width: 600px) {
@@ -91,7 +97,7 @@ main {
         justify-content: center;
     }
 
-    main {
+    .main-container, .logo-container {
         margin: 0;
     }
 }

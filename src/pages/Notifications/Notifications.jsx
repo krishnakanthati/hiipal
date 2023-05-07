@@ -1,14 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 
-function Home() {
+function Notifications() {
   return (
     <>
       <Navbar />
-      <div className="main-container">Home</div>
+      <div className="main-container">Notifications</div>
     </>
   );
 }
 
-export default Home;
+export default Notifications;
