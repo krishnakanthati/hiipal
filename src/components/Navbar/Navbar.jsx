@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import diamond from "../../assets/diamond.mp3";
@@ -10,6 +10,18 @@ import * as MdIcons from "react-icons/md";
 
 function Navbar() {
   const [hovered, setHovered] = useState(false);
+  const [logoColor, setLogoColor] = useState("blue");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const colors = ["red", "blue", "green"];
+      const nextIndex = (colors.indexOf(logoColor) + 1) % colors.length;
+      setLogoColor(colors[nextIndex]);
+    }, 1000 * 60);
+
+    return () => clearInterval(interval);
+  }, [logoColor]);
+
   return (
     <div className="navbar-container">
       <nav className="navbar">
@@ -59,7 +71,9 @@ function Navbar() {
         </ul>
       </nav>
       <main>
-        <h1 className="logo">Hii pal!</h1>
+        <h1 className="logo" style={{ color: logoColor }}>
+          Hii pal!
+        </h1>
         <p className="content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate
