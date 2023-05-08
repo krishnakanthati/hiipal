@@ -9,15 +9,15 @@ import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
 
 function Navbar() {
-  const [hovered, setHovered] = useState(false);
-  const [logoColor, setLogoColor] = useState("blue");
+  let audio = new Audio(diamond);
+  const [logoColor, setLogoColor] = useState("black");
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const colors = ["blue", "black"];
+      const colors = ["black", "blue"];
       const nextIndex = (colors.indexOf(logoColor) + 1) % colors.length;
       setLogoColor(colors[nextIndex]);
-      document.body.classList.add("black");
+      document.body.classList.add("blue");
     }, 1000 * 60);
 
     return () => {
@@ -47,12 +47,9 @@ function Navbar() {
                 className="nav-icon"
                 height={"0.75rem"}
                 title="Hii"
-                onMouseOver={() => {
-                  setHovered(!hovered);
-                }}
+                onClick={() => audio.play()}
               />
             </Link>
-            {hovered && <audio src={diamond} autoPlay />}
           </li>
           <li className="navbar-li">
             <Link className="nav-link" to="/notifications">
@@ -69,16 +66,9 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      <main className="logo-container">
-        <h1 className="logo" style={{ color: logoColor }}>
-          Hii pal!
-        </h1>
-
-        <p className="slogan">
-          This decentralized application helps you to make a transaction with
-          your pals.
-        </p>
-      </main>
+      <h1 className="header" style={{ color: logoColor }}>
+        Hii pal!
+      </h1>
     </div>
   );
 }

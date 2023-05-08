@@ -1,5 +1,5 @@
-.black::-webkit-scrollbar-thumb {
-    background-color: black;
+.blue::-webkit-scrollbar-thumb {
+    background-color: blue;
 }
 
 .navbar-container {
@@ -7,33 +7,21 @@
     padding: 0;
 }
 
-.logo-container {
-    margin-top: 0;
-    margin-left: 3rem;
-    padding: 1rem;
-    border: 1px solid brown;
-}
-
-.logo {
-    margin-top: 0;
-    font-size: 1.5rem;
+.header {
+    margin: .75rem 0 0 3rem;
+    font-size: 1.4rem;
+    font-weight: 700;
     background-color: white;
-    position: fixed;
     cursor: pointer;
-}
-
-.slogan {
-    margin-top: 2rem;
-    margin-bottom: 0;
-    font-weight: 500;
+    display: inline-block;
     /* position: fixed; */
+    /* border: .1px solid black; */
 }
 
 .navbar {
     width: 3rem;
     height: 100vh;
     position: fixed;
-    border-right: .01rem solid black;
     background-color: white;
     transition: width 200ms ease;
 }
@@ -78,10 +66,6 @@
     color: blue;
 }
 
-.nav-icon.icon-clicked {
-    color: orangered;
-}
-
 @media only screen and (max-width: 600px) {
     .navbar {
         bottom: 0;
@@ -97,8 +81,8 @@
         justify-content: center;
     }
 
-    .main-container, .logo-container {
-        margin: 0;
+    .main-container, .header {
+        margin: 0 .2rem;
     }
 }
 

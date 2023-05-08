@@ -1,6 +1,6 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  /* line-height: 1.5; */
   font-weight: 400;
 
   color-scheme: light dark;
@@ -28,6 +28,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+  box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
@@ -35,17 +36,9 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: blue;
-  border-radius: .5rem;
+  background-color: black;
+  border-radius: .2rem;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button:focus,
-button:focus-visible {}
 
 @media (prefers-color-scheme: light) {
   :root {
