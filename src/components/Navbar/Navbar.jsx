@@ -66,9 +66,11 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      <h1 className="header" style={{ color: logoColor }}>
-        Hii pal!
-      </h1>
+      <div className="header-div">
+        <h1 className="header" style={{ color: logoColor }}>
+          Hii pal!
+        </h1>
+      </div>
     </div>
   );
 }

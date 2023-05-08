@@ -13,8 +13,10 @@
     background-color: white;
     cursor: pointer;
     display: inline-block;
-    /* position: fixed; */
-    /* border: .1px solid black; */
+}
+
+.header-div {
+    position: fixed;
 }
 
 .navbar {
