@@ -3,10 +3,12 @@
 }
 
 .main-container {
-  margin-top: 0;
   margin-left: 3rem;
   /* border: 1px solid coral; */
-  min-height: 100%;
+  padding-top: .5rem;
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
 }
 
 .read-the-docs {

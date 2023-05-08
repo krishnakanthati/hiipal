@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import SearchBar from "../../components/SearchBar/SearchBar";
-import Features from "../Features/Features";
+import "./Search.css";
 
 function Search() {
   return (
     <>
       <Navbar />
       <div className="main-container">
-        <Features />
+        <SearchBar className="searchbar" />
       </div>
     </>
   );
