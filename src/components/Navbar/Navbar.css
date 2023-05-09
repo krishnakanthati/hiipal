@@ -7,16 +7,16 @@
     padding: 0;
 }
 
+.header-div {
+    position: fixed;
+}
+
 .header {
-    margin: .75rem 0 0 3rem;
+    margin: 0.8rem 0 0 3rem;
     font-size: 1.5rem;
     background-color: white;
     cursor: pointer;
     display: inline-block;
-}
-
-.header-div {
-    position: fixed;
 }
 
 .navbar {
@@ -57,9 +57,9 @@
 }
 
 .nav-icon {
-    min-width: 1.75rem;
+    width: 1.75rem;
     margin: 0rem 0.62rem;
-    min-height: 1.75rem;
+    height: 1.75rem;
     color: black;
 }
 
