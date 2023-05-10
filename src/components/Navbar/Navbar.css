@@ -87,6 +87,11 @@
     .main-container, .header {
         margin: 0 .5rem;
     }
+
+    .main-container {
+        display: block;
+        margin-top: 2rem;
+    }
 }
 
 @media only screen and (min-width: 600px) {
