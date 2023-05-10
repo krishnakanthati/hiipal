@@ -17,6 +17,7 @@
     background-color: white;
     /* border: 1px solid green; */
     cursor: pointer;
+    top: 0;
 }
 
 .navbar {
