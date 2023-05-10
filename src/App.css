@@ -3,12 +3,14 @@
 }
 
 .main-container {
+  display: block;
+  height: 80vh;
   margin-left: 3rem;
-  border: 1px solid coral;
-  padding-top: .5rem;
-  min-height: 75vh;
-  display: flex;
-  justify-content: center;
+  /* border: 1px solid coral; */
+  min-height: 80vh;
+  box-sizing: border-box;
+  margin-top: 3rem;
+  white-space: pre-line;
 }
 
 .read-the-docs {

@@ -10,21 +10,6 @@ import * as MdIcons from "react-icons/md";
 
 function Navbar() {
   let audio = new Audio(diamond);
-  const [logoColor, setLogoColor] = useState("black");
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const colors = ["black", "blue"];
-      const nextIndex = (colors.indexOf(logoColor) + 1) % colors.length;
-      setLogoColor(colors[nextIndex]);
-      document.body.classList.add("blue");
-    }, 1000 * 60);
-
-    return () => {
-      clearInterval(interval);
-      document.body.classList.remove(`${logoColor}`);
-    };
-  }, [logoColor]);
 
   return (
     <div className="navbar-container">
@@ -66,11 +51,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      <div className="header-div">
-        <h1 className="header" style={{ color: logoColor }}>
-          Hii pal!
-        </h1>
-      </div>
+      <nav className="header">Hii pal!</nav>
     </div>
   );
 }

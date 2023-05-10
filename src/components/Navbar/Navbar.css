@@ -7,16 +7,17 @@
     padding: 0;
 }
 
-.header-div {
-    position: fixed;
-}
-
 .header {
-    margin: 0.8rem 0 0 3rem;
-    font-size: 1.5rem;
-    background-color: white;
-    cursor: pointer;
+    position: fixed;
+    margin: 0.75rem 0 0 3rem;
+    padding: 0rem;
     display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: white;
+    /* border: 1px solid green; */
+    cursor: pointer;
+    top: 0;
 }
 
 .navbar {
@@ -61,6 +62,7 @@
     margin: 0rem 0.62rem;
     height: 1.75rem;
     color: black;
+    cursor: pointer;
 }
 
 .nav-icon:hover {
@@ -83,7 +85,7 @@
     }
 
     .main-container, .header {
-        margin: 0 .2rem;
+        margin: 0 .5rem;
     }
 }
 
