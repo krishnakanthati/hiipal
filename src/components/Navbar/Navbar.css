@@ -9,11 +9,10 @@
 
 .header {
     position: fixed;
-    margin: 0.75rem 0 0 3rem;
-    padding: 0rem;
-    /* display: inline-block; */
-    font-size: 1.5rem;
-    font-weight: 900;
+    margin: 0.65rem 0 0 3rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
     background-color: white;
     /* border: 1px solid green; */
     cursor: pointer;
@@ -88,9 +87,15 @@
         margin: 0 .5rem;
     }
 
+    .header {
+        margin-top: 0.65rem;
+    }
+
     .main-container {
         display: block;
-        margin-top: 2rem;
+        margin-top: 3rem;
+        box-sizing: border-box;
+        word-wrap: break-word;
     }
 }
 

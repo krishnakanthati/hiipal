@@ -51,7 +51,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      <nav className="header">Hii pal!</nav>
+      <div className="header">Hii pal!</div>
     </div>
   );
 }
