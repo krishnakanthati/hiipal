@@ -55,7 +55,11 @@ function Navbar() {
       <nav className="header">
         <ul className="header-ul">
           <li className="header-li">
-            <Link className="nav-link" to="/" style={{ color: "black" }}>
+            <Link
+              className="nav-link"
+              to="/"
+              style={{ color: "black", margin: "0 0.75rem" }}
+            >
               Hii pal!
             </Link>
           </li>
@@ -64,11 +68,11 @@ function Navbar() {
               <TbIcons.TbMoodSadDizzy className="nav-icon" />
             </Link>
           </li>
-          <li className="header-li">
+          {/* <li className="header-li">
             <Link className="nav-link" to="/">
               <MdIcons.MdOutlineAddCircleOutline className="nav-icon" />
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
