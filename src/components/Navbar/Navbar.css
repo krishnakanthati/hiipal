@@ -47,9 +47,9 @@ header {
     margin-top: auto;
 }
 
-/* .header-li:last-child {
-    min-width: 1.75rem;
-} */
+.header-li:last-child {
+    min-height: 1.75rem;
+}
 
 .nav-link {
     display: flex;
@@ -97,6 +97,7 @@ header {
     .main-container {
         display: block;
         margin-top: 3.5rem;
+        padding: 0.75rem;
         box-sizing: border-box;
     }
 }
