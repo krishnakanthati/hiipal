@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+
 import diamond from "../../assets/diamond.mp3";
 
 import * as HiIcons from "react-icons/hi";
+import * as CgIcons from "react-icons/cg";
 import * as BiIcons from "react-icons/bi";
 import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
@@ -46,12 +48,28 @@ function Navbar() {
           </li>
           <li className="navbar-li">
             <Link className="nav-link" to="/message">
-              <TbIcons.TbMessage2 className="nav-icon" title="Message" />
+              <TbIcons.TbMessage2 title="Message" className="nav-icon" />
             </Link>
           </li>
         </ul>
       </nav>
-      <h1 className="header">Hii pal!</h1>
+      {/* <h1 className="header">Hii pal!</h1> */}
+      <header>
+        <nav className="header">
+          <ul className="header-ul">
+            <li className="header-li">
+              <Link className="nav-link" to="/">
+                Hii pal!
+              </Link>
+            </li>
+            <li className="header-li">
+              <Link className="nav-link" to="/">
+                <CgIcons.CgProfile className="nav-icon" />
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
   );
 }
