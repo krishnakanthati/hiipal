@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import diamond from "../../assets/diamond.mp3";
 
 import * as HiIcons from "react-icons/hi";
-import * as CgIcons from "react-icons/cg";
 import * as BiIcons from "react-icons/bi";
 import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
@@ -14,7 +13,7 @@ function Navbar() {
   let audio = new Audio(diamond);
 
   return (
-    <div className="navbar-container">
+    <header>
       <nav className="navbar">
         <ul className="navbar-ul">
           <li className="navbar-li">
@@ -53,24 +52,26 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      {/* <h1 className="header">Hii pal!</h1> */}
-      <header>
-        <nav className="header">
-          <ul className="header-ul">
-            <li className="header-li">
-              <Link className="nav-link" to="/">
-                Hii pal!
-              </Link>
-            </li>
-            <li className="header-li">
-              <Link className="nav-link" to="/">
-                <CgIcons.CgProfile className="nav-icon" />
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
+      <nav className="header">
+        <ul className="header-ul">
+          <li className="header-li">
+            <Link className="nav-link" to="/" style={{ color: "black" }}>
+              Hii pal!
+            </Link>
+          </li>
+          <li className="header-li">
+            <Link className="nav-link" to="/">
+              <TbIcons.TbMoodSadDizzy className="nav-icon" />
+            </Link>
+          </li>
+          <li className="header-li">
+            <Link className="nav-link" to="/">
+              <MdIcons.MdOutlineAddCircleOutline className="nav-icon" />
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 
