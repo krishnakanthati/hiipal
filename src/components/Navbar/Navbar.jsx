@@ -55,11 +55,7 @@ function Navbar() {
       <nav className="header">
         <ul className="header-ul">
           <li className="header-li">
-            <Link
-              className="nav-link"
-              to="/"
-              style={{ color: "black", margin: "0 0.75rem" }}
-            >
+            <Link className="nav-link" to="/" style={{ color: "black" }}>
               Hii pal!
             </Link>
           </li>

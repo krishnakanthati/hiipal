@@ -47,10 +47,6 @@ header {
     margin-top: auto;
 }
 
-.header-li:last-child {
-    min-height: 1.75rem;
-}
-
 .nav-link {
     display: flex;
     align-items: center;
@@ -59,7 +55,8 @@ header {
 }
 
 .nav-icon {
-    min-width: 1.75rem;
+    width: 1.75rem;
+    height: 1.75rem;
     margin: 0rem 0.62rem;
     min-height: 1.75rem;
     color: black;
@@ -92,6 +89,10 @@ header {
 
     .main-container, .header, .navbar {
         margin: 0;
+    }
+
+    .header {
+        margin-left: 0.75rem;
     }
 
     .main-container {
