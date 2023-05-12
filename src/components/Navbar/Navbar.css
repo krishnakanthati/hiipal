@@ -94,7 +94,7 @@ header {
     }
 
     .header {
-        width: calc(100%-3rem);
+        width: calc(100% - 3rem);
         height: 3rem;
 
     }
