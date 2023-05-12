@@ -7,6 +7,7 @@ import diamond from "../../assets/diamond.mp3";
 import * as HiIcons from "react-icons/hi";
 import * as CgIcons from "react-icons/cg";
 import * as BiIcons from "react-icons/bi";
+import * as AiIcons from "react-icons/ai";
 import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
 import * as RxIcons from "react-icons/rx";
@@ -71,6 +72,11 @@ function Navbar() {
       </nav>
       <nav className="sidebar">
         <ul className="sidebar-ul">
+          <li className="sidebar-li">
+            <Link className="nav-link" to="/">
+              <AiIcons.AiOutlineInfoCircle className="nav-icon" />
+            </Link>
+          </li>
           <li className="sidebar-li">
             <Link className="nav-link" to="/">
               <RxIcons.RxTwitterLogo className="nav-icon" />
