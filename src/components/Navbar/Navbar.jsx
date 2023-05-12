@@ -5,9 +5,13 @@ import { Link } from "react-router-dom";
 import diamond from "../../assets/diamond.mp3";
 
 import * as HiIcons from "react-icons/hi";
+import * as CgIcons from "react-icons/cg";
 import * as BiIcons from "react-icons/bi";
 import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
+import * as RxIcons from "react-icons/rx";
+import * as RiIcons from "react-icons/ri";
+import * as FaIcons from "react-icons/fa";
 
 function Navbar() {
   let audio = new Audio(diamond);
@@ -61,14 +65,26 @@ function Navbar() {
           </li>
           <li className="header-li">
             <Link className="nav-link" to="/">
-              <TbIcons.TbMoodSadDizzy className="nav-icon" />
+              <CgIcons.CgMenuBoxed className="nav-icon" />
             </Link>
           </li>
-          {/* <li className="header-li">
+        </ul>
+      </nav>
+      <nav className="sidebar">
+        <ul className="sidebar-ul">
+          <li className="sidebar-li">
             <Link className="nav-link" to="/">
-              <MdIcons.MdOutlineAddCircleOutline className="nav-icon" />
+              <RxIcons.RxTwitterLogo className="nav-icon" />
             </Link>
-          </li> */}
+          </li>
+          <li className="sidebar-li">
+            <Link
+              className="nav-link"
+              to="https://github.com/krishnakanthati/hiipal"
+            >
+              <RiIcons.RiGithubLine className="nav-icon" />
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

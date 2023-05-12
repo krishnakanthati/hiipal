@@ -6,6 +6,8 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
+  scrollbar-width: none;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,14 +19,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: black;
 }
 
 @media (prefers-color-scheme: light) {

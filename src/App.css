@@ -3,11 +3,23 @@
 }
 
 .main-container {
-  display: block;
-  margin-left: 3rem;
-  box-sizing: border-box;
-  margin-top: 3.5rem;
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+  right: 3rem;
+  bottom: 0;
   text-align: justify;
+  font-weight: 500;
+  overflow: auto;
+}
+
+.main-container::-webkit-scrollbar {
+  width: 0;
+  scrollbar-width: none;
+}
+
+.main-container::-moz-scrollbar {
+  scrollbar-width: none;
 }
 
 .read-the-docs {
