@@ -10,7 +10,6 @@ import * as BiIcons from "react-icons/bi";
 import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
 import * as RxIcons from "react-icons/rx";
-import * as RiIcons from "react-icons/ri";
 import * as FaIcons from "react-icons/fa";
 
 function Navbar() {
@@ -82,7 +81,7 @@ function Navbar() {
               className="nav-link"
               to="https://github.com/krishnakanthati/hiipal"
             >
-              <RiIcons.RiGithubLine className="nav-icon" />
+              <FaIcons.FaGithubAlt className="nav-icon" />
             </Link>
           </li>
         </ul>

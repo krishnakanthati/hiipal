@@ -94,9 +94,9 @@ header {
     }
 
     .header {
-        width: calc(100% - 3rem);
+        margin-left: 1rem;
+        width: calc(100% - 1rem);
         height: 3rem;
-
     }
 
     .sidebar {
@@ -112,11 +112,12 @@ header {
         justify-content: center;
     }
 
-    .main-container, .header, .navbar {
+    .header, .navbar {
         margin-bottom: 0;
     }
 
     .main-container {
+        left: 1rem;
         margin-bottom: 3rem;
         box-sizing: border-box;
     }
