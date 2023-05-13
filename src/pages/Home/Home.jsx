@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
 
 function Home() {
   return (
@@ -93,6 +94,7 @@ function Home() {
         <p style={{ color: "red", textAlign: "right" }}>
           <span style={{ color: "black" }}>support: </span>hiipal@hotmail.com
         </p>
+        <Footer />
       </div>
     </>
   );

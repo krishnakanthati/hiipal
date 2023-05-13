@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 import diamond from "../../assets/diamond.mp3";
 
 import * as HiIcons from "react-icons/hi";
-import * as CgIcons from "react-icons/cg";
-import * as BiIcons from "react-icons/bi";
+import * as IoIcons2 from "react-icons/io5";
 import * as AiIcons from "react-icons/ai";
 import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
@@ -14,6 +13,7 @@ import * as RxIcons from "react-icons/rx";
 import * as FaIcons from "react-icons/fa";
 
 function Navbar() {
+  const [toggleMenu, setToggleMenu] = useState(false);
   let audio = new Audio(diamond);
 
   return (
@@ -27,7 +27,7 @@ function Navbar() {
           </li>
           <li className="navbar-li">
             <Link className="nav-link" to="/search">
-              <BiIcons.BiSearchAlt2 className="nav-icon" title="Search" />
+              <IoIcons2.IoSearch className="nav-icon" title="Search" />
             </Link>
           </li>
           <li className="navbar-li">
@@ -64,8 +64,16 @@ function Navbar() {
             </Link>
           </li>
           <li className="header-li">
-            <Link className="nav-link" to="/">
-              <CgIcons.CgMenuBoxed className="nav-icon" />
+            <Link
+              className="nav-link"
+              to="/"
+              onClick={() => setToggleMenu(!toggleMenu)}
+            >
+              {toggleMenu ? (
+                <TbIcons.TbMenu className="nav-icon" />
+              ) : (
+                <AiIcons.AiOutlineClose className="nav-icon" />
+              )}
             </Link>
           </li>
         </ul>
