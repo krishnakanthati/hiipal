@@ -71,10 +71,15 @@ function Navbar() {
                 to=""
                 onClick={() => setToggleMenu(!toggleMenu)}
               >
-                {toggleMenu ? (
+                {/* {toggleMenu ? (
                   <AiIcons.AiOutlineClose className="nav-icon" />
                 ) : (
                   <TbIcons.TbMenu className="nav-icon" />
+                )} */}
+                {toggleMenu ? (
+                  <TbIcons.TbMoodSadDizzy className="nav-icon" />
+                ) : (
+                  <TbIcons.TbMoodSmileDizzy className="nav-icon" />
                 )}
               </Link>
             </li>
