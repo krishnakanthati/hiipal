@@ -11,96 +11,99 @@ import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
 import * as RxIcons from "react-icons/rx";
 import * as FaIcons from "react-icons/fa";
+import Footer from "../Footer/Footer";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
   let audio = new Audio(diamond);
 
   return (
-    <header>
-      <nav className="navbar">
-        <ul className="navbar-ul">
-          <li className="navbar-li">
-            <Link className="nav-link" to="/">
-              <HiIcons.HiOutlineHome className="nav-icon" title="Home" />
-            </Link>
-          </li>
-          <li className="navbar-li">
-            <Link className="nav-link" to="/search">
-              <IoIcons2.IoSearch className="nav-icon" title="Search" />
-            </Link>
-          </li>
-          <li className="navbar-li">
-            <Link className="nav-link" to="/transaction">
-              <img
-                src="../../eth.svg"
-                className="nav-icon"
-                height={"0.75rem"}
-                title="Hii"
-                onClick={() => audio.play()}
-              />
-            </Link>
-          </li>
-          <li className="navbar-li">
-            <Link className="nav-link" to="/notifications">
-              <MdIcons.MdOutlineNotifications
-                className="nav-icon"
-                title="Notifications"
-              />
-            </Link>
-          </li>
-          <li className="navbar-li">
-            <Link className="nav-link" to="/message">
-              <TbIcons.TbMessage2 title="Message" className="nav-icon" />
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <nav className="header">
-        <ul className="header-ul">
-          <li className="header-li">
-            <Link className="nav-link" to="/" style={{ color: "black" }}>
-              Hii pal!
-            </Link>
-          </li>
-          <li className="header-li">
-            <Link
-              className="nav-link"
-              to="/"
-              onClick={() => setToggleMenu(!toggleMenu)}
-            >
-              {toggleMenu ? (
-                <AiIcons.AiOutlineClose className="nav-icon" />
-              ) : (
-                <TbIcons.TbMenu className="nav-icon" />
-              )}
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <nav className="sidebar">
-        <ul className="sidebar-ul">
-          <li className="sidebar-li">
-            <Link className="nav-link" to="/">
-              <AiIcons.AiOutlineInfoCircle className="nav-icon" />
-            </Link>
-          </li>
-          <li className="sidebar-li">
-            <Link className="nav-link" to="/">
-              <RxIcons.RxTwitterLogo className="nav-icon" />
-            </Link>
-          </li>
-          <li className="sidebar-li">
-            <Link
-              className="nav-link"
-              to="https://github.com/krishnakanthati/hiipal"
-            >
-              <FaIcons.FaGithubAlt className="nav-icon" />
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <>
+      <header>
+        <nav className="navbar">
+          <ul className="navbar-ul">
+            <li className="navbar-li">
+              <Link className="nav-link" to="/">
+                <HiIcons.HiOutlineHome className="nav-icon" title="Home" />
+              </Link>
+            </li>
+            <li className="navbar-li">
+              <Link className="nav-link" to="/search">
+                <IoIcons2.IoSearch className="nav-icon" title="Search" />
+              </Link>
+            </li>
+            <li className="navbar-li">
+              <Link className="nav-link" to="/transaction">
+                <img
+                  src="../../eth.svg"
+                  className="nav-icon"
+                  height={"0.75rem"}
+                  title="Hii"
+                  onClick={() => audio.play()}
+                />
+              </Link>
+            </li>
+            <li className="navbar-li">
+              <Link className="nav-link" to="/notifications">
+                <MdIcons.MdOutlineNotifications
+                  className="nav-icon"
+                  title="Notifications"
+                />
+              </Link>
+            </li>
+            <li className="navbar-li">
+              <Link className="nav-link" to="/message">
+                <TbIcons.TbMessage2 title="Message" className="nav-icon" />
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <nav className="header">
+          <ul className="header-ul">
+            <li className="header-li">
+              <Link className="nav-link" to="/" style={{ color: "black" }}>
+                Hii pal!
+              </Link>
+            </li>
+            <li className="header-li">
+              <Link
+                className="nav-link"
+                to=""
+                onClick={() => setToggleMenu(!toggleMenu)}
+              >
+                {toggleMenu ? (
+                  <AiIcons.AiOutlineClose className="nav-icon" />
+                ) : (
+                  <TbIcons.TbMenu className="nav-icon" />
+                )}
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        <nav className="sidebar">
+          <ul className="sidebar-ul">
+            <li className="sidebar-li">
+              <Link className="nav-link" to="/">
+                <AiIcons.AiOutlineInfoCircle className="nav-icon" />
+              </Link>
+            </li>
+            <li className="sidebar-li">
+              <Link className="nav-link" to="/">
+                <RxIcons.RxTwitterLogo className="nav-icon" />
+              </Link>
+            </li>
+            <li className="sidebar-li">
+              <Link
+                className="nav-link"
+                to="https://github.com/krishnakanthati/hiipal"
+              >
+                <FaIcons.FaGithubAlt className="nav-icon" />
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </>
   );
 }
 
