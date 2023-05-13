@@ -90,6 +90,9 @@ function Home() {
         dignissim cras. itaque vitae cupiditate, nemo, ad saepe distinctio
         excepturi amet cum quis cumque enim, deserunt unde quidem fugit
         molestias sint ipsum?
+        <p style={{ color: "red", textAlign: "right" }}>
+          <span style={{ color: "black" }}>support: </span>hiipal@hotmail.com
+        </p>
       </div>
     </>
   );
