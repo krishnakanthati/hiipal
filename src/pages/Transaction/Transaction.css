@@ -14,3 +14,24 @@
 .connect-wallet:hover {
     color: white;
 }
+
+.card {
+    margin: 0;
+    border: .1rem solid black;
+    border-radius: 1rem;
+    width: 25%;
+    margin-top: 1rem;
+    padding: .5rem;
+    background-color: lightskyblue;
+}
+
+.eth-icon {
+    border: .1rem solid black;
+    border-radius: 100%;
+    font-size: 2rem;
+    padding: .5rem;
+}
+
+.eth-icon:hover {
+    color: white;
+}
