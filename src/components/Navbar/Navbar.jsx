@@ -11,7 +11,7 @@ import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
 import * as RxIcons from "react-icons/rx";
 import * as FaIcons from "react-icons/fa";
-import Footer from "../Footer/Footer";
+import * as CgIcons from "react-icons/cg";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -72,9 +72,9 @@ function Navbar() {
                 onClick={() => setToggleMenu(!toggleMenu)}
               >
                 {toggleMenu ? (
-                  <AiIcons.AiOutlineClose className="nav-icon" />
+                  <IoIcons2.IoClose className="nav-icon" />
                 ) : (
-                  <TbIcons.TbMenu className="nav-icon" />
+                  <CgIcons.CgMenuBoxed className="nav-icon" />
                 )}
               </Link>
             </li>
