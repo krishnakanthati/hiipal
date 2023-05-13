@@ -70,9 +70,9 @@ function Navbar() {
               onClick={() => setToggleMenu(!toggleMenu)}
             >
               {toggleMenu ? (
-                <TbIcons.TbMenu className="nav-icon" />
-              ) : (
                 <AiIcons.AiOutlineClose className="nav-icon" />
+              ) : (
+                <TbIcons.TbMenu className="nav-icon" />
               )}
             </Link>
           </li>
