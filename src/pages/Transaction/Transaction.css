@@ -26,13 +26,17 @@
     background-color: lightskyblue;
 }
 
+.card:hover .eth-icon {
+    border-color: red;
+}
+
+.card:hover {
+    color: white;
+}
+
 .eth-icon {
-    border: .1rem solid black;
+    border: .1rem solid white;
     border-radius: 100%;
     font-size: 2rem;
     padding: .5rem;
-}
-
-.eth-icon:hover {
-    color: white;
 }

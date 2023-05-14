@@ -13,12 +13,8 @@
   overflow: auto;
 }
 
-.main-container::-webkit-scrollbar {
+div::-webkit-scrollbar {
   width: 0;
-  scrollbar-width: none;
-}
-
-.main-container::-moz-scrollbar {
   scrollbar-width: none;
 }
 

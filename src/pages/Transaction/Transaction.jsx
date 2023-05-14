@@ -17,7 +17,12 @@ function Transaction() {
         <div className="card">
           <SiIcons.SiEthereum className="eth-icon" />
           <div className="card-container">
-            <b>Pal ID: krishnakanthati</b>
+            <p>
+              <b>Pal ID: krishnakanthati</b>
+            </p>
+            <p>
+              <b>Address: 0xadisil...kalll8</b>
+            </p>
           </div>
         </div>
       </div>
