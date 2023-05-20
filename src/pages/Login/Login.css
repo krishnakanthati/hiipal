@@ -17,7 +17,7 @@
     color-scheme: none;
 } */
 
-.login-form {
+.login-form-div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,12 +25,24 @@
     margin: 0;
     background-color: #F2F2F2;
     border-radius: .5rem;
-    font-size: 1rem;
     height: 100%
 }
 
+.form-container {
+    display: grid;
+    gap: .75rem;
+
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
 input {
-    border: .12rem solid black;
+    border: none;
     border-radius: .1rem;
     padding: .25rem .5rem;
     font-weight: 500;
@@ -79,10 +91,11 @@ label {
 .form-submit-button {
     color: white;
     border: .1rem solid black;
-    background: var(--disabled);
+    background: #999999;
     transition: color var(--transition), background var(--transition);
     width: 100%;
-    margin-top: 1rem;
+    height: 1.75rem;
+    /* margin-top: 1rem; */
     /* padding: 1rem 2rem;
     border-radius: 4px;
     border: 0;
