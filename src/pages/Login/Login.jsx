@@ -55,10 +55,10 @@ function Login() {
             <div className="form-group__input">
               <input
                 required
-                type="email"
+                type="text"
                 id="email"
                 className="form-input"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$"
+                pattern="^(?=.*[A-Za-z])[A-Za-z0-9_]{5,15}$"
                 title="Enter valid email address"
                 placeholder="Enter valid email address"
               />
