@@ -59,10 +59,10 @@ function Login() {
                 id="email"
                 className="form-input"
                 pattern="^(?=.*[A-Za-z])[A-Za-z0-9_]{5,15}$"
-                title="Enter valid email address"
-                placeholder="Enter valid email address"
+                title="Enter valid pal ID"
+                placeholder="Enter valid pal ID"
               />
-              <div className="form-group__error">Enter a valid Pal ID</div>
+              <div className="form-group__error">Enter a valid pal ID</div>
             </div>
           </div>
           <div className="form-group">
