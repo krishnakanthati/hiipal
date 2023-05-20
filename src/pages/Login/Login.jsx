@@ -62,9 +62,7 @@ function Login() {
                 title="Enter valid email address"
                 placeholder="Enter valid email address"
               />
-              <div className="form-group__error">
-                Enter a valid email address
-              </div>
+              <div className="form-group__error">Enter a valid Pal ID</div>
             </div>
           </div>
         </div>
