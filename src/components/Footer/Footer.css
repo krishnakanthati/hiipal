@@ -1,11 +1,13 @@
 .footer {
     position: fixed;
     right: 3rem;
+    font-weight: bold;
     bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
     .footer {
         bottom: 3rem;
+        color: white;
     }
 }
