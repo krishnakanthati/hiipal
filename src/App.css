@@ -12,6 +12,12 @@
   height: calc(100% - 4.5rem);
 }
 
+@media only screen and (max-width: 600px) {
+  .main-container {
+    height: calc(100% - 6rem);
+  }
+}
+
 div::-webkit-scrollbar {
   width: 0;
   scrollbar-width: none;
