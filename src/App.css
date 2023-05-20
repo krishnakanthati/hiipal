@@ -4,13 +4,11 @@
 
 .main-container {
   position: fixed;
-  top: 3rem;
-  left: 3rem;
-  right: 3rem;
-  bottom: 0;
+  inset: 3rem 3rem 0 3rem;
   text-align: justify;
   font-weight: 500;
   overflow: auto;
+  height: calc(100vh - 6rem);
 }
 
 div::-webkit-scrollbar {
@@ -21,7 +19,7 @@ div::-webkit-scrollbar {
 button {
   height: 2rem;
   width: 8rem;
-  border-radius: 1rem;
+  border-radius: .1rem;
   background-color: #1E90FF;
   border: none;
   color: white;

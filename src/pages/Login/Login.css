@@ -17,26 +17,23 @@
     color-scheme: none;
 }
 
-body {
-    display: grid;
-    min-height: 100vh;
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
     font-family: 'Google Sans', sans-serif, system-ui;
     overflow: hidden;
     margin: 0;
     background-color: var(--gray-9);
     font-size: 1rem;
-}
-
-form {
-    display: grid;
-    position: relative;
-    grid-gap: 2rem;
+    height: 80%;
 }
 
 input {
     border: .12rem solid black;
     border-radius: .1rem;
-    padding: .5rem .5rem;
+    padding: .25rem .5rem;
     font-weight: 500;
     transition: border-color var(--transition);
 }
@@ -51,8 +48,15 @@ input::placeholder {
 
 .form-group {
     display: flex;
+    align-items: flex-end;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    /* background-color: red; */
+    /* border: 1px solid green; */
+    margin: 0;
+    padding: 0;
+    /* height: 2rem; */
 }
 
 .label1 {
@@ -65,7 +69,7 @@ input::placeholder {
 label {
     font-family: sans-serif;
     display: flex;
-    font-weight: 400;
+    font-weight: 500;
     padding-right: .5rem;
     transform-style: preserve-3d;
     transition: color var(--transition);
@@ -73,11 +77,13 @@ label {
     font-size: 1.25rem;
 }
 
-button {
-    color: black;
+.form-submit-button {
+    color: white;
     border: .1rem solid black;
     background: var(--disabled);
     transition: color var(--transition), background var(--transition);
+    width: 100%;
+    margin-top: 1rem;
     /* padding: 1rem 2rem;
     border-radius: 4px;
     border: 0;
@@ -98,6 +104,7 @@ button {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+    color: red;
 }
 
 .form-group:has(:invalid) {
