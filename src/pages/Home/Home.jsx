@@ -2,12 +2,15 @@ import React from "react";
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+import Login from "../Login/Login";
 
 function Home() {
   return (
     <>
       <Navbar />
+
       <div className="main-container">
+        <Login />
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Suspendisse interdum
         consectetur libero id faucibus. A arcu cursus vitae congue mauris.
