@@ -8,8 +8,8 @@
   text-align: justify;
   font-weight: 500;
   overflow: auto;
-  /* border: 1px solid black; */
-  height: calc(100% - 5rem);
+  border: 1px solid black;
+  height: calc(100% - 4.5rem);
 }
 
 div::-webkit-scrollbar {
