@@ -13,18 +13,18 @@
     --disabled: var(--grey);
 }
 
-:where(html) {
+/* :where(html) {
     color-scheme: none;
-}
+} */
 
 .login-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
     overflow: hidden;
     margin: 0;
-    background-color: var(--gray-9);
+    background-color: #F2F2F2;
+    border-radius: 1rem;
     font-size: 1rem;
     height: 100%
 }
