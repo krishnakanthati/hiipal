@@ -48,10 +48,6 @@ input {
     transition: border-color var(--transition);
 }
 
-input:focus-visible {
-    outline-color: var(--color);
-}
-
 input::placeholder {
     color: transparent;
 }
