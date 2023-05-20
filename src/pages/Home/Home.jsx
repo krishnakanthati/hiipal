@@ -11,10 +11,9 @@ function Home() {
 
       <div className="main-container">
         <Login />
-        <div>
-          <Footer />
-        </div>
+        <div></div>
       </div>
+      <Footer />
     </>
   );
 }
