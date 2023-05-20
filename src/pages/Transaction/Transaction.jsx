@@ -9,7 +9,6 @@ function Transaction() {
     <>
       <Navbar />
       <div className="main-container">
-        <p>Transaction</p>
         <button className="connect-wallet">
           Connect Wallet <IoIcons.IoWalletOutline />
         </button>
