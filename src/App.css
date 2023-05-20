@@ -7,8 +7,9 @@
   inset: 3rem 3rem 0 3rem;
   text-align: justify;
   font-weight: 500;
-  overflow: auto;
-  height: calc(100vh - 6rem);
+  overflow: hidden;
+  /* border: 1px solid black; */
+  height: calc(100% - 5rem);
 }
 
 div::-webkit-scrollbar {

@@ -1,1 +1,6 @@
-.footer {}
+.footer {
+    position: fixed;
+    right: 3rem;
+    bottom: 0;
+    height: 2.5rem !important;
+}

@@ -4,7 +4,11 @@ import "./Footer.css";
 function Footer() {
   return (
     <div className="footer">
-      <p style={{ color: "red", textAlign: "right", bottom: 0 }}>
+      <p
+        style={{
+          color: "red",
+        }}
+      >
         <span style={{ color: "black" }}>support: </span>hiipal@hotmail.com
       </p>
     </div>
