@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import diamond from "../../assets/diamond.mp3";
 
 import * as HiIcons from "react-icons/hi";
+import * as BiIcons from "react-icons/bi";
 import * as IoIcons2 from "react-icons/io5";
 import * as AiIcons from "react-icons/ai";
 import * as TbIcons from "react-icons/tb";
@@ -83,8 +84,11 @@ function Navbar() {
         <nav className="sidebar">
           <ul className="sidebar-ul">
             <li className="sidebar-li">
-              <Link className="nav-link" to="/">
-                <AiIcons.AiOutlineInfoCircle className="nav-icon" />
+              <Link
+                className="nav-link"
+                to="https://www.buymeacoffee.com/krishnakanthati"
+              >
+                <BiIcons.BiLike className="nav-icon" />
               </Link>
             </li>
             <li className="sidebar-li">
