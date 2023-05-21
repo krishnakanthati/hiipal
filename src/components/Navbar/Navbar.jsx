@@ -87,6 +87,7 @@ function Navbar() {
               <Link
                 className="nav-link"
                 to="https://www.buymeacoffee.com/krishnakanthati"
+                title="Buy the developer a beer"
               >
                 <BiIcons.BiLike className="nav-icon" />
               </Link>
