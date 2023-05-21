@@ -9,6 +9,7 @@ function Search() {
       <Navbar />
       <div className="main-container">
         <SearchBar className="searchbar" />
+        <div className="search-container"></div>
       </div>
     </>
   );

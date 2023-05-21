@@ -6,7 +6,7 @@ function SearchBar({ onVariableChange }) {
   const [query, setQuery] = useState("");
 
   return (
-    <div>
+    <div className="searchbar-div">
       <input
         type="search"
         value={query}

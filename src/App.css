@@ -9,7 +9,9 @@
   font-weight: 500;
   overflow: auto;
   background: #EFF2FF;
-  height: calc(100% - 4.5rem);
+  height: calc(100% - 5.5rem);
+  padding: .5rem;
+  border: .1rem solid lightblue;
 }
 
 @media only screen and (max-width: 600px) {
