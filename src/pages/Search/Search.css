@@ -1,0 +1,16 @@
+.search-container {
+    border: .1rem solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(33% - 10px);
+    border: .1rem solid green;
+    height: 100px;
+    background-color: darkblue;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    padding: .5rem;
+}
