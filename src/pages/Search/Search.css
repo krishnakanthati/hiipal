@@ -5,7 +5,7 @@
 }
 
 .card {
-    width: calc(33% - 10px);
+    width: calc(25%);
     border: .1rem solid green;
     height: 100px;
     background-color: lemonchiffon;
