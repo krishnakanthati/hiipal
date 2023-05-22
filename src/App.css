@@ -12,6 +12,7 @@
   height: calc(100% - 5.5rem);
   padding: .5rem;
   border: .1rem solid lightblue;
+  border-radius: .25rem;
 }
 
 @media only screen and (max-width: 600px) {
