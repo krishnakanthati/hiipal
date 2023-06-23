@@ -1,16 +1,13 @@
 .search-container {
-    border: .1rem solid black;
+    /* border: .1rem solid black; */
     display: flex;
     flex-wrap: wrap;
 }
 
 .card {
     width: calc(25%);
-    border: .1rem solid green;
+    border: .1rem solid white;
     height: 100px;
-    background-color: lemonchiffon;
-    margin-left: 10px;
-    margin-top: 10px;
-    color: white;
+    background-color: #E6E6FA;
     padding: .5rem;
 }
