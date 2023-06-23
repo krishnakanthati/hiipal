@@ -36,7 +36,7 @@ function Navbar() {
             <li className="navbar-li">
               <Link className="nav-link" to="/transaction">
                 <img
-                  src="../../eth.svg"
+                  src="../../logo.svg"
                   className="nav-icon"
                   height={"0.75rem"}
                   title="Hii"
