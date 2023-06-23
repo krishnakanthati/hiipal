@@ -62,7 +62,7 @@ label {
 }
 
 .form-submit-button {
-    border: .1rem solid black;
+    border: .1rem solid white;
     transition: color var(--transition), background var(--transition);
     width: 100%;
     cursor: pointer;

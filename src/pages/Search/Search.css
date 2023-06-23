@@ -1,13 +1,15 @@
 .search-container {
-    /* border: .1rem solid black; */
     display: flex;
     flex-wrap: wrap;
+    gap: .5rem;
 }
 
 .card {
-    width: calc(25%);
+    width: 100%;
     border: .1rem solid white;
     height: 100px;
     background-color: #E6E6FA;
     padding: .5rem;
+    flex: 1;
+    font-size: 1rem;
 }
