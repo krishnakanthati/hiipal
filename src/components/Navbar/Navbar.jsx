@@ -66,6 +66,11 @@ function Navbar() {
               </Link>
             </li>
             <li className="header-li">
+              <Link className="nav-link" to="/" style={{ color: "black" }}>
+                loading..
+              </Link>
+            </li>
+            <li className="header-li">
               <Link
                 className="nav-link"
                 to=""

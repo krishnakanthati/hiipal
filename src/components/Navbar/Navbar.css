@@ -62,8 +62,8 @@ header {
     width: 100%;
 }
 
-.navbar-li:last-child {
-    margin-top: auto;
+.header-ul li:nth-child(2) {
+    margin-left: auto;
 }
 
 .nav-link {
