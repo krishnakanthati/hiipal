@@ -10,7 +10,7 @@ function Search() {
     const fetchPosts = async () => {
       try {
         const response = await fetch(
-          "https://jsonplaceholder.typicode.com/users"
+          "https://jsonplaceholder.typicode.com/photos"
         );
         const data = await response.json();
         setUsers(data);
@@ -30,8 +30,7 @@ function Search() {
         <div className="search-container">
           {users.map((user) => (
             <div key={user.id} className="card">
-              <h3>{user.name}</h3>
-              <p>{user.email}</p>
+              {user.id}
             </div>
           ))}
         </div>
