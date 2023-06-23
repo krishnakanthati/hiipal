@@ -62,12 +62,12 @@ label {
 }
 
 .form-submit-button {
-    color: white;
-    /* border: .1rem solid black; */
+    border: .1rem solid black;
     transition: color var(--transition), background var(--transition);
     width: 100%;
     cursor: pointer;
-    background-color: #1E90FF;
+    background-color: #E6E6FA;
+    border-radius: .2rem;
 }
 
 .sr-only {
