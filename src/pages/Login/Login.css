@@ -63,11 +63,11 @@ label {
 
 .form-submit-button {
     color: white;
-    border: .1rem solid black;
-    background: #999999;
+    /* border: .1rem solid black; */
     transition: color var(--transition), background var(--transition);
     width: 100%;
     cursor: pointer;
+    background-color: #1E90FF;
 }
 
 .sr-only {
