@@ -64,6 +64,7 @@ header {
 
 .header-ul li:nth-child(2) {
     margin-left: auto;
+    font-size: 1rem;
 }
 
 .nav-link {

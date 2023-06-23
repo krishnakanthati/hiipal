@@ -66,7 +66,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="header-li">
-              <Link className="nav-link" to="/" style={{ color: "black" }}>
+              <Link className="nav-link" to="/" style={{ color: "red" }}>
                 loading..
               </Link>
             </li>
