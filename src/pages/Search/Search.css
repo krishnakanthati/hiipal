@@ -14,30 +14,24 @@
     padding: .25rem;
 }
 
-.scrolltotop {
+.scrolltotop-div {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
     z-index: 9999;
 }
 
-#myBtn {
-    display: none;
+#scrolltotop {
     position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    z-index: 99;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color: red;
-    color: white;
+    bottom: .75rem;
+    right: 2.25rem;
+    z-index: 1;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-    width: 100%;
+    font-size: 2.5rem;
 }
 
-#myBtn:hover {
-    background-color: #555;
+#scrolltotop:hover {
+    color: white;
 }

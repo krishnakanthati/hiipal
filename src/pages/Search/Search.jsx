@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import SearchBar from "../../components/SearchBar/SearchBar";
+import * as IoIcons from "react-icons/io";
 import "./Search.css";
 
 function Search() {
@@ -46,11 +47,13 @@ function Search() {
       <Navbar />
       <div className="main-container" id="main-container">
         <SearchBar className="searchbar" />
-        <div className="scrolltotop">
+        <div className="scrolltotop-div">
           {isVisible && (
-            <button className="myBtn" onClick={scrollToTop} title="Go to top">
-              Top
-            </button>
+            <IoIcons.IoIosArrowDropup
+              id="scrolltotop"
+              onClick={scrollToTop}
+              title="Go to top"
+            />
           )}
         </div>
 
