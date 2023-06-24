@@ -10,7 +10,6 @@ import Search from "./pages/Search/Search";
 import Notifications from "./pages/Notifications/Notifications";
 import Message from "./pages/Message/Message";
 import Transaction from "./pages/Transaction/Transaction";
-import Login from "./pages/Login/Login";
 
 function App() {
   return (
