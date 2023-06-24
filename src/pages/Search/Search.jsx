@@ -23,14 +23,17 @@ function Search() {
 
   const scrollToTop = () => {
     const scrollableDiv = document.getElementById("main-container");
-    scrollableDiv.scrollTop = 0;
+    scrollableDiv.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
         const response = await fetch(
-          "https://jsonplaceholder.typicode.com/posts"
+          "https://jsonplaceholder.typicode.com/photos"
         );
         const data = await response.json();
         setUsers(data);

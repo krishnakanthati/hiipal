@@ -12,6 +12,7 @@
     font-size: 1rem;
     color: white;
     padding: .25rem;
+    cursor: pointer;
 }
 
 .scrolltotop-div {
