@@ -62,7 +62,7 @@ function Navbar() {
           <ul className="header-ul">
             <li className="header-li">
               <Link className="nav-link" to="/" style={{ color: "black" }}>
-                Hii pal!
+                Hii pal<span style={{ color: "blue" }}>!</span>
               </Link>
             </li>
             <li className="header-li">
