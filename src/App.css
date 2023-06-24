@@ -12,8 +12,8 @@
   background: #CCCCFF;
   height: calc(100% - 5.5rem);
   padding: .5rem;
-  border: .1rem solid black;
   border-radius: .25rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 @media only screen and (max-width: 600px) {
