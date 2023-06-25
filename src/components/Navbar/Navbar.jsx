@@ -74,7 +74,7 @@ function Navbar() {
               <Link
                 className="nav-link"
                 to=""
-                onDoubleClick={() => setToggleMenu(!toggleMenu)}
+                onClick={() => setToggleMenu(!toggleMenu)}
               >
                 {toggleMenu ? (
                   <IoIcons2.IoClose className="nav-icon" />
