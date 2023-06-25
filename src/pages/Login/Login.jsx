@@ -143,7 +143,7 @@ function Login() {
           </div>
           <div className="form-group"></div>
           <button type="submit" className="form-submit-button">
-            Connect ✔
+            Connect
           </button>
         </form>
       </div>
