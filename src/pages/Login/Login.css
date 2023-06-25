@@ -77,6 +77,7 @@ label {
     background-color: #E6E6FA;
     border-radius: .2rem;
     transition: transform 0.5s ease-in-out;
+    margin-top: .5rem;
 }
 
 .form-submit-button:active {

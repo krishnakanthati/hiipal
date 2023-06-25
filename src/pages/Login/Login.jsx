@@ -141,7 +141,6 @@ function Login() {
               <div className="form-group__error">Enter correct password</div>
             </div>
           </div>
-          <div className="form-group"></div>
           <button type="submit" className="form-submit-button">
             Connect
           </button>
