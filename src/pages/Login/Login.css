@@ -78,6 +78,7 @@ label {
     border-radius: .2rem;
     transition: transform 0.5s ease-in-out;
     margin-top: .5rem;
+    font-size: 1rem;
 }
 
 .form-submit-button:active {
