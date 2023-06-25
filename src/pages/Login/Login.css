@@ -13,10 +13,6 @@
     --disabled: var(--grey);
 }
 
-/* :where(html) {
-    color-scheme: none;
-} */
-
 .login-form-div {
     display: flex;
     justify-content: center;
@@ -30,6 +26,10 @@
 .form-container {
     display: grid;
     gap: 1.2rem;
+}
+
+.login-header {
+    text-align: center;
 }
 
 .form-group {

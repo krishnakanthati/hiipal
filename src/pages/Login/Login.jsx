@@ -1,11 +1,15 @@
 import React from "react";
 import "./Login.css";
+import * as AiIcons from "react-icons/ai";
 
 function Login() {
   return (
     <>
       <div className="login-form-div">
         <form action="" className="form-container">
+          <h2 className="login-header">
+            Log in <AiIcons.AiOutlineThunderbolt />
+          </h2>
           <div className="form-group">
             <label htmlFor="email" className="form-label">
               <span
