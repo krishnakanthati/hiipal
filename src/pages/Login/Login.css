@@ -33,7 +33,7 @@
 }
 
 .login-icon:hover {
-    color: #7DF9FF;
+    transform: scale(1.2);
 }
 
 .form-group {
