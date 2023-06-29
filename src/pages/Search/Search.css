@@ -13,6 +13,11 @@
     color: white;
     padding: .25rem;
     cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card:active {
+    transform: scale(0.9);
 }
 
 .scrolltotop-div {
