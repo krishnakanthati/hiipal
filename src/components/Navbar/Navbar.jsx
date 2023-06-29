@@ -61,11 +61,7 @@ function Navbar() {
         <nav className="header">
           <ul className="header-ul">
             <li className="header-li">
-              <Link
-                className="nav-link"
-                to="/"
-                style={{ color: "black", tabIndex: -1 }}
-              >
+              <Link className="nav-link" to="/" style={{ color: "black" }}>
                 Hii pal
                 <span style={{ color: "#CCCCFF" }}>!</span>
               </Link>
