@@ -61,14 +61,17 @@ function Navbar() {
         <nav className="header">
           <ul className="header-ul">
             <li className="header-li">
-              <Link className="nav-link" to="/" style={{ color: "black" }}>
-                Hii pal<span style={{ color: "#CCCCFF" }}>!</span>
+              <Link
+                className="nav-link"
+                to="/"
+                style={{ color: "black", tabIndex: -1 }}
+              >
+                Hii pal
+                <span style={{ color: "#CCCCFF" }}>!</span>
               </Link>
             </li>
             <li className="header-li">
-              <Link className="nav-link" to="/" style={{ color: "red" }}>
-                loading..
-              </Link>
+              <input className="topbar-search" />
             </li>
             <li className="header-li">
               <Link
