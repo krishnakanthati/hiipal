@@ -7,9 +7,9 @@ function Login() {
     <>
       <div className="login-form-div">
         <form action="" className="form-container">
-          <h2 className="login-header">
+          <div className="login-header">
             Log in <AiIcons.AiOutlineThunderbolt className="login-icon" />
-          </h2>
+          </div>
           <div className="form-group">
             <label htmlFor="email" className="form-label">
               <span
