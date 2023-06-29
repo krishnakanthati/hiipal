@@ -71,7 +71,9 @@ function Navbar() {
               </Link>
             </li>
             <li className="header-li">
-              <input className="topbar-search" />
+              <Link className="nav-link" to="/" style={{ color: "red" }}>
+                loading..
+              </Link>
             </li>
             <li className="header-li">
               <Link

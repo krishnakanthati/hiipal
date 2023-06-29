@@ -108,11 +108,6 @@ header {
     color: blue;
 }
 
-.topbar-search {
-    border: .1rem solid black;
-    border-radius: .2rem;
-}
-
 @media only screen and (max-width: 600px) {
     .navbar {
         bottom: 0;
