@@ -13,7 +13,6 @@ header {
     font-size: 1.5rem;
     font-weight: 700;
     background-color: white;
-    cursor: pointer;
     width: calc(100% - 3rem);
     height: 3rem;
     /* border: 1px solid black; */
