@@ -1,6 +1,7 @@
 import React from "react";
 import "./Login.css";
 import * as AiIcons from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -144,6 +145,12 @@ function Login() {
           <button type="submit" className="form-submit-button">
             Connect
           </button>
+          <Link
+            style={{ textAlign: "center", textDecoration: "none" }}
+            to="/signup"
+          >
+            signup
+          </Link>
         </form>
       </div>
     </>
