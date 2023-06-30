@@ -145,12 +145,21 @@ function Login() {
           <button type="submit" className="form-submit-button">
             Connect
           </button>
-          <Link
-            style={{ textAlign: "center", textDecoration: "none" }}
-            to="/signup"
+          <div
+            style={{
+              textAlign: "center",
+            }}
           >
-            signup
-          </Link>
+            Don't have an account?&nbsp;
+            <Link
+              style={{
+                textDecoration: "none",
+              }}
+              to="/signup"
+            >
+              Sign up
+            </Link>
+          </div>
         </form>
       </div>
     </>
