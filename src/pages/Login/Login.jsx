@@ -148,6 +148,8 @@ function Login() {
           <div
             style={{
               textAlign: "center",
+              fontSize: ".75rem",
+              fontWeight: 700,
             }}
           >
             Don't have an account?&nbsp;
