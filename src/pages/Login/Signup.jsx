@@ -124,7 +124,7 @@ function Signup() {
                 <span
                   aria-hidden="true"
                   className="label__letter"
-                  style={{ "--index": 5 }}
+                  style={{ "--index": 6 }}
                 >
                   d
                 </span>
@@ -152,7 +152,7 @@ function Signup() {
                 fontWeight: 700,
               }}
             >
-              Don't have an account?&nbsp;
+              Have an account already?&nbsp;
               <Link
                 style={{
                   textDecoration: "none",
