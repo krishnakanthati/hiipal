@@ -142,6 +142,61 @@ function Signup() {
                 <div className="form-group__error">Enter correct password</div>
               </div>
             </div>
+            <div className="form-group">
+              <label htmlFor="phone" className="form-label">
+                <span
+                  aria-hidden="true"
+                  className="label__letter"
+                  style={{ "--index": 0 }}
+                >
+                  p
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="label__letter"
+                  style={{ "--index": 1 }}
+                >
+                  h
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="label__letter"
+                  style={{ "--index": 2 }}
+                >
+                  o
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="label__letter"
+                  style={{ "--index": 3 }}
+                >
+                  n
+                </span>
+                <span
+                  aria-hidden="true"
+                  className="label__letter"
+                  style={{ "--index": 4 }}
+                >
+                  e
+                </span>
+                <span className="sr-only">phone</span>
+              </label>
+              <div className="form-group__input">
+                <input
+                  required
+                  type="tel"
+                  id="phone"
+                  pattern="[0-9]{10}"
+                  className="form-input"
+                  title="Enter correct phone number"
+                  placeholder="Enter correct phone number"
+                />
+                <div className="form-group__error">
+                  Enter correct phone number
+                </div>
+              </div>
+            </div>
+
             <button type="submit" className="form-submit-button">
               Register <AiIcons.AiFillThunderbolt className="login-icon" />
             </button>
