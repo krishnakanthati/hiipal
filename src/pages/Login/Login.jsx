@@ -8,9 +8,6 @@ function Login() {
     <>
       <div className="login-form-div">
         <form action="" className="form-container">
-          <div className="login-header">
-            Log in <AiIcons.AiOutlineThunderbolt className="login-icon" />
-          </div>
           <div className="form-group">
             <label htmlFor="email" className="form-label">
               <span
@@ -143,7 +140,7 @@ function Login() {
             </div>
           </div>
           <button type="submit" className="form-submit-button">
-            Connect
+            Connect <AiIcons.AiOutlineThunderbolt className="login-icon" />
           </button>
           <div
             style={{

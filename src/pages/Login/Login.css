@@ -27,13 +27,6 @@
     gap: 1.2rem;
 }
 
-.login-header {
-    text-align: center;
-    font-size: 1.75rem;
-    font-weight: 500;
-    margin-bottom: .75rem;
-}
-
 .login-icon:hover {
     transform: scale(1.2);
 }
