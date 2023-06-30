@@ -73,12 +73,13 @@ label {
     transition: color var(--transition), background var(--transition);
     width: 100%;
     height: 2.15rem;
-    color: white;
+    color: black;
     cursor: pointer;
     background-color: #E6E6FA;
     border-radius: .2rem;
     transition: transform 0.5s ease-in-out;
     font-size: 1rem;
+    border: .1rem solid black;
 }
 
 .form-submit-button:active {
