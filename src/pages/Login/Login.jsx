@@ -147,7 +147,7 @@ function Login() {
           </button>
           <div
             style={{
-              textAlign: "center",
+              textAlign: "left",
               fontSize: ".75rem",
               fontWeight: 700,
             }}
