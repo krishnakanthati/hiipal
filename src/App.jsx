@@ -10,12 +10,14 @@ import Search from "./pages/Search/Search";
 import Notifications from "./pages/Notifications/Notifications";
 import Message from "./pages/Message/Message";
 import Transaction from "./pages/Transaction/Transaction";
+import Signup from "./pages/Login/Signup";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path="/search" element={<Search />} />
         <Route path="/notifications" element={<Notifications />} />
         <Route path="/message" element={<Message />} />
