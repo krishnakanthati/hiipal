@@ -1,16 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import "./Login.css";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 function Signup() {
+  const [palid, setPalid] = useState("");
+  const [password, setPassword] = useState("");
+  const [phone, setPhone] = useState("");
+
+  async function registerPal(event) {
+    event.preventDefault();
+    const response = await fetch("http://localhost:1337/api/register", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ palid, password, phone }),
+    });
+
+    const data = await response.json();
+    console.log(data);
+  }
+
   return (
     <>
       <Navbar />
       <div className="main-container">
         <div className="login-form-div">
-          <form action="" className="form-container">
+          <form action="" onSubmit={registerPal} className="form-container">
             <div className="form-group">
               <label htmlFor="email" className="form-label">
                 <span
@@ -61,9 +77,11 @@ function Signup() {
                 <input
                   required
                   type="text"
-                  id="email"
+                  id="palid"
                   className="form-input"
                   pattern="^(?=.*[A-Za-z])[A-Za-z0-9_]{5,15}$"
+                  value={palid}
+                  onChange={(e) => setPalid(e.target.value)}
                   title="Enter valid pal ID"
                   placeholder="Enter valid pal ID"
                 />
@@ -138,6 +156,9 @@ function Signup() {
                   className="form-input"
                   title="Enter correct password"
                   placeholder="Enter correct password"
+                  pattern=".{8,}"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
                 <div className="form-group__error">Enter correct password</div>
               </div>
@@ -190,6 +211,8 @@ function Signup() {
                   className="form-input"
                   title="Enter correct phone number"
                   placeholder="Enter correct phone number"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
                 <div className="form-group__error">
                   Enter correct phone number
