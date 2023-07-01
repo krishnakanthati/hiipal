@@ -18,7 +18,9 @@ function Signup() {
     });
 
     const data = await response.json();
-    console.log(data);
+    if (data.status === "green") {
+      window.location.href = "#/";
+    }
   }
 
   return (

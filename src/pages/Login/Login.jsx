@@ -16,7 +16,11 @@ function Login() {
     });
 
     const data = await response.json();
-    console.log(data);
+    if (data.pal) {
+      window.location.href = "#/search";
+    } else {
+      alert("Please check your pal ID and password.");
+    }
   }
 
   return (
@@ -152,6 +156,7 @@ function Login() {
                 className="form-input"
                 title="Enter correct password"
                 placeholder="Enter correct password"
+                pattern=".{8,}"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
