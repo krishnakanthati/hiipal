@@ -42,7 +42,7 @@ input {
     border: none;
     border-radius: .1rem;
     padding: .5rem .5rem;
-    font-weight: 600;
+    font-weight: bold;
     transition: border-color var(--transition);
     background-color: white;
     color: black;
@@ -52,9 +52,8 @@ input::placeholder {
     color: transparent;
 }
 
-label {
-    font-family: sans-serif;
-    font-weight: 600;
+.form-label {
+    font-weight: 700;
     padding-right: .5rem;
     transform-style: preserve-3d;
     transition: color var(--transition);
@@ -72,7 +71,6 @@ label {
     border-radius: .2rem;
     transition: transform 0.5s ease-in-out;
     font-size: 1rem;
-    /* border: .1rem solid black; */
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
