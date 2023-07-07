@@ -11,10 +11,6 @@
     left: 3rem;
 }
 
-.footer:hover {
-    content: "";
-}
-
 @media only screen and (max-width: 600px) {
     .footer, .pal-count {
         padding: 0;
@@ -25,7 +21,6 @@
     }
 
     .pal-count {
-        color: black;
         left: 1rem;
         padding-left: .1rem;
     }
