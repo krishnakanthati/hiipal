@@ -1,4 +1,4 @@
-.footer {
+.footer, .pal-count {
     position: fixed;
     right: 3rem;
     font-weight: bold;
@@ -7,16 +7,26 @@
     padding: .1rem;
 }
 
+.pal-count {
+    left: 3rem;
+}
+
 .footer:hover {
     content: "";
 }
 
 @media only screen and (max-width: 600px) {
-    .footer {
+    .footer, .pal-count {
         padding: 0;
         padding-right: .1rem;
         bottom: 3rem;
         color: white;
         font-size: .75rem;
+    }
+
+    .pal-count {
+        color: black;
+        left: 1rem;
+        padding-left: .1rem;
     }
 }
