@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div>
       <span className="pal-count">
-        pal: 1 (<span style={{ color: "blue" }}>+4</span>)
+        pal: 1 (<span style={{ color: "#00c50b" }}>+4</span>)
       </span>
       <span className="footer">hiipal@hotmail.com</span>
     </div>
