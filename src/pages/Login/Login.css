@@ -42,7 +42,7 @@ input {
     border: none;
     border-radius: .1rem;
     padding: .5rem .5rem;
-    font-weight: bold;
+    font-weight: 700;
     transition: border-color var(--transition);
     background-color: white;
     color: black;
