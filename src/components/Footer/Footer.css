@@ -1,8 +1,15 @@
 .footer {
     position: fixed;
     right: 3rem;
-    font-weight: 700;
+    font-weight: bold;
     bottom: 0;
+    font-size: 1rem;
+    padding: .1rem;
+    opacity: .8;
+}
+
+.footer:hover {
+    content: "";
 }
 
 @media only screen and (max-width: 600px) {
