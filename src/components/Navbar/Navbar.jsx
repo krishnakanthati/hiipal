@@ -12,6 +12,7 @@ import * as MdIcons from "react-icons/md";
 import * as RxIcons from "react-icons/rx";
 import * as FaIcons from "react-icons/fa";
 import * as CgIcons from "react-icons/cg";
+import * as FaIcons6 from "react-icons/fa6";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -103,11 +104,8 @@ function Navbar() {
               </Link>
             </li>
             <li className="sidebar-li">
-              <Link
-                className="nav-link"
-                to="https://github.com/krishnakanthati/hiipal"
-              >
-                <FaIcons.FaGithubAlt className="nav-icon" />
+              <Link className="nav-link" to="/signup">
+                <FaIcons6.FaRegCircleUser className="nav-icon" />
               </Link>
             </li>
           </ul>
