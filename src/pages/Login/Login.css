@@ -42,10 +42,12 @@ input {
     border: none;
     border-radius: .1rem;
     padding: .5rem .5rem;
-    font-weight: 700;
+    font-weight: 500;
     transition: border-color var(--transition);
     background-color: white;
     color: black;
+    /* font-size: .75rem; */
+    /* height: 1rem; */
 }
 
 input::placeholder {
