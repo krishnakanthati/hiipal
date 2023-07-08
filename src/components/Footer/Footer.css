@@ -1,27 +1,21 @@
-.footer, .pal-count {
+.footer {
     position: fixed;
-    right: 3rem;
-    font-weight: bold;
     bottom: 0;
-    font-size: 1rem;
-    padding: .1rem;
+    right: 3rem;
+    padding: 0 .2rem;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 6.4rem);
+    justify-content: space-between;
+    font-weight: bold;
 }
 
-.pal-count {
-    left: 3rem;
-}
 
 @media only screen and (max-width: 600px) {
-    .footer, .pal-count {
-        padding: 0;
-        padding-right: .1rem;
+    .footer {
+
+        width: calc(100% - 4.4rem);
         bottom: 3rem;
         color: white;
-        font-size: .75rem;
-    }
-
-    .pal-count {
-        left: 1rem;
-        padding-left: .1rem;
     }
 }
