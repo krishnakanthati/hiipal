@@ -6,9 +6,9 @@
     display: flex;
     justify-content: center;
     width: calc(100% - 6.4rem);
+    height: 1.5rem;
     justify-content: space-between;
     font-weight: bold;
-    border: .1rem solid pink;
 }
 
 

@@ -10,7 +10,7 @@ import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
 import * as RxIcons from "react-icons/rx";
-import * as FaIcons from "react-icons/fa";
+import * as RiIcons from "react-icons/ri";
 import * as CgIcons from "react-icons/cg";
 import * as FaIcons6 from "react-icons/fa6";
 
@@ -105,7 +105,7 @@ function Navbar() {
             </li>
             <li className="sidebar-li">
               <Link className="nav-link" to="/signup">
-                <FaIcons6.FaRegCircleUser className="nav-icon" />
+                <RiIcons.RiSkull2Line className="nav-icon" />
               </Link>
             </li>
           </ul>
