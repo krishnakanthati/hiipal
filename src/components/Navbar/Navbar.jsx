@@ -10,9 +10,8 @@ import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
 import * as RxIcons from "react-icons/rx";
-import * as ImIcons from "react-icons/im";
+import * as RiIcons from "react-icons/ri";
 import * as CgIcons from "react-icons/cg";
-import * as GiIcons from "react-icons/gi";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -105,7 +104,7 @@ function Navbar() {
             </li>
             <li className="sidebar-li">
               <Link className="nav-link" to="/signup">
-                <ImIcons.ImCool className="nav-icon" />
+                <RiIcons.RiSkull2Line className="nav-icon" />
               </Link>
             </li>
           </ul>
