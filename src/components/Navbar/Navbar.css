@@ -6,8 +6,8 @@ header {
 
 .header {
     position: fixed;
-    left: 3rem;
-    right: 0;
+    margin-left: 3rem;
+    margin-right: 0;
     top: 0;
     padding: 0;
     font-size: 1.5rem;
