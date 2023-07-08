@@ -46,8 +46,6 @@ input {
     transition: border-color var(--transition);
     background-color: white;
     color: black;
-    /* font-size: .75rem; */
-    /* height: 1rem; */
 }
 
 input::placeholder {
