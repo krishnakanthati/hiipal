@@ -12,7 +12,6 @@ import * as MdIcons from "react-icons/md";
 import * as RxIcons from "react-icons/rx";
 import * as ImIcons from "react-icons/im";
 import * as CgIcons from "react-icons/cg";
-import * as FaIcons6 from "react-icons/fa6";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);

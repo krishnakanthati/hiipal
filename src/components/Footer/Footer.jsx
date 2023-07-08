@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Footer.css";
 
 function Footer() {
+  const [palRegisteredCount, setPalRegisteredCount] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost:1337/api/pal/count")
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.count) {
+          setPalRegisteredCount(data.count);
+        }
+      })
+      .catch((error) => {
+        console.log("Error retrieving pal count:", error);
+      });
+  }, []);
+
   return (
     <div className="footer">
       <div className="pal-count">
-        pal: 27 (<span style={{ color: "#00c50b" }}>+4</span>)
+        pal: {palRegisteredCount} (<span style={{ color: "#00c50b" }}>+4</span>)
       </div>
       <div className="email">hiipal@hotmail.com</div>
     </div>
