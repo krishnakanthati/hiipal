@@ -81,7 +81,7 @@ function Signup() {
                   type="text"
                   id="palid"
                   className="form-input"
-                  pattern="^(?=.*[A-Za-z])[A-Za-z0-9_]{5,15}$"
+                  pattern="^(?=.*[A-Za-z])[A-Za-z0-9_]{4,15}$"
                   value={palid}
                   onChange={(e) => setPalid(e.target.value)}
                   title="Enter valid pal ID"
