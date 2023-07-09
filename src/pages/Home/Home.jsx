@@ -8,7 +8,6 @@ function Home() {
   return (
     <>
       <Navbar />
-
       <div className="main-container">
         <Login />
       </div>

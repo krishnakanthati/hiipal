@@ -5,7 +5,7 @@ function Footer() {
   const [palRegisteredCount, setPalRegisteredCount] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:1337/api/pal/count")
+    fetch("https://hiipal.netlify.app/api/pal/count")
       .then((response) => response.json())
       .then((data) => {
         if (data.count) {

@@ -11,7 +11,7 @@ function Signup() {
 
   async function registerPal(event) {
     event.preventDefault();
-    const response = await fetch("http://localhost:1337/api/register", {
+    const response = await fetch("https://hiipal.netlify.app/api/register", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ palid, password, phone }),

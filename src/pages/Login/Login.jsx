@@ -9,7 +9,7 @@ function Login() {
 
   async function connectPal(event) {
     event.preventDefault();
-    const response = await fetch("http://localhost:1337/api/login", {
+    const response = await fetch("https://hiipal.netlify.app/api/login", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ palid, password }),
