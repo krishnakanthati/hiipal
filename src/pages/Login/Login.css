@@ -44,7 +44,7 @@ input {
     padding: .5rem .5rem;
     font-weight: 700;
     transition: border-color var(--transition);
-    background-color: white;
+    background-color: #E6E6FA;
     color: black;
 }
 
