@@ -86,29 +86,31 @@ function Navbar() {
             </li>
           </ul>
         </nav>
-        <nav className="sidebar">
-          <ul className="sidebar-ul">
-            <li className="sidebar-li">
-              <Link
-                className="nav-link"
-                to="https://www.buymeacoffee.com/krishnakanthati"
-                title="Buy the developer a beer"
-              >
-                <BiIcons.BiLike className="nav-icon" />
-              </Link>
-            </li>
-            <li className="sidebar-li">
-              <Link className="nav-link" to="/">
-                <RxIcons.RxTwitterLogo className="nav-icon" />
-              </Link>
-            </li>
-            <li className="sidebar-li">
-              <Link className="nav-link" to="/signup">
-                <ImIcons.ImCool className="nav-icon" />
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        {toggleMenu && (
+          <nav className="sidebar">
+            <ul className="sidebar-ul">
+              <li className="sidebar-li">
+                <Link
+                  className="nav-link"
+                  to="https://www.buymeacoffee.com/krishnakanthati"
+                  title="Buy the developer a beer"
+                >
+                  <BiIcons.BiLike className="nav-icon" />
+                </Link>
+              </li>
+              <li className="sidebar-li">
+                <Link className="nav-link" to="/">
+                  <RxIcons.RxTwitterLogo className="nav-icon" />
+                </Link>
+              </li>
+              <li className="sidebar-li">
+                <Link className="nav-link" to="/signup">
+                  <ImIcons.ImCool className="nav-icon" />
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        )}
       </header>
     </>
   );
