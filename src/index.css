@@ -17,6 +17,11 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
 }
 
 body {
