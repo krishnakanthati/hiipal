@@ -1,15 +1,14 @@
 import React from "react";
-
-import * as IoIcons from "react-icons/io5";
 import Navbar from "../../components/Navbar/Navbar";
 import "./Transaction.css";
+import ExampleComponent from "../../components/ExampleComponent/ExampleComponent";
 
 function Transaction() {
   return (
     <>
       <Navbar />
       <div className="main-container">
-        <div>Transactions</div>
+        <ExampleComponent />
       </div>
     </>
   );

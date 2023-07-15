@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -15,7 +15,21 @@ import * as CgIcons from "react-icons/cg";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const sidebarRef = useRef();
   let audio = new Audio(diamond);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+        setToggleMenu(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <>
@@ -87,7 +101,7 @@ function Navbar() {
           </ul>
         </nav>
         {toggleMenu && (
-          <nav className="sidebar">
+          <nav ref={sidebarRef} className="sidebar">
             <ul className="sidebar-ul">
               <li className="sidebar-li">
                 <Link
