@@ -13,18 +13,46 @@
     --disabled: var(--grey);
 }
 
+
 .login-form-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    border-radius: .5rem;
     height: 100%;
+    overflow: hidden;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* border: .1rem solid black; */
+    gap: .5rem;
 }
 
 .form-container {
     display: grid;
     gap: 1rem;
+}
+
+.or-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem;
+}
+
+.half-width-hr {
+    width: 50%;
+    height: .15rem;
+    background-color: white;
+    border: none;
+    margin: 0;
+    border-radius: 5rem;
+}
+
+.or-text {
+    margin: 0 .75rem;
+    color: white;
 }
 
 .login-icon:hover {
@@ -63,18 +91,16 @@ input::placeholder {
 
 .form-submit-button {
     transition: color var(--transition), background var(--transition);
-    width: 100%;
-    height: 2.15rem;
-    color: black;
-    cursor: pointer;
-    background-color: #E6E6FA;
-    border-radius: .2rem;
     transition: transform 0.5s ease-in-out;
-    font-size: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
-.form-submit-button:active {
+.anonymous-btn {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.form-submit-button:active, .anonymous-btn:active {
     transform: scale(0.95);
 }
 
