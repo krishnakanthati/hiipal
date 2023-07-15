@@ -33,6 +33,7 @@ header {
     position: fixed;
     background-color: white;
     height: calc(100% - 3rem);
+    border-radius: 5rem;
 }
 
 .navbar-ul, .sidebar-ul {
