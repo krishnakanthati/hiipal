@@ -11,7 +11,7 @@ import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
 import * as RxIcons from "react-icons/rx";
 import * as ImIcons from "react-icons/im";
-import * as CgIcons from "react-icons/cg";
+import * as FiIcons from "react-icons/fi";
 
 function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -94,7 +94,7 @@ function Navbar() {
                 {toggleMenu ? (
                   <IoIcons2.IoClose className="nav-icon" />
                 ) : (
-                  <HiIcons.HiOutlineMenuAlt4 className="nav-icon" />
+                  <HiIcons.HiMenuAlt4 className="nav-icon" />
                 )}
               </Link>
             </li>
