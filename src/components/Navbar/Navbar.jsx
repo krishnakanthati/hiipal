@@ -94,7 +94,7 @@ function Navbar() {
                 {toggleMenu ? (
                   <IoIcons2.IoClose className="nav-icon" />
                 ) : (
-                  <CgIcons.CgMenuBoxed className="nav-icon" />
+                  <HiIcons.HiOutlineMenuAlt4 className="nav-icon" />
                 )}
               </Link>
             </li>
