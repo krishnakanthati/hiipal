@@ -87,7 +87,7 @@ function Login() {
                     value={palid}
                     onChange={(e) => setPalid(e.target.value)}
                   />
-                  <div className="form-group__error">Enter a valid pal ID</div>
+                  <div className="form-group__error">Enter a valid ID</div>
                 </div>
               </div>
               <div className="form-group">
