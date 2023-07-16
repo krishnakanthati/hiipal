@@ -122,6 +122,11 @@ function Navbar() {
                   <ImIcons.ImCool className="nav-icon" />
                 </Link>
               </li>
+              <li className="sidebar-li">
+                <Link className="nav-link" to="https://hiipal.netlify.app/">
+                  <BiIcons.BiServer className="nav-icon" />
+                </Link>
+              </li>
             </ul>
           </nav>
         )}
