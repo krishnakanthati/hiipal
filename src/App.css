@@ -7,7 +7,7 @@
   inset: 3rem 3rem 1.5rem 3rem;
   text-align: justify;
   font-weight: 500;
-  overflow: auto;
+  overflow: scroll;
   background: #ccccff;
   /* height: calc(100% - 4.5rem); */
   padding: .5rem;

@@ -9,6 +9,37 @@ function Signup() {
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
 
+  const handlePalidChange = (e) => {
+    const { value } = e.target;
+    setPalid(value);
+    checkUsernameRealtime(value);
+  };
+
+  const checkUsernameRealtime = async (value) => {
+    console.log(value);
+    try {
+      const response = await fetch(
+        "https://hiipal.netlify.app/api/check-username",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ value }),
+        }
+      );
+      const data = await response.json();
+      if (data.exists) {
+        console.log(data);
+      } else {
+        console.log(data);
+      }
+    } catch (error) {
+      console.error("Error checking username availability:", error);
+      // Handle error and display an appropriate message
+    }
+  };
+
   async function registerPal(event) {
     event.preventDefault();
     const response = await fetch("https://hiipal.netlify.app/api/register", {
@@ -83,7 +114,8 @@ function Signup() {
                   className="form-input"
                   pattern="^(?=.*[A-Za-z])[A-Za-z0-9_]{4,15}$"
                   value={palid}
-                  onChange={(e) => setPalid(e.target.value)}
+                  onChange={handlePalidChange}
+                  // onChange={(e) => setPalid(e.target.value)}
                   title="Enter valid pal ID"
                   placeholder="Enter valid pal ID"
                 />
