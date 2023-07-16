@@ -81,7 +81,7 @@ header {
     position: relative;
 }
 
-.nav-link:focus::before {
+/* .nav-link:focus::before {
     content: '';
     position: absolute;
     bottom: 0.25rem;
@@ -89,8 +89,8 @@ header {
     transform: translateX(-50%);
     width: 25%;
     height: 0.25rem;
-    background: linear-gradient(to right, red 65%, blue 35%);
-}
+    background: linear-gradient(to right, red 70%, blue 30%);
+} */
 
 .nav-icon {
     width: 1.75rem;
@@ -99,9 +99,10 @@ header {
     min-height: 1.75rem;
     color: black;
     cursor: pointer;
+    transition: transform 0.5s ease-in-out;
 }
 
-.nav-icon:hover {
+.nav-icon:active {
     color: blue;
 }
 
