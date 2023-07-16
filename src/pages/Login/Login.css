@@ -75,7 +75,7 @@ input {
     transition: border-color var(--transition);
     background-color: white;
     color: black;
-    /* width: 10rem; */
+    width: 10rem;
 }
 
 input::placeholder {
