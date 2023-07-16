@@ -76,6 +76,7 @@ input {
     background-color: white;
     color: black;
     width: 10rem;
+    border-radius: 1rem;
 }
 
 input::placeholder {
