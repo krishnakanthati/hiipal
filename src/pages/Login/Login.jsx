@@ -193,7 +193,9 @@ function Login() {
               <span class="or-text">OR</span>
               <hr class="half-width-hr"></hr>
             </div>
-            <button className="anonymous-btn">Go Anonymous</button>
+            <Link to="/search">
+              <button className="anonymous-btn">Go Anonymous</button>
+            </Link>
           </div>
         </div>
       </div>

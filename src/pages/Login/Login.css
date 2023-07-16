@@ -75,6 +75,7 @@ input {
     transition: border-color var(--transition);
     background-color: white;
     color: black;
+    /* width: 10rem; */
 }
 
 input::placeholder {
@@ -99,6 +100,11 @@ input::placeholder {
     width: 100%;
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
+}
+
+.anonymous-btn:active {
+    background-color: hsl(130 52% 46%);
+    color: white;
 }
 
 .form-submit-button:active, .anonymous-btn:active {
@@ -150,7 +156,8 @@ label span {
 
 form:valid [type="submit"] {
     background: var(--valid);
-    color: var(--gray-1);
+    /* color: var(--gray-1); */
+    color: white;
 }
 
 .form-group__input {
