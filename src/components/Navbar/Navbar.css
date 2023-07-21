@@ -31,8 +31,9 @@ header {
     height: 100vh;
     margin-top: 3rem;
     position: fixed;
-    background-color: white;
+    background-color: transparent;
     height: calc(100% - 3rem);
+    z-index: 1;
 }
 
 .navbar-ul, .sidebar-ul {

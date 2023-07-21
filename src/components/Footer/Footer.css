@@ -13,16 +13,18 @@
 
 @media only screen and (max-width: 600px) {
     .footer {
-        width: calc(100% - 4.4rem);
+        width: calc(100% - 2.4rem);
         bottom: 3rem;
         color: white;
+        right: 1rem;
     }
 
     .email {
-        transform: rotate(-90deg);
-        position: fixed;
+        left: 1rem;
+        /* transform: rotate(-90deg);
+        position: fixed; */
         /* border: .1rem solid red; */
-        right: -.75rem;
-        bottom: 8rem;
+        /* right: -.75rem;
+        bottom: 8rem; */
     }
 }
