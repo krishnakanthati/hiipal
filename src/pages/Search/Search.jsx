@@ -8,6 +8,8 @@ function Search() {
   const [users, setUsers] = useState([]);
   const [isVisible, setIsVisible] = useState(false);
 
+  const [isLoading, setLoading] = useState(true);
+
   useEffect(() => {
     const scrollableDiv = document.getElementById("main-container");
     scrollableDiv.addEventListener("scroll", handleScroll);
@@ -37,6 +39,7 @@ function Search() {
         );
         const data = await response.json();
         setUsers(data);
+        setLoading(false);
       } catch (error) {
         console.log(error);
       }
@@ -47,7 +50,7 @@ function Search() {
 
   return (
     <>
-      <Navbar />
+      <Navbar isLoading={isLoading} />
       <div className="main-container" id="main-container">
         <SearchBar className="searchbar" />
         <div className="scrolltotop-div">

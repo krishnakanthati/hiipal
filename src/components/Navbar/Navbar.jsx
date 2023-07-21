@@ -13,7 +13,7 @@ import * as RxIcons from "react-icons/rx";
 import * as ImIcons from "react-icons/im";
 import * as FiIcons from "react-icons/fi";
 
-function Navbar() {
+function Navbar({ isLoading }) {
   const [toggleMenu, setToggleMenu] = useState(false);
   const sidebarRef = useRef();
   let audio = new Audio(diamond);
@@ -80,11 +80,13 @@ function Navbar() {
                 <span style={{ color: "#CCCCFF" }}>!</span>
               </Link>
             </li>
-            <li className="header-li">
-              <Link className="nav-link" to="/" style={{ color: "red" }}>
-                loading..
-              </Link>
-            </li>
+            {isLoading && (
+              <li className="header-li">
+                <Link className="nav-link" to="/" style={{ color: "red" }}>
+                  loading..
+                </Link>
+              </li>
+            )}
             <li className="header-li">
               <Link
                 className="nav-link"
