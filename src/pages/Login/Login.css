@@ -75,7 +75,7 @@ input {
     transition: border-color var(--transition);
     background-color: white;
     color: black;
-    width: 10rem;
+    width: 8rem;
     border-radius: 1rem;
 }
 
