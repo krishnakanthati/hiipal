@@ -75,8 +75,10 @@ input {
     transition: border-color var(--transition);
     background-color: white;
     color: black;
-    width: 8rem;
+    width: 10rem;
     border-radius: 1rem;
+    border: 1px solid pink;
+    box-sizing: border-box;
 }
 
 input::placeholder {

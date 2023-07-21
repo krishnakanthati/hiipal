@@ -80,6 +80,11 @@ function Navbar({ isLoading }) {
                 <span style={{ color: "#CCCCFF" }}>!</span>
               </Link>
             </li>
+            {!isLoading && (
+              <li className="sidebar-li">
+                <input />
+              </li>
+            )}
             {isLoading && (
               <li className="header-li">
                 <Link className="nav-link" to="/" style={{ color: "red" }}>
