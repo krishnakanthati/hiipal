@@ -22,7 +22,7 @@
         transform: rotate(-90deg);
         position: fixed;
         /* border: .1rem solid red; */
-        right: -1rem;
-        bottom: 7.2rem;
+        right: -.75rem;
+        bottom: 7rem;
     }
 }
