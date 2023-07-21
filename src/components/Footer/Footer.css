@@ -5,7 +5,7 @@
     padding: 0 .2rem;
     display: flex;
     justify-content: center;
-    width: calc(100% - 6.4rem);
+    width: calc(100% - 4.4rem);
     height: 1.5rem;
     justify-content: space-between;
     font-weight: 450;
@@ -13,18 +13,8 @@
 
 @media only screen and (max-width: 600px) {
     .footer {
-        width: calc(100% - 2.4rem);
         bottom: 3rem;
         color: white;
-        right: 1rem;
-    }
-
-    .email {
-        left: 1rem;
-        /* transform: rotate(-90deg);
-        position: fixed; */
-        /* border: .1rem solid red; */
-        /* right: -.75rem;
-        bottom: 8rem; */
+        font-size: .75rem;
     }
 }
