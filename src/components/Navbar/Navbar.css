@@ -31,7 +31,6 @@ header {
     height: 100vh;
     margin-top: 3rem;
     position: fixed;
-    background-color: white;
     height: calc(100% - 3rem);
 }
 
