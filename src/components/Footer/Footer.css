@@ -18,5 +18,6 @@
         width: calc(100% - 4rem);
         bottom: 3rem;
         color: white;
+        background-color: black;
     }
 }
