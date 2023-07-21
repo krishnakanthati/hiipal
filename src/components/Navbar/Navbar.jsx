@@ -82,7 +82,7 @@ function Navbar({ isLoading }) {
             </li>
             {!isLoading && (
               <li className="sidebar-li">
-                <input />
+                <input style={{ background: "#ccccff", color: "white" }} />
               </li>
             )}
             {isLoading && (
