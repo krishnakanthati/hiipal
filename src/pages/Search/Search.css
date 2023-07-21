@@ -20,13 +20,6 @@
     transform: scale(0.9);
 }
 
-.scrolltotop-div {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    z-index: 9999;
-}
-
 #scrolltotop {
     position: fixed;
     bottom: 1.7rem;
