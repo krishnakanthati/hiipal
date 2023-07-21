@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import SearchBar from "../../components/SearchBar/SearchBar";
-import * as MdIcons from "react-icons/md";
+import * as IoIcons from "react-icons/io";
 import "./Search.css";
 
 function Search() {
@@ -55,7 +55,7 @@ function Search() {
         <SearchBar className="searchbar" />
         <div className="scrolltotop-div">
           {isVisible && (
-            <MdIcons.MdOutlineKeyboardDoubleArrowUp
+            <IoIcons.IoIosArrowUp
               id="scrolltotop"
               onClick={scrollToTop}
               title="Go to top"
