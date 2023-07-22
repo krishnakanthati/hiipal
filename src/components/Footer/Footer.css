@@ -10,11 +10,12 @@
     justify-content: space-between;
     font-weight: 500;
     box-sizing: border-box;
-    font-size: small;
+    font-size: 1rem
 }
 
 @media only screen and (max-width: 600px) {
     .footer {
+        font-size: small;
         width: calc(100% - 4rem);
         bottom: 3rem;
     }
