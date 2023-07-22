@@ -104,7 +104,7 @@ function Signup() {
                 >
                   D
                 </span>
-                <span className="sr-only">pal ID</span>
+                {/* <span className="sr-only">pal ID</span> */}
               </label>
               <div className="form-group__input palid-wrapper">
                 <input
@@ -181,7 +181,7 @@ function Signup() {
                 >
                   d
                 </span>
-                <span className="sr-only">password</span>
+                {/* <span className="sr-only">password</span> */}
               </label>
               <div className="form-group__input">
                 <input
@@ -235,7 +235,7 @@ function Signup() {
                 >
                   e
                 </span>
-                <span className="sr-only">phone</span>
+                {/* <span className="sr-only">phone</span> */}
               </label>
               <div className="form-group__input">
                 <input
