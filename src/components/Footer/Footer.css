@@ -6,9 +6,9 @@
     display: flex;
     justify-content: center;
     width: calc(100% - 6rem);
-    height: 1rem;
+    height: 1.5rem;
     justify-content: space-between;
-    font-weight: 450;
+    font-weight: 500;
     box-sizing: border-box;
     font-size: small;
 }
