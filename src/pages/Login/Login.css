@@ -92,7 +92,7 @@ input {
     padding: .5rem .5rem;
     font-weight: 700;
     transition: border-color var(--transition);
-    background-color: cornsilk;
+    background-color: #e8f0fe;
     color: black;
     width: 10rem;
     border-radius: 1rem;
