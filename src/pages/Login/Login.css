@@ -42,7 +42,7 @@
 .half-width-hr {
     width: 50%;
     height: .15rem;
-    background-color: white;
+    background-color: black;
     border: none;
     margin: 0;
     border-radius: 5rem;
@@ -51,7 +51,7 @@
 .or-text {
     margin: 0 .75rem;
     font-weight: 600;
-    color: white;
+    color: black;
 }
 
 .login-icon:hover {
@@ -92,7 +92,7 @@ input {
     padding: .5rem .5rem;
     font-weight: 700;
     transition: border-color var(--transition);
-    background-color: white;
+    background-color: cornsilk;
     color: black;
     width: 10rem;
     border-radius: 1rem;
