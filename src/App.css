@@ -36,5 +36,11 @@ button {
   background: #007bff;
   border-radius: .5rem;
   font-size: 1rem;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+input {
+  box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
