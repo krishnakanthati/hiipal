@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 0;
     right: 3rem;
-    padding: 0 .2rem;
+    padding: 0 .5rem;
     display: flex;
     justify-content: center;
     width: calc(100% - 6rem);
@@ -10,7 +10,8 @@
     justify-content: space-between;
     font-weight: 500;
     box-sizing: border-box;
-    font-size: 1rem
+    font-size: 1rem;
+    color: #777777;
 }
 
 @media only screen and (max-width: 600px) {
