@@ -74,18 +74,19 @@ function Login() {
                 </span>
                 <span className="sr-only">pal ID</span>
               </label>
-              <div className="form-group__input">
+              <div className="form-group__input palid-wrapper">
                 <input
                   required
                   type="text"
                   id="palid"
-                  className="form-input"
+                  className="form-input palid-input"
                   pattern="^(?=.*[A-Za-z])[A-Za-z0-9_]{4,15}$"
                   title="Enter valid pal ID"
                   placeholder="Enter valid pal ID"
                   value={palid}
                   onChange={(e) => setPalid(e.target.value)}
                 />
+                <span class="at-symbol">@</span>
                 <div className="form-group__error">Enter a valid ID</div>
               </div>
             </div>

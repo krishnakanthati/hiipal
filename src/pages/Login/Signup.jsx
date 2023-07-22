@@ -106,12 +106,12 @@ function Signup() {
                 </span>
                 <span className="sr-only">pal ID</span>
               </label>
-              <div className="form-group__input">
+              <div className="form-group__input palid-wrapper">
                 <input
                   required
                   type="text"
                   id="palid"
-                  className="form-input"
+                  className="form-input palid-input"
                   pattern="^(?=.*[A-Za-z])[A-Za-z0-9_]{4,15}$"
                   value={palid}
                   onChange={handlePalidChange}
@@ -119,6 +119,7 @@ function Signup() {
                   title="Enter valid pal ID"
                   placeholder="Enter valid pal ID"
                 />
+                <span class="at-symbol">@</span>
                 <div className="form-group__error">Enter a valid pal ID</div>
               </div>
             </div>

@@ -65,6 +65,27 @@
     flex-direction: row;
 }
 
+/* Style the paldi input field */
+
+.palid-wrapper {
+    position: relative;
+}
+
+.palid-input {
+    padding-left: 1.5rem;
+}
+
+/* Style the @ symbol */
+.at-symbol {
+    position: absolute;
+    left: .3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #808080;
+}
+
 input {
     border: none;
     border-radius: .1rem;

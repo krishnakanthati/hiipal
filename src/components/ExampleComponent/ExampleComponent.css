@@ -1,0 +1,18 @@
+.try-input {
+    padding-left: 2rem;
+    /* Adjust the padding as needed */
+    position: relative;
+}
+
+.try-input::before {
+    content: "@";
+    position: absolute;
+    left: 0.625rem;
+    /* Adjust the position of the "@" symbol as needed */
+    /* top: 50%; */
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* To prevent the "@" from being selectable */
+    font-size: 1rem;
+    /* Adjust the size of the "@" symbol */
+}
