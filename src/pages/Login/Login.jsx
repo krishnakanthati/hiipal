@@ -72,7 +72,7 @@ function Login() {
                 >
                   D
                 </span>
-                <span className="sr-only">pal ID</span>
+                {/* <span className="sr-only">pal ID</span> */}
               </label>
               <div className="form-group__input palid-wrapper">
                 <input
@@ -148,7 +148,7 @@ function Login() {
                 >
                   d
                 </span>
-                <span className="sr-only">password</span>
+                {/* <span className="sr-only">password</span> */}
               </label>
               <div className="form-group__input">
                 <input

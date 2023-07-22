@@ -132,7 +132,7 @@ input::placeholder {
     transform: scale(0.95);
 }
 
-.sr-only {
+/* .sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -143,7 +143,7 @@ input::placeholder {
     white-space: nowrap;
     border-width: 0;
     color: red;
-}
+} */
 
 .form-group:has(:invalid) {
     --color: var(--invalid);
