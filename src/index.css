@@ -24,6 +24,7 @@
   tap-highlight-color: transparent;
 
   touch-action: manipulation;
+  box-sizing: border-box;
 }
 
 body {
