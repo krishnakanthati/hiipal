@@ -77,7 +77,7 @@ function Navbar({ isLoading }) {
             <li className="header-li">
               <Link className="nav-link" to="/" style={{ color: "black" }}>
                 Hii pal
-                <span style={{ color: "#CCCCFF" }}>!</span>
+                <span style={{ color: "#2f88ff" }}>!</span>
               </Link>
             </li>
             {isLoading && (
