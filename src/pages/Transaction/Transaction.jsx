@@ -7,9 +7,7 @@ function Transaction() {
   return (
     <>
       <Navbar />
-      <div className="main-container">
-        <ExampleComponent />
-      </div>
+      <div className="main-container">{/* <ExampleComponent /> */}</div>
     </>
   );
 }
