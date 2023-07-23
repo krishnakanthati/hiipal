@@ -40,7 +40,7 @@
 }
 
 .half-width-hr {
-    width: 50%;
+    width: 25%;
     height: .1rem;
     background-color: black;
     border: none;
@@ -49,7 +49,7 @@
 }
 
 .or-text {
-    margin: 0 .75rem;
+    margin: 0 .5rem;
     font-weight: 600;
     color: black;
 }
