@@ -14,7 +14,7 @@ import * as ImIcons from "react-icons/im";
 import * as FiIcons from "react-icons/fi";
 
 function Navbar({ isLoading }) {
-  const [toggleMenu, setToggleMenu] = useState(true);
+  const [toggleMenu, setToggleMenu] = useState(false);
   const sidebarRef = useRef();
   let audio = new Audio(diamond);
 
