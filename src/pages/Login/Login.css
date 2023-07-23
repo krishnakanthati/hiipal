@@ -106,12 +106,12 @@ input::placeholder {
 }
 
 .form-label {
-    font-weight: 700;
+    font-weight: bolder;
     padding-right: .5rem;
     transform-style: preserve-3d;
     transition: color var(--transition);
     color: var(--color);
-    font-size: 1rem;
+    font-size: .85rem;
 }
 
 .form-submit-button {
