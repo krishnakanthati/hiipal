@@ -82,8 +82,12 @@ function Navbar({ isLoading }) {
             </li>
             {isLoading && (
               <li className="header-li">
-                <Link className="nav-link" to="/" style={{ color: "red" }}>
-                  loading..
+                <Link
+                  className="nav-link"
+                  to="/"
+                  style={{ color: "red", fontSize: ".75rem" }}
+                >
+                  loading
                 </Link>
               </li>
             )}
