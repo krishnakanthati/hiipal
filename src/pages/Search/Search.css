@@ -22,8 +22,8 @@
 
 #scrolltotop {
     position: fixed;
-    bottom: 1.7rem;
-    right: 3.25rem;
+    bottom: 1.75rem;
+    right: 3.5rem;
     z-index: 1;
     cursor: pointer;
     font-size: 2.25rem;

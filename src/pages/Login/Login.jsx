@@ -86,7 +86,7 @@ function Login() {
                   value={palid}
                   onChange={(e) => setPalid(e.target.value)}
                 />
-                <span class="at-symbol">@</span>
+                <span className="at-symbol">@</span>
                 <div className="form-group__error">Enter a valid ID</div>
               </div>
             </div>
