@@ -242,3 +242,9 @@ form:valid [type="submit"] {
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .login-form-div {
+        height: 100vh;
+    }
+}
