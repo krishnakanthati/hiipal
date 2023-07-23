@@ -18,8 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110%;
-    border: .1rem solid black;
+    height: 100%;
 }
 
 .form-wrapper {
