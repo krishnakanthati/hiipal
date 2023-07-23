@@ -83,7 +83,11 @@
     transform: translateY(-50%);
     font-size: 1rem;
     font-weight: bold;
-    /* color: #808080; */
+    color: white;
+}
+
+.palid-wrapper:focus-within .at-symbol {
+    color: black;
 }
 
 input {
