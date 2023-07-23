@@ -27,10 +27,13 @@
     right: 3.5rem;
     z-index: 1;
     cursor: pointer;
-    font-size: 5rem;
-    color: white;
+    font-size: 2.5rem;
+    color: black;
 }
 
+#scrolltotop:hover {
+    color: white;
+}
 
 @media only screen and (max-width: 600px) {
     #scrolltotop {
