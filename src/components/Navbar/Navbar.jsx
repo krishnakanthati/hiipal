@@ -14,7 +14,7 @@ import * as ImIcons from "react-icons/im";
 import * as FiIcons from "react-icons/fi";
 
 function Navbar({ isLoading }) {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(true);
   const sidebarRef = useRef();
   let audio = new Audio(diamond);
 
@@ -117,11 +117,6 @@ function Navbar({ isLoading }) {
               <li className="sidebar-li">
                 <Link className="nav-link" to="/">
                   <RxIcons.RxTwitterLogo className="nav-icon" />
-                </Link>
-              </li>
-              <li className="sidebar-li">
-                <Link className="nav-link" to="https://hiipal.netlify.app/">
-                  <ImIcons.ImCool className="nav-icon" />
                 </Link>
               </li>
             </ul>
