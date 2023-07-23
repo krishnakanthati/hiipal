@@ -79,7 +79,7 @@
 .at-symbol {
     position: absolute;
     left: .3rem;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     font-size: 1rem;
     font-weight: bold;
