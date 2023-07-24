@@ -84,7 +84,6 @@
     transform: translateY(-50%);
     font-size: 1rem;
     font-weight: bold;
-    color: white;
 }
 
 .palid-wrapper:focus-within .at-symbol {
