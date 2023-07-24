@@ -39,7 +39,7 @@
     margin: 0 0.5rem;
 }
 
-.half-width-hr-first, .half-width-hr-second {
+.half-width-hr {
     width: 50%;
     height: .1rem;
     background-color: black;

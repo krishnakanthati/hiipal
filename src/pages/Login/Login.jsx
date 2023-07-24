@@ -193,9 +193,9 @@ function Login() {
               </div>
             </form>
             <div className="or-container">
-              <hr className="half-width-hr-first"></hr>
+              <hr className="half-width-hr"></hr>
               <span className="or-text">OR</span>
-              <hr className="half-width-hr-second"></hr>
+              <hr className="half-width-hr"></hr>
             </div>
             <Link to="/search">
               <button className="anonymous-btn">Go Anonymous</button>
