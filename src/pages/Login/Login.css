@@ -42,7 +42,7 @@
 .half-width-hr {
     width: 50%;
     height: .1rem;
-    background-color: #787878;
+    background-color: black;
     border: none;
     margin: 0;
     border-radius: 5rem;
@@ -50,8 +50,8 @@
 
 .or-text {
     margin: 0 .25rem;
-    font-weight: 600;
-    color: #787878;
+    font-weight: bolder;
+    color: #00c50b;
     font-size: .75rem;
 }
 
