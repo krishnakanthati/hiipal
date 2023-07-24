@@ -10,8 +10,6 @@ import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
 import * as RxIcons from "react-icons/rx";
-import * as ImIcons from "react-icons/im";
-import * as FiIcons from "react-icons/fi";
 
 function Navbar({ isLoading }) {
   const [toggleMenu, setToggleMenu] = useState(false);
