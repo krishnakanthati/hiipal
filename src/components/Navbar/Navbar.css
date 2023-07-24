@@ -117,9 +117,10 @@ header {
         display: flex;
         align-items: center;
         box-sizing: border-box;
-        margin-left: 1rem;
+        margin-left: 0rem;
+        padding-left: 1rem;
+        padding-right: .5rem;
         width: 100%;
-        width: calc(100% - 1.5rem);
     }
 
     .sidebar {
