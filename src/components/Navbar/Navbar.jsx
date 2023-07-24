@@ -10,6 +10,7 @@ import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
 import * as MdIcons from "react-icons/md";
 import * as RxIcons from "react-icons/rx";
+import * as RiIcons from "react-icons/ri";
 
 function Navbar({ isLoading }) {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -119,6 +120,11 @@ function Navbar({ isLoading }) {
               <li className="sidebar-li">
                 <Link className="nav-link" to="/">
                   <RxIcons.RxTwitterLogo className="nav-icon" />
+                </Link>
+              </li>
+              <li className="sidebar-li">
+                <Link className="nav-link" to="/">
+                  <IoIcons2.IoSettingsOutline className="nav-icon" />
                 </Link>
               </li>
             </ul>
