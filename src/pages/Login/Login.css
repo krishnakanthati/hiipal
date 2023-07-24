@@ -42,7 +42,7 @@
 .half-width-hr {
     width: 50%;
     height: .1rem;
-    background-color: black;
+    background-color: white;
     border: none;
     margin: 0;
     border-radius: 5rem;
