@@ -39,10 +39,10 @@
     margin: 0 0.5rem;
 }
 
-.half-width-hr {
+.half-width-hr-first, .half-width-hr-second {
     width: 50%;
     height: .1rem;
-    background-image: linear-gradient(to right, red 25%, blue 100%);
+    background-color: black;
     border: none;
     margin: 0;
     border-radius: 5rem;
