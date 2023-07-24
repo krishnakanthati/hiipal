@@ -41,7 +41,7 @@
 
 .half-width-hr {
     width: 50%;
-    height: .2rem;
+    height: .15rem;
     background-image: linear-gradient(to right, red 25%, blue 100%);
     border: none;
     margin: 0;
