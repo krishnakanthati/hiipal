@@ -11,7 +11,7 @@
   overflow: auto;
   /* height: calc(100% - 4.5rem);  */
   padding: .5rem;
-  border-radius: 75rem;
+  border-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(0, 0, 0, 0.75) 0px 0px 0px 1px;
 
   /*Mozilla No Scroll*/
