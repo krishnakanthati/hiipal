@@ -1,5 +1,6 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Edu SA Beginner', cursive;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -46,6 +47,6 @@ input:focus {
   }
 
   button {
-    background-color: #f9f9f9;
+    background-color: white;
   }
 }
