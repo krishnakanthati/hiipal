@@ -12,7 +12,9 @@
   /* height: calc(100% - 4.5rem);  */
   padding: .5rem;
   border-radius: .75rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(0, 0, 0, 0.75) 0px 0px 0px 1px;
+  /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(0, 0, 0, 0.75) 0px 0px 0px 1px; */
+  border: .15rem solid #2f88ff;
+
 
   /*Mozilla No Scroll*/
   overflow: -moz-scrollbars-none;
@@ -42,11 +44,11 @@ button {
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(0, 0, 0, 0.75) 0px 0px 0px 1px;
   background-color: white;
-  font-family: 'Edu SA Beginner', cursive;
 }
 
 input {
   font-family: 'Edu SA Beginner', cursive;
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(0, 0, 0, 0.75) 0px 0px 0px 1px;
+  width: 10rem;
 }

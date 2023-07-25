@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500;600;700&display=swap');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-family: 'Edu SA Beginner', cursive;
-
+  font-size: 1rem;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: white;
@@ -33,6 +35,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   touch-action: manipulation;
+  font-family: 'Edu SA Beginner', cursive;
 }
 
 input:focus {
@@ -48,5 +51,6 @@ input:focus {
 
   button {
     background-color: white;
+    font-family: 'Edu SA Beginner', cursive;
   }
 }
