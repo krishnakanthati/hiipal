@@ -40,7 +40,7 @@ button {
   color: black;
   cursor: pointer;
   border-radius: .4rem;
-  font-size: .8rem;
+  font-size: 1rem;
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(0, 0, 0, 0.75) 0px 0px 0px 1px;
   background-color: white;
