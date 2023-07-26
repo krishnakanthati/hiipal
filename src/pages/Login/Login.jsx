@@ -85,9 +85,7 @@ function Login() {
                 </Link>
               </div>
             </form>
-            <span className="" style={{ textAlign: "center", color: "blue" }}>
-              or
-            </span>
+            <span className="or">OR</span>
             <Link to="/search">
               <button className="anonymous-btn">Go Anonymous</button>
             </Link>
