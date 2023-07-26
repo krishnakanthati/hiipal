@@ -50,11 +50,11 @@ input {
   outline: none;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(0, 0, 0, 0.75) 0px 0px 0px 1px;
-  width: 12rem;
+  width: 13rem;
+  font-size: 1rem;
   padding: .5rem .5rem;
   font-weight: 700;
   color: black;
-  font-size: 1rem;
   border-radius: .2rem;
   font-weight: bolder;
 }
