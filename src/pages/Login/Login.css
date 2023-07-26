@@ -35,7 +35,7 @@ input::placeholder {
 
 .form-label {
     position: absolute;
-    font-weight: bolder;
+    font-weight: 700;
     transform-style: preserve-3d;
     top: -.18rem;
     left: 0;
