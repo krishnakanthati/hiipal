@@ -48,9 +48,9 @@ input::placeholder {
 .form-group .form-input:valid~.form-label,
 .form-group .form-input:focus~.form-label {
     color: blue;
-    transform: translateX(.75rem) translateY(-.6rem);
+    transform: translateX(.6rem) translateY(-.4rem);
     font-size: .75rem;
-    padding: 0 .25rem;
+    padding: 0 .2rem;
     background-color: white;
 }
 
