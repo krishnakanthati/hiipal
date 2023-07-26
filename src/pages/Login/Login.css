@@ -25,7 +25,7 @@
 }
 
 .form-input {
-    transition: .5s;
+    transition: .5s ease-in-out;
     background-color: transparent;
 }
 
@@ -66,23 +66,14 @@ input::placeholder {
     background-color: white;
 }
 
-.anonymous-btn:active {
-    background-color: #00c50b;
-    color: white;
-}
-
 .form-submit-button:active, .anonymous-btn:active {
     transform: scale(0.95);
 }
 
-/* form:valid [type="submit"] {
+form:valid [type="submit"], .anonymous-btn:active {
     background: #00c50b;
     color: white;
-} */
-
-/* .form-group__input {
-    position: relative;
-} */
+}
 
 @media only screen and (max-width: 600px) {
     .login-form-div {

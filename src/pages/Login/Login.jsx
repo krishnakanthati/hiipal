@@ -33,9 +33,6 @@ function Login() {
           <div className="form-wrapper">
             <form action="" onSubmit={connectPal} className="form-container">
               <div className="form-group">
-                <label htmlFor="palid" className="form-label">
-                  pal ID
-                </label>
                 <input
                   required
                   type="text"
@@ -47,24 +44,25 @@ function Login() {
                   value={palid}
                   onChange={(e) => setPalid(e.target.value)}
                 />
+                <label htmlFor="palid" className="form-label">
+                  pal ID
+                </label>
               </div>
               <div className="form-group">
+                <input
+                  required
+                  type="password"
+                  id="password"
+                  className="form-input"
+                  title="Enter correct password"
+                  placeholder="Enter correct password"
+                  pattern=".{8,}"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
                 <label htmlFor="password" className="form-label">
                   password
                 </label>
-                <div className="form-group__input">
-                  <input
-                    required
-                    type="password"
-                    id="password"
-                    className="form-input"
-                    title="Enter correct password"
-                    placeholder="Enter correct password"
-                    pattern=".{8,}"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
-                </div>
               </div>
               <button type="submit" className="form-submit-button">
                 Connect <AiIcons.AiOutlineThunderbolt className="login-icon" />
