@@ -34,125 +34,23 @@ function Login() {
             <form action="" onSubmit={connectPal} className="form-container">
               <div className="form-group">
                 <label htmlFor="palid" className="form-label">
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 0 }}
-                  >
-                    p
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 1 }}
-                  >
-                    a
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 2 }}
-                  >
-                    l
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 3 }}
-                  >
-                    &nbsp;
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 4 }}
-                  >
-                    I
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 5 }}
-                  >
-                    D
-                  </span>
-                  {/* <span className="sr-only">pal ID</span> */}
+                  pal ID
                 </label>
-                <div className="form-group__input palid-wrapper">
-                  <input
-                    required
-                    type="text"
-                    id="palid"
-                    className="form-input palid-input"
-                    pattern="^(?=.*[A-Za-z])[A-Za-z0-9_]{4,15}$"
-                    title="Enter valid pal ID"
-                    placeholder="Enter valid pal ID"
-                    value={palid}
-                    onChange={(e) => setPalid(e.target.value)}
-                  />
-                  <span className="at-symbol">@</span>
-                  <div className="form-group__error">Enter a valid ID</div>
-                </div>
+                <input
+                  required
+                  type="text"
+                  id="palid"
+                  className="form-input"
+                  pattern="^(?=.*[A-Za-z])[A-Za-z0-9_]{4,15}$"
+                  title="Enter valid pal ID"
+                  placeholder="Enter valid pal ID"
+                  value={palid}
+                  onChange={(e) => setPalid(e.target.value)}
+                />
               </div>
               <div className="form-group">
                 <label htmlFor="password" className="form-label">
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 0 }}
-                  >
-                    p
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 1 }}
-                  >
-                    a
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 2 }}
-                  >
-                    s
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 3 }}
-                  >
-                    s
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 4 }}
-                  >
-                    w
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 5 }}
-                  >
-                    o
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 5 }}
-                  >
-                    r
-                  </span>
-                  <span
-                    aria-hidden="true"
-                    className="label__letter"
-                    style={{ "--index": 5 }}
-                  >
-                    d
-                  </span>
-                  {/* <span className="sr-only">password</span> */}
+                  password
                 </label>
                 <div className="form-group__input">
                   <input
@@ -166,9 +64,6 @@ function Login() {
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />
-                  <div className="form-group__error">
-                    Enter correct password
-                  </div>
                 </div>
               </div>
               <button type="submit" className="form-submit-button">
@@ -188,15 +83,13 @@ function Login() {
                   }}
                   to="/signup"
                 >
-                  Sign up
+                  Register
                 </Link>
               </div>
             </form>
-            <div className="or-container">
-              <hr className="half-width-hr"></hr>
-              <span className="or-text">OR</span>
-              <hr className="half-width-hr"></hr>
-            </div>
+            <span className="" style={{ textAlign: "center", color: "blue" }}>
+              or
+            </span>
             <Link to="/search">
               <button className="anonymous-btn">Go Anonymous</button>
             </Link>
