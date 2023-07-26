@@ -34,7 +34,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   touch-action: manipulation;
-  /* font-family: 'Edu SA Beginner', cursive; */
 }
 
 input:focus {
