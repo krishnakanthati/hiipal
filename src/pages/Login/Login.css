@@ -45,14 +45,14 @@ input::placeholder {
     transition: ease-in .5s;
 }
 
-/* .form-group .form-input:valid~.form-label,
+.form-group .form-input:valid~.form-label,
 .form-group .form-input:focus~.form-label {
     color: blue;
     transform: translateX(.75rem) translateY(-.6rem);
     font-size: .75rem;
     padding: 0 .25rem;
     background-color: white;
-} */
+}
 
 .form-submit-button {
     transform: color white, background green;
