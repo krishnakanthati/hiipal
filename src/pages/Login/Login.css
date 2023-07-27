@@ -46,9 +46,17 @@ input::placeholder {
     transition: ease-in .5s;
 }
 
-.form-group .form-input:valid~.form-label,
-.form-group .form-input:focus~.form-label {
+.form-group .form-input:focus~.form-label,
+.form-group .form-input:not(:placeholder-shown)~.form-label {
     color: blue;
+    transform: translateX(.7rem) translateY(-1.65rem);
+    font-size: .75rem;
+    padding: 0 .2rem;
+    background-color: white;
+}
+
+.form-group .form-input:focus:invalid:not(:placeholder-shown)~.form-label {
+    color: red;
     transform: translateX(.7rem) translateY(-1.65rem);
     font-size: .75rem;
     padding: 0 .2rem;
