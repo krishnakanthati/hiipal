@@ -46,7 +46,7 @@ input::placeholder {
     transition: ease-in .5s;
 }
 
-.form-group .form-input:valid~.form-label,
+/* .form-group .form-input:valid~.form-label, */
 .form-group .form-input:focus~.form-label {
     color: blue;
     transform: translateX(.7rem) translateY(-1.65rem);
