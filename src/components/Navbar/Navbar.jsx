@@ -91,7 +91,7 @@ function Navbar({ isLoading }) {
                 <Link
                   className="nav-link"
                   to="/"
-                  style={{ color: "red", fontSize: ".75rem" }}
+                  style={{ color: "red", fontSize: ".85rem" }}
                 >
                   loading
                 </Link>
