@@ -9,7 +9,7 @@
     box-sizing: border-box;
     font-size: 1rem;
     color: #777777;
-    border: .1rem solid black;
+    /* border: .1rem solid black; */
     background-color: #ccccff;
     border-radius: .25rem;
 
@@ -20,7 +20,7 @@
 
 .email {
     font-weight: 700;
-    color: black;
+    color: white;
 }
 
 @media only screen and (max-width: 600px) {
