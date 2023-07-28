@@ -3,7 +3,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import * as IoIcons from "react-icons/io";
 import "./Search.css";
-import Footer from "../../components/Footer/Footer";
 
 function Search() {
   const [users, setUsers] = useState([]);
@@ -72,7 +71,6 @@ function Search() {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 }
