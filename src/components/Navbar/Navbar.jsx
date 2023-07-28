@@ -93,7 +93,7 @@ function Navbar({ isLoading }) {
                   to="/"
                   style={{ color: "red", fontSize: ".85rem" }}
                 >
-                  loading
+                  loading..
                 </Link>
               </li>
             )}
