@@ -12,7 +12,7 @@ import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
 
 function Navbar({ isLoading }) {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(true);
   const sidebarRef = useRef();
   let audio = new Audio(diamond);
 
