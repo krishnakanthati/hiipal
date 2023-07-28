@@ -79,7 +79,7 @@ function Navbar({ isLoading }) {
                 style={{
                   color: "black",
                   fontFamily: "'Lisu Bosa', serif",
-                  fontSize: "1.75rem",
+                  fontSize: "2rem",
                 }}
               >
                 Hii pal
