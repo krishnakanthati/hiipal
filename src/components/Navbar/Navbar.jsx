@@ -10,7 +10,6 @@ import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
 import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
-import * as ImIcons from "react-icons/im";
 
 function Navbar({ isLoading }) {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -107,7 +106,7 @@ function Navbar({ isLoading }) {
                 {toggleMenu ? (
                   <IoIcons2.IoClose className="nav-icon" />
                 ) : (
-                  <ImIcons.ImMenu className="nav-icon" />
+                  <HiIcons.HiMenuAlt4 className="nav-icon" />
                 )}
               </Link>
             </li>
