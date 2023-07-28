@@ -19,9 +19,6 @@ function Footer() {
 
   return (
     <div className="footer">
-      {/* <div className="pal-count">
-        {palRegisteredCount} (<span style={{ color: "#00c50b" }}>+0</span>)
-      </div> */}
       <div className="email">dev@hiipal.com</div>
     </div>
   );
