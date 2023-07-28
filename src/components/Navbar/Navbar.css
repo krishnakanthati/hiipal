@@ -131,8 +131,6 @@ header {
         height: calc(100% - 6rem);
         bottom: 3rem;
         right: .5rem;
-        background-color: white;
-        opacity: .8;
     }
 
     .navbar-ul {
