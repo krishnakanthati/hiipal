@@ -3,11 +3,22 @@ import Navbar from "../../components/Navbar/Navbar";
 import "./Login.css";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
 
 function Signup() {
   const [palid, setPalid] = useState("");
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
+
+  const inputStyle = {
+    /* Add your custom styles here */
+    /* For example: */
+    border: "1px solid #ccc",
+    padding: "8px",
+    borderRadius: "4px",
+    width: "100%",
+  };
 
   const handlePalidChange = (e) => {
     const { value } = e.target;
@@ -89,7 +100,7 @@ function Signup() {
                   pattern=".{8,}"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                />{" "}
+                />
                 <label htmlFor="password" className="form-label">
                   password
                 </label>

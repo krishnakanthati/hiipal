@@ -11,7 +11,7 @@ function Home() {
       <div className="main-container">
         <Login />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
