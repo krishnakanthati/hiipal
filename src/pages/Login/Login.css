@@ -60,7 +60,7 @@ input::placeholder {
     color: red;
     transform: translateX(.7rem) translateY(-1.65rem);
     font-size: .75rem;
-    padding: 0 .2rem;
+    padding: 0 .1rem;
     background-color: white;
     border-radius: 1rem;
 }
