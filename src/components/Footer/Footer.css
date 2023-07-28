@@ -4,6 +4,7 @@
     right: 3rem;
     width: calc(100% - 6rem);
     height: 1.5rem;
+    padding: 0 .5rem;
 
     box-sizing: border-box;
     font-size: 1rem;
@@ -13,13 +14,13 @@
     border-radius: .25rem;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .email {
     font-weight: 700;
-    color: black;
+    color: grey;
 }
 
 @media only screen and (max-width: 600px) {
