@@ -97,19 +97,6 @@ function Navbar({ isLoading }) {
                 </Link>
               </li>
             )}
-            <li className="header-li">
-              <Link
-                className="nav-link"
-                to=""
-                onClick={() => setToggleMenu(!toggleMenu)}
-              >
-                {toggleMenu ? (
-                  <IoIcons2.IoClose className="nav-icon" />
-                ) : (
-                  <HiIcons.HiMenuAlt4 className="nav-icon" />
-                )}
-              </Link>
-            </li>
           </ul>
         </nav>
         {toggleMenu && (
@@ -118,10 +105,19 @@ function Navbar({ isLoading }) {
               <li className="sidebar-li">
                 <Link
                   className="nav-link"
-                  to="https://www.buymeacoffee.com/krishnakanthati"
-                  title="Buy the developer a beer"
+                  to=""
+                  onClick={() => setToggleMenu(!toggleMenu)}
                 >
-                  <BiIcons.BiLike className="nav-icon" />
+                  {toggleMenu ? (
+                    <IoIcons2.IoClose className="nav-icon" />
+                  ) : (
+                    <HiIcons.HiMenuAlt4 className="nav-icon" />
+                  )}
+                </Link>
+              </li>
+              <li className="sidebar-li">
+                <Link className="nav-link" to="/">
+                  <IoIcons2.IoSettingsOutline className="nav-icon" />
                 </Link>
               </li>
               <li className="sidebar-li">
@@ -130,8 +126,12 @@ function Navbar({ isLoading }) {
                 </Link>
               </li>
               <li className="sidebar-li">
-                <Link className="nav-link" to="/">
-                  <IoIcons2.IoSettingsOutline className="nav-icon" />
+                <Link
+                  className="nav-link"
+                  to="https://www.buymeacoffee.com/krishnakanthati"
+                  title="Buy the developer a beer"
+                >
+                  <BiIcons.BiLike className="nav-icon" />
                 </Link>
               </li>
             </ul>

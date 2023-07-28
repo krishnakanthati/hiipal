@@ -15,7 +15,7 @@ header {
     font-size: 1.5rem;
     font-weight: 700;
     background-color: white;
-    width: calc(100% - 3rem);
+    width: calc(100% - 6rem);
     height: 3rem;
 }
 
@@ -24,16 +24,14 @@ header {
     position: fixed;
     background-color: white;
     height: 100%;
-    /* border: 1px solid black; */
 }
 
 .sidebar {
     right: 0;
     width: 3rem;
     height: 100vh;
-    margin-top: 3rem;
     position: fixed;
-    height: calc(100% - 3rem);
+    height: calc(100%);
     z-index: 1;
     overflow: hidden;
 }
@@ -48,12 +46,15 @@ header {
 }
 
 .sidebar-ul {
-    justify-content: flex-start;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse; */
 }
 
 .navbar-li:last-child {
     margin-top: auto;
+}
+
+.sidebar-li:first-child {
+    margin-bottom: auto;
 }
 
 .header-ul {
