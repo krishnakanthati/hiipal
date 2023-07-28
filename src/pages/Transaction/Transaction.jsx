@@ -8,6 +8,7 @@ function Transaction() {
     <>
       <Navbar />
       <div className="main-container">{/* <ExampleComponent /> */}</div>
+      <Footer />
     </>
   );
 }
