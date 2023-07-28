@@ -9,7 +9,7 @@
     box-sizing: border-box;
     font-size: 1rem;
     color: #777777;
-    /* border: .1rem solid black; */
+    border-bottom: .15rem solid black;
     background-color: #ccccff;
     border-radius: .25rem;
 
