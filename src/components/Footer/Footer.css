@@ -10,7 +10,7 @@
     font-size: 1rem;
     color: #777777;
     border: .1rem solid black;
-    background-color: blanchedalmond;
+    background-color: #ccccff;
     border-radius: .25rem;
 
     display: flex;
@@ -20,7 +20,7 @@
 
 .email {
     font-weight: 700;
-    color: grey;
+    color: black;
 }
 
 @media only screen and (max-width: 600px) {
