@@ -27,7 +27,6 @@ header {
 .sidebar {
     right: 0;
     width: 3rem;
-    border: .1rem solid black;
     position: fixed;
     height: calc(100%);
     height: 3rem;
