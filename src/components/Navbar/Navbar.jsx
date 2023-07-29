@@ -12,7 +12,7 @@ import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
 
 function Navbar({ isLoading }) {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [toggleMenu, setToggleMenu] = useState(true);
   const sidebarRef = useRef();
   let audio = new Audio(diamond);
 
@@ -114,7 +114,7 @@ function Navbar({ isLoading }) {
                   )}
                 </Link>
               </li>
-              <li className="sidebar-li">
+              {/* <li className="sidebar-li">
                 <Link className="nav-link" to="/">
                   <IoIcons2.IoSettingsOutline className="nav-icon" />
                 </Link>
@@ -132,7 +132,7 @@ function Navbar({ isLoading }) {
                 >
                   <BiIcons.BiLike className="nav-icon" />
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         )}
