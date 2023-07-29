@@ -8,7 +8,7 @@ import * as HiIcons from "react-icons/hi";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
-import * as RxIcons from "react-icons/rx";
+import * as LiIcons from "react-icons/lia";
 import * as AiIcons from "react-icons/ai";
 
 function Navbar({ isLoading }) {
@@ -108,7 +108,8 @@ function Navbar({ isLoading }) {
                   onClick={() => setToggleMenu(!toggleMenu)}
                 >
                   {toggleMenu ? (
-                    <IoIcons2.IoClose className="nav-icon" />
+                    // <IoIcons2.IoClose className="nav-icon" />
+                    <LiIcons.LiaDragonSolid className="nav-icon" />
                   ) : (
                     <HiIcons.HiMenuAlt4 className="nav-icon" />
                   )}
