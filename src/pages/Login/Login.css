@@ -27,6 +27,7 @@
 .form-input {
     transition: .5s ease-in-out;
     background-color: transparent;
+    text-transform: lowercase;
 }
 
 input::placeholder {
