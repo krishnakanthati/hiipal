@@ -30,5 +30,6 @@
         bottom: 3rem;
         right: 0;
         left: .5rem;
+        justify-content: center;
     }
 }
