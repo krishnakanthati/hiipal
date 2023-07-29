@@ -19,8 +19,7 @@
 }
 
 .email {
-    font-weight: 700;
-    color: black;
+    color: white;
 }
 
 @media only screen and (max-width: 600px) {
