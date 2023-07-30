@@ -18,7 +18,7 @@ function Navbar({ isLoading }) {
   let audio = new Audio(diamond);
 
   const logoStyle = {
-    height: "2.75rem",
+    height: "3rem",
     width: "3rem",
     // background: "",
     // border: ".1rem solid orangered",
