@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 import diamond from "../../assets/diamond.mp3";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/hiipal.png";
 
 import * as HiIcons from "react-icons/hi";
 import * as BiIcons from "react-icons/bi";
