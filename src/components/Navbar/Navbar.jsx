@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 import diamond from "../../assets/diamond.mp3";
-import logo from "../../assets/hiipal.png";
+import logo from "../../assets/hiipal.svg";
 
 import * as HiIcons from "react-icons/hi";
 import * as BiIcons from "react-icons/bi";
@@ -18,8 +18,8 @@ function Navbar({ isLoading }) {
   let audio = new Audio(diamond);
 
   const logoStyle = {
-    height: "2rem",
-    width: "2rem",
+    height: "3rem",
+    width: "3rem",
   };
 
   useEffect(() => {
