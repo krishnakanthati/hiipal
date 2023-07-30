@@ -24,9 +24,6 @@ function Footer() {
     <div className="footer">
       <div className="footer-icon">
         <div>
-          <BiIcons.BiSolidLike />
-        </div>
-        <div>
           <BiIcons.BiShare />
         </div>
         <div>

@@ -90,7 +90,7 @@ form:valid [type="submit"], .anonymous-btn:active {
 .or {
     text-align: center;
     font-weight: bolder;
-    color: blue;
+    color: black;
     font-size: .75rem;
 }
 
