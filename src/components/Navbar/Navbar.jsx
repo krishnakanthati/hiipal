@@ -9,21 +9,18 @@ import * as HiIcons from "react-icons/hi";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
-import * as LiIcons from "react-icons/lia";
-import * as FaIcons from "react-icons/fa6";
+import * as GiIcons from "react-icons/gi";
+import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
 
 function Navbar({ isLoading }) {
-  const [toggleMenu, setToggleMenu] = useState(true);
+  const [toggleMenu, setToggleMenu] = useState(false);
   const sidebarRef = useRef();
   let audio = new Audio(diamond);
 
   const logoStyle = {
     height: "3rem",
     width: "3rem",
-    // background: "",
-    // border: ".1rem solid orangered",
-    // borderRadius: ".5rem",
   };
 
   useEffect(() => {
@@ -106,26 +103,25 @@ function Navbar({ isLoading }) {
                 </Link>
               </li>
             )}
+            <li className="sidebar-li">
+              <Link
+                className="nav-link"
+                to=""
+                onClick={() => setToggleMenu(!toggleMenu)}
+              >
+                {toggleMenu ? (
+                  <IoIcons2.IoClose className="nav-icon" />
+                ) : (
+                  <GiIcons.GiSeaDragon className="nav-icon" />
+                )}
+              </Link>
+            </li>
           </ul>
         </nav>
         {toggleMenu && (
           <nav ref={sidebarRef} className="sidebar">
             <ul className="sidebar-ul">
               <li className="sidebar-li">
-                <Link
-                  className="nav-link"
-                  to=""
-                  onClick={() => setToggleMenu(!toggleMenu)}
-                >
-                  {toggleMenu ? (
-                    // <IoIcons2.IoClose className="nav-icon" />
-                    <FaIcons.FaUser className="nav-icon" />
-                  ) : (
-                    <HiIcons.HiMenuAlt4 className="nav-icon" />
-                  )}
-                </Link>
-              </li>
-              {/* <li className="sidebar-li">
                 <Link className="nav-link" to="/">
                   <IoIcons2.IoSettingsOutline className="nav-icon" />
                 </Link>
@@ -143,7 +139,7 @@ function Navbar({ isLoading }) {
                 >
                   <BiIcons.BiLike className="nav-icon" />
                 </Link>
-              </li> */}
+              </li>
             </ul>
           </nav>
         )}
