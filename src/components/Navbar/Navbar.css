@@ -134,7 +134,6 @@ header {
     .sidebar {
         height: calc(100% - 6rem);
         bottom: 3rem;
-        right: .5rem;
         height: 3rem;
         top: 0rem;
     }
