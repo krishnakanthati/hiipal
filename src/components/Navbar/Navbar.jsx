@@ -92,6 +92,15 @@ function Navbar({ isLoading }) {
                 {/* <span style={{ color: "#2f88ff" }}>!</span> */}
               </Link>
             </li>
+            <li className="header-li">
+              <input
+                style={{
+                  borderRadius: "2.5rem",
+                  width: "7rem",
+                  height: "1.75rem",
+                }}
+              />
+            </li>
             {isLoading && (
               <li className="header-li">
                 <Link
