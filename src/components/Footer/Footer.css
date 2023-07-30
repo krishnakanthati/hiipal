@@ -9,7 +9,7 @@
     box-sizing: border-box;
     font-size: 1rem;
     background-color: white;
-    border: .1rem solid #ccccff;
+    border: .1rem solid transparent;
     border-radius: .1rem;
     display: flex;
     justify-content: flex-end;
