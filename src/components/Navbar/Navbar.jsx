@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 import diamond from "../../assets/diamond.mp3";
+import logo from "../../assets/logo.svg";
 
 import * as HiIcons from "react-icons/hi";
 import * as BiIcons from "react-icons/bi";
@@ -15,6 +16,11 @@ function Navbar({ isLoading }) {
   const [toggleMenu, setToggleMenu] = useState(true);
   const sidebarRef = useRef();
   let audio = new Audio(diamond);
+
+  const logoStyle = {
+    height: "2rem",
+    fill: "blue",
+  };
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -81,7 +87,7 @@ function Navbar({ isLoading }) {
                   fontSize: "1.8rem",
                 }}
               >
-                Hii pal
+                <img src={logo} alt="SVG Image" style={logoStyle} />
                 <span style={{ color: "#2f88ff" }}>!</span>
               </Link>
             </li>

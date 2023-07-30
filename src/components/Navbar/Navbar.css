@@ -127,8 +127,9 @@ header {
         align-items: center;
         box-sizing: border-box;
         margin-left: 0rem;
-        margin-right: .5rem;
+        /* margin-right: .5rem; */
         width: calc(100% - 1rem);
+        border: .1rem solid black;
     }
 
     .sidebar {
