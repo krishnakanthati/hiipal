@@ -101,7 +101,7 @@ function Navbar({ isLoading }) {
                 }}
               />
             </li>
-            {isLoading && (
+            {/* {isLoading && (
               <li className="header-li">
                 <Link
                   className="nav-link"
@@ -111,7 +111,7 @@ function Navbar({ isLoading }) {
                   loading..
                 </Link>
               </li>
-            )}
+            )} */}
             <li className="sidebar-li">
               <Link
                 className="nav-link"
