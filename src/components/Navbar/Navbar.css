@@ -123,8 +123,8 @@ header {
     }
 
     .header {
-        display: flex;
-        align-items: center;
+        /* display: flex; */
+        /* align-items: center; */
         box-sizing: border-box;
         margin-left: 0rem;
         /* margin-right: .5rem; */
