@@ -18,8 +18,8 @@ function Navbar({ isLoading }) {
   let audio = new Audio(diamond);
 
   const logoStyle = {
-    height: "2.5rem",
-    width: "2.5rem",
+    height: "2rem",
+    width: "2rem",
   };
 
   useEffect(() => {
