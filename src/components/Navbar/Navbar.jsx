@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 import diamond from "../../assets/diamond.mp3";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/hiipal.png";
 
 import * as HiIcons from "react-icons/hi";
 import * as BiIcons from "react-icons/bi";
@@ -19,7 +19,7 @@ function Navbar({ isLoading }) {
 
   const logoStyle = {
     height: "2rem",
-    fill: "blue",
+    width: "2rem",
   };
 
   useEffect(() => {
@@ -88,7 +88,7 @@ function Navbar({ isLoading }) {
                 }}
               >
                 <img src={logo} alt="SVG Image" style={logoStyle} />
-                <span style={{ color: "#2f88ff" }}>!</span>
+                {/* <span style={{ color: "#2f88ff" }}>!</span> */}
               </Link>
             </li>
             {isLoading && (
