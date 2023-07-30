@@ -6,11 +6,10 @@
     height: 1.5rem;
     padding: 0 .5rem;
     background-color: white;
-    border-radius: .1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: .1rem solid black;
+    border-bottom: .1rem solid black;
 }
 
 .email {
@@ -30,7 +29,8 @@
         width: calc(100%);
         bottom: 3rem;
         right: 0;
-        border: .1rem solid #ccccff;
+        border-bottom: .1rem solid #ccccff;
+        border-top: .1rem solid #ccccff;
         /* justify-content: center; */
     }
 }
