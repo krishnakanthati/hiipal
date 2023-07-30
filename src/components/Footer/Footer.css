@@ -8,8 +8,7 @@
 
     box-sizing: border-box;
     font-size: 1rem;
-    color: #777777;
-    background-color: #ccccff;
+    background-color: white;
     border-radius: .1rem;
     display: flex;
     justify-content: flex-end;
