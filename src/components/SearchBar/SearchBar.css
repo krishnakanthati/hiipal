@@ -2,8 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: .25rem;
-    padding-bottom: .75rem;
-    /* border: .1rem solid black; */
+}
 
+.searchbar {
+    border-radius: 2.5rem;
+    width: 7rem;
+    height: 1.75rem;
 }

@@ -5,7 +5,7 @@ function Message() {
   return (
     <>
       <Navbar />
-      <div className="main-container">Message</div>
+      <div className="main-container"></div>
     </>
   );
 }

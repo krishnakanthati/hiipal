@@ -11,6 +11,7 @@ import * as TbIcons from "react-icons/tb";
 import * as GiIcons from "react-icons/gi";
 import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
+import SearchBar from "../SearchBar/SearchBar";
 
 function Navbar({ isLoading }) {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -88,13 +89,7 @@ function Navbar({ isLoading }) {
               </Link>
             </li>
             <li className="header-li">
-              <input
-                style={{
-                  borderRadius: "2.5rem",
-                  width: "7rem",
-                  height: "1.75rem",
-                }}
-              />
+              <SearchBar />
             </li>
             {/* {isLoading && (
               <li className="header-li">
