@@ -11,6 +11,7 @@ import * as TbIcons from "react-icons/tb";
 import * as GiIcons from "react-icons/gi";
 import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
+import * as LuIcons from "react-icons/lu";
 import SearchBar from "../SearchBar/SearchBar";
 
 function Navbar({ isLoading }) {
@@ -123,6 +124,11 @@ function Navbar({ isLoading }) {
               <li className="sidebar-li">
                 <Link className="nav-link" to="/">
                   <IoIcons2.IoSettingsOutline className="nav-icon" />
+                </Link>
+              </li>
+              <li className="sidebar-li">
+                <Link className="nav-link" to="/">
+                  <LuIcons.LuMoon className="nav-icon" />
                 </Link>
               </li>
               <li className="sidebar-li">
