@@ -22,7 +22,7 @@ function Navbar({ isLoading }) {
   let audio = new Audio(diamond);
 
   const handleKeyDown = (e) => {
-    if (e.key === "s") {
+    if (e.key === "s" && e.target.tagName.toLowerCase() !== "input") {
       setToggleMenu((prevToggleMenu) => !prevToggleMenu);
     }
   };
