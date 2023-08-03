@@ -10,8 +10,8 @@ function Home() {
       <Navbar />
       <div className="main-container">
         <Login />
+        <Footer />
       </div>
-      <Footer />
     </>
   );
 }

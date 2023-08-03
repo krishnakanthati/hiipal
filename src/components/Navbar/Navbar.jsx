@@ -85,11 +85,13 @@ function Navbar({ isLoading }) {
                 to="/"
                 style={{
                   color: "black",
-                  fontSize: "1.8rem",
+                  fontSize: "1.5rem",
+                  fontWeight: "700",
                 }}
               >
-                <img src={logo} alt="SVG Image" style={logoStyle} />
-                {/* <span style={{ color: "#2f88ff" }}>!</span> */}
+                Hii pal
+                {/* <img src={logo} alt="SVG Image" style={logoStyle} /> */}
+                <span style={{ color: "#2f88ff" }}>!</span>
               </Link>
             </li>
             <li className="header-li">
