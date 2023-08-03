@@ -12,12 +12,27 @@ import * as GiIcons from "react-icons/gi";
 import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
 import * as LuIcons from "react-icons/lu";
+
 import SearchBar from "../SearchBar/SearchBar";
 
 function Navbar({ isLoading }) {
   const [toggleMenu, setToggleMenu] = useState(false);
   const sidebarRef = useRef();
+
   let audio = new Audio(diamond);
+
+  const handleKeyDown = (e) => {
+    if (e.key === "s") {
+      setToggleMenu((prevToggleMenu) => !prevToggleMenu);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   useEffect(() => {
     function handleClickOutside(event) {
