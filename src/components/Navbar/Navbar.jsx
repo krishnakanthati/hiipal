@@ -125,9 +125,9 @@ function Navbar({ isLoading }) {
                 onClick={() => setToggleMenu(!toggleMenu)}
               >
                 {toggleMenu ? (
-                  <IoIcons2.IoClose className="nav-icon" />
+                  <IoIcons2.IoClose className="nav-icon" title="close" />
                 ) : (
-                  <GiIcons.GiSeaDragon className="nav-icon" />
+                  <GiIcons.GiSeaDragon className="nav-icon" title="sidebar" />
                 )}
               </Link>
             </li>
