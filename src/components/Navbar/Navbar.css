@@ -12,6 +12,7 @@ header {
     width: calc(100% - 6rem);
     height: 3rem;
     display: flex;
+    align-items: center;
 }
 
 .navbar {
@@ -19,6 +20,7 @@ header {
     position: fixed;
     background-color: white;
     height: 100%;
+    width: 100%;
 }
 
 .sidebar {
