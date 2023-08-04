@@ -105,7 +105,7 @@ function Navbar({ isLoading }) {
               </Link>
             </li>
             <li className="header-li">
-              <SearchBar />
+              <SearchBar className="nav-link" />
             </li>
             {/* {isLoading && (
               <li className="header-li">
