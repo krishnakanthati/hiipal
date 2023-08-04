@@ -55,7 +55,7 @@ function Navbar({ isLoading }) {
           <ul className="navbar-ul">
             <li className="navbar-li">
               <Link className="nav-link" to="/">
-                <HiIcons2.HiOutlineHome className="nav-icon" title="Home" />
+                <HiIcons.HiOutlineHome className="nav-icon" title="Home" />
               </Link>
             </li>
             <li className="navbar-li">
@@ -84,10 +84,7 @@ function Navbar({ isLoading }) {
             </li>
             <li className="navbar-li">
               <Link className="nav-link" to="/message">
-                <HiIcons2.HiOutlineChatBubbleBottomCenterText
-                  className="nav-icon"
-                  title="Message"
-                />
+                <BiIcons.BiChat className="nav-icon" title="Message" />
               </Link>
             </li>
           </ul>
