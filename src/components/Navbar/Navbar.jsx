@@ -83,10 +83,7 @@ function Navbar({ isLoading }) {
             </li>
             <li className="navbar-li">
               <Link className="nav-link" to="/message">
-                <IoIcons2.IoChatboxOutline
-                  title="Message"
-                  className="nav-icon"
-                />
+                <PiIcons.PiChatsDuotone className="nav-icon" title="Message" />
               </Link>
             </li>
           </ul>
