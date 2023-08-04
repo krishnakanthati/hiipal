@@ -42,7 +42,7 @@ header {
     height: 100%;
 }
 
-.sidebar-ul {
+.sidebar-ul, .navbar-ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +103,7 @@ header {
 .nav-icon {
     width: 1.75rem;
     height: 1.75rem;
-    margin: 0rem 0.62rem;
+    /* margin: 0rem 0.62rem; */
     min-height: 1.75rem;
     color: black;
     cursor: pointer;
