@@ -83,7 +83,7 @@ function Navbar({ isLoading }) {
             </li>
             <li className="navbar-li">
               <Link className="nav-link" to="/message">
-                <PiIcons.PiChatsDuotone className="nav-icon" title="Message" />
+                <BiIcons.BiChat className="nav-icon" title="Message" />
               </Link>
             </li>
           </ul>
