@@ -83,7 +83,7 @@ function Navbar({ isLoading }) {
             </li>
             <li className="navbar-li">
               <Link className="nav-link" to="/message">
-                <TbIcons.TbMessage2 title="Message" className="nav-icon" />
+                <TbIcons.TbMessage title="Message" className="nav-icon" />
               </Link>
             </li>
           </ul>
