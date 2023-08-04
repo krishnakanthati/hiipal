@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import diamond from "../../assets/diamond.mp3";
 
+import * as HiIcons2 from "react-icons/hi2";
 import * as HiIcons from "react-icons/hi";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons2 from "react-icons/io5";
@@ -54,7 +55,7 @@ function Navbar({ isLoading }) {
           <ul className="navbar-ul">
             <li className="navbar-li">
               <Link className="nav-link" to="/">
-                <HiIcons.HiOutlineHome className="nav-icon" title="Home" />
+                <HiIcons2.HiOutlineHome className="nav-icon" title="Home" />
               </Link>
             </li>
             <li className="navbar-li">
@@ -83,7 +84,10 @@ function Navbar({ isLoading }) {
             </li>
             <li className="navbar-li">
               <Link className="nav-link" to="/message">
-                <BiIcons.BiChat className="nav-icon" title="Message" />
+                <HiIcons2.HiOutlineChatBubbleBottomCenterText
+                  className="nav-icon"
+                  title="Message"
+                />
               </Link>
             </li>
           </ul>
