@@ -84,7 +84,7 @@ function Navbar({ isLoading }) {
             </li>
             <li className="navbar-li">
               <Link className="nav-link" to="/message">
-                <BiIcons.BiMessage className="nav-icon" title="Message" />
+                <BiIcons.BiMessageDetail className="nav-icon" title="Message" />
               </Link>
             </li>
           </ul>
