@@ -8,7 +8,7 @@ import * as HiIcons2 from "react-icons/hi2";
 import * as HiIcons from "react-icons/hi";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons2 from "react-icons/io5";
-import * as TiIcons from "react-icons/ti";
+import * as TbIcons from "react-icons/tb";
 import * as GiIcons from "react-icons/gi";
 import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
@@ -126,9 +126,15 @@ function Navbar({ isLoading }) {
                 onClick={() => setToggleMenu(!toggleMenu)}
               >
                 {toggleMenu ? (
-                  <IoIcons2.IoClose className="nav-icon" title="close" />
+                  <TbIcons.TbLayoutSidebarRight
+                    className="nav-icon"
+                    title="close"
+                  />
                 ) : (
-                  <GiIcons.GiSeaDragon className="nav-icon" title="sidebar" />
+                  <TbIcons.TbLayoutSidebar
+                    className="nav-icon"
+                    title="sidebar"
+                  />
                 )}
               </Link>
             </li>

@@ -12,14 +12,31 @@ function Login() {
 
   async function connectPal(event) {
     event.preventDefault();
-    const response = await fetch("https://hiipal.netlify.app/api/login", {
+    const response = await fetch("http://localhost:8888/api/login", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ palid, password }),
     });
 
+    async function getDataWithToken(token) {
+      // Make the GET request to your backend with the token in the Authorization header
+      const response = await fetch("http://localhost:8888/get/test", {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+      });
+
+      const data = await response.json();
+      console.log("Data with token:", data);
+    }
+
     const data = await response.json();
-    if (data.pal) {
+    if (data.status == "green") {
+      console.log(data);
+      // Call the function to make the authenticated GET request with the token
+      await getDataWithToken(data.token);
       window.location.href = "#/search";
     } else {
       alert("Please check your pal ID and password.");
