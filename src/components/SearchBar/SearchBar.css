@@ -10,6 +10,7 @@
     height: 1.75rem;
     text-transform: lowercase;
     flex: 1;
+    border: .1rem solid black;
 }
 
 .searchbar:active {
