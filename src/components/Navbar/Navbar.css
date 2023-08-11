@@ -120,6 +120,7 @@ header {
         bottom: 0;
         width: 100%;
         height: 3rem;
+        border: .1rem solid black;
     }
 
     .header {
@@ -130,6 +131,7 @@ header {
         width: calc(100%);
         padding-left: .5rem;
         padding-right: .5rem;
+        border: .1rem solid black;
     }
 
     .sidebar {
