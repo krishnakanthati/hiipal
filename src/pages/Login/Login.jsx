@@ -29,12 +29,13 @@ function Login() {
       });
 
       const data = await response.json();
-      console.log(data[0]);
+      // console.log(data[0]);
     }
 
     const data = await response.json();
     if (data.status == "green") {
       // Call the function to make the authenticated GET request with the token
+      console.log(data.pal);
       await getDataWithToken(data.token);
       window.location.href = "#/search";
     } else {

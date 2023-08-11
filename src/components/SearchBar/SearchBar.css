@@ -6,8 +6,12 @@
 
 .searchbar {
     border-radius: 2.5rem;
-    width: 7rem;
+    width: 1.75rem;
     height: 1.75rem;
     text-transform: lowercase;
     flex: 1;
+}
+
+.searchbar:active {
+    width: 7rem;
 }

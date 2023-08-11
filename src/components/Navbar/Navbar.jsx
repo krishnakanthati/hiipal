@@ -48,6 +48,8 @@ function Navbar({ isLoading }) {
     };
   }, []);
 
+  useEffect(() => {});
+
   return (
     <>
       <header>
@@ -158,10 +160,12 @@ function Navbar({ isLoading }) {
                   <RxIcons.RxTwitterLogo className="nav-icon" />
                 </Link>
               </li>
+              <hr style={{ border: ".1rem solid #cccccc", width: "80%" }} />
               <li className="sidebar-li">
                 <Link
                   className="nav-link"
-                  to="https://www.buymeacoffee.com/krishnakanthati"
+                  // to="https://www.buymeacoffee.com/krishnakanthati"
+                  to="/#"
                   title="Buy the developer a beer"
                 >
                   <BiIcons.BiLike className="nav-icon" />

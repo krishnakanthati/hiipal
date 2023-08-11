@@ -16,7 +16,6 @@
 .email {
     box-sizing: border-box;
     color: black;
-    font-weight: 700;
 }
 
 @media only screen and (max-width: 600px) {
