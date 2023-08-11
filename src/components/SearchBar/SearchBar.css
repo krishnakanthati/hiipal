@@ -10,12 +10,12 @@
     text-transform: lowercase;
     flex: 1;
     width: 7rem;
-    background-color: #333333;
-    border: .1rem solid white;
+    border: .1rem solid black;
     color: white;
 }
 
 .searchbar:focus {
     border: none;
     border: .1rem solid white;
+    background-color: #333333;
 }
