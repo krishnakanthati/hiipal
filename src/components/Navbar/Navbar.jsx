@@ -98,7 +98,6 @@ function Navbar({ isLoading }) {
                 className="nav-link"
                 to="/"
                 style={{
-                  color: "black",
                   fontSize: "1.5rem",
                 }}
               >
