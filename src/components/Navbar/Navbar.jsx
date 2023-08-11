@@ -57,7 +57,7 @@ function Navbar({ isLoading }) {
           <ul className="navbar-ul">
             <li className="navbar-li">
               <Link className="nav-link" to="/">
-                <HiIcons.HiOutlineHome className="nav-icon" title="Home" />
+                <BiIcons.BiHomeAlt2 className="nav-icon" title="Home" />
               </Link>
             </li>
             <li className="navbar-li">
@@ -99,8 +99,8 @@ function Navbar({ isLoading }) {
                 to="/"
                 style={{
                   color: "black",
-                  fontSize: "1.5rem",
-                  fontWeight: "750",
+                  fontSize: "1.1rem",
+                  fontWeight: "900",
                 }}
               >
                 Hii pal
@@ -109,6 +109,11 @@ function Navbar({ isLoading }) {
             </li>
             <li className="header-li">
               <SearchBar className="nav-link" />
+            </li>
+            <li className="header-li">
+              <Link className="nav-link" to="/message">
+                <BiIcons.BiUserCircle className="nav-icon" title="Message" />
+              </Link>
             </li>
             {/* {isLoading && (
               <li className="header-li">
