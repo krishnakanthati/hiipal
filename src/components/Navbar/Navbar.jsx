@@ -102,11 +102,14 @@ function Navbar({ isLoading }) {
                   color: "black",
                 }}
               >
-                <FaIcons.FaExclamation />
+                <FaIcons.FaExclamation className="nav-icon" />
               </Link>
             </li>
             <li className="header-li">
               <SearchBar className="nav-link" />
+            </li>
+            <li className="header-li">
+              <Link className="nav-link" to="/"></Link>
             </li>
             {/* {isLoading && (
               <li className="header-li">

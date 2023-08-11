@@ -5,7 +5,7 @@
 }
 
 .searchbar {
-    border-radius: 2.5rem;
+    border-radius: 5rem;
     height: 1.75rem;
     text-transform: lowercase;
     flex: 1;
