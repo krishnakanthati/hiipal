@@ -99,7 +99,7 @@ function Navbar({ isLoading }) {
                 to="/"
                 style={{
                   color: "black",
-                  fontSize: "1.1rem",
+                  fontSize: "1.5rem",
                   fontWeight: "900",
                 }}
               >
@@ -109,11 +109,6 @@ function Navbar({ isLoading }) {
             </li>
             <li className="header-li">
               <SearchBar className="nav-link" />
-            </li>
-            <li className="header-li">
-              <Link className="nav-link" to="/message">
-                <BiIcons.BiUserCircle className="nav-icon" title="Message" />
-              </Link>
             </li>
             {/* {isLoading && (
               <li className="header-li">
