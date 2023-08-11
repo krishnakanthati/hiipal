@@ -15,9 +15,8 @@ function SearchBar({ onVariableChange }) {
           setQuery(e.target.value);
           onVariableChange(e.target.value);
         }}
-        placeholder="&#128269;"
+        placeholder="search.."
       />
-      {/* <span class="search-icon">&#128269;</span> */}
     </div>
   );
 }
