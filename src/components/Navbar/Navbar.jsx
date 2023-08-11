@@ -160,7 +160,6 @@ function Navbar({ isLoading }) {
                   <RxIcons.RxTwitterLogo className="nav-icon" />
                 </Link>
               </li>
-              <hr style={{ border: ".1rem solid #cccccc", width: "80%" }} />
               <li className="sidebar-li">
                 <Link
                   className="nav-link"
