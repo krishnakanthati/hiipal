@@ -100,7 +100,7 @@ function Navbar({ isLoading }) {
                 style={{
                   color: "black",
                   fontSize: "1.5rem",
-                  fontWeight: "700",
+                  fontWeight: "750",
                 }}
               >
                 Hii pal
