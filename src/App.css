@@ -11,7 +11,7 @@
   overflow: auto;
   padding: .25rem;
   /* height: calc(100% - 4.5rem); */
-  border: .1rem solid black;
+  border: .1rem solid #2f88ff;
   border-radius: .1rem;
 
 
@@ -22,7 +22,6 @@
 
 @media only screen and (max-width: 600px) {
   .main-container {
-    border: .1rem solid black;
     height: calc(100% - 6rem);
     inset: 3rem 0rem 0rem 3rem;
     overflow: auto;
