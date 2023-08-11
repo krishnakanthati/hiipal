@@ -99,6 +99,7 @@ function Navbar({ isLoading }) {
                 to="/"
                 style={{
                   fontSize: "1.5rem",
+                  color: "black",
                 }}
               >
                 <FaIcons.FaExclamation />
