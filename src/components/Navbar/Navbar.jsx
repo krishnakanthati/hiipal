@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 import diamond from "../../assets/diamond.mp3";
 
-import * as HiIcons2 from "react-icons/hi2";
+import * as FaIcons from "react-icons/fa";
 import * as HiIcons from "react-icons/hi";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
-import * as GiIcons from "react-icons/gi";
+import * as LiIcons from "react-icons/lia";
 import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
 import * as LuIcons from "react-icons/lu";
@@ -100,11 +100,9 @@ function Navbar({ isLoading }) {
                 style={{
                   color: "black",
                   fontSize: "1.5rem",
-                  fontWeight: "750",
                 }}
               >
-                Hii pal
-                <span style={{ color: "#2f88ff" }}>!</span>
+                <FaIcons.FaExclamation />
               </Link>
             </li>
             <li className="header-li">
