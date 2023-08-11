@@ -10,10 +10,13 @@
     height: 1.75rem;
     text-transform: lowercase;
     flex: 1;
-    background-color: #333333;
+    background-color: white;
+    border: .1rem solid #333333;
     color: white;
 }
 
 .searchbar:focus {
     width: 7rem;
+    background-color: #333333;
+    border: .1rem solid white;
 }
