@@ -1,7 +1,7 @@
 .search-container {
     display: grid;
     grid-auto-rows: 8rem;
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: .25rem;
     padding: 0;
 }
