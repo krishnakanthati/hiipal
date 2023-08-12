@@ -89,16 +89,11 @@ function Navbar({ isLoading }) {
                 <BiIcons.BiChat className="nav-icon" title="Message" />
               </Link>
             </li>
-            <li className="navbar-li">
-              <Link className="nav-link" to="/message">
-                <div className="profile"></div>
-              </Link>
-            </li>
           </ul>
         </nav>
         <nav className="header">
           <ul className="header-ul">
-            <li className="header-li">
+            {/* <li className="header-li">
               <Link
                 className="nav-link"
                 to="/"
@@ -108,6 +103,11 @@ function Navbar({ isLoading }) {
                 }}
               >
                 <FaIcons.FaExclamation className="nav-icon" />
+              </Link>
+            </li> */}
+            <li className="header-li">
+              <Link className="nav-link" to="/message">
+                <div className="profile"></div>
               </Link>
             </li>
             <li className="header-li">
