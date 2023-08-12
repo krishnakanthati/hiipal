@@ -24,7 +24,9 @@
 @media only screen and (max-width: 600px) {
   .main-container {
     height: calc(100% - 6rem);
-    inset: 3rem .2rem 3rem .2rem;
+    inset: 3rem 0rem 3rem 0rem;
+    border-left: none;
+    border-right: none;
     overflow: auto;
   }
 }
