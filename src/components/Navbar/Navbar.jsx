@@ -91,7 +91,7 @@ function Navbar({ isLoading }) {
             </li>
             <li className="navbar-li">
               <Link className="nav-link" to="/message">
-                <AiIcons.AiOutlineUser className="nav-icon" title="Message" />
+                <div className="profile">K</div>
               </Link>
             </li>
           </ul>

@@ -101,6 +101,18 @@ header {
     background: linear-gradient(to right, red 70%, blue 30%);
 } */
 
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5rem;
+    font-weight: bolder;
+    border: .1rem solid black;
+}
+
 .nav-icon {
     width: 1.75rem;
     height: 1.75rem;
