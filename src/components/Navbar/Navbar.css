@@ -143,6 +143,10 @@ header {
         padding-right: .5rem;
     }
 
+    .header-ul li:last-child {
+        display: none;
+    }
+
     .sidebar {
         height: calc(100% - 6rem);
         bottom: 3rem;
