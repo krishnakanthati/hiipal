@@ -98,7 +98,7 @@ function Login() {
                   }}
                   to="/signup"
                 >
-                  Register
+                  Sign up
                 </Link>
               </div>
             </form>
