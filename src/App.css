@@ -27,6 +27,7 @@
     inset: 3rem 0rem 3rem 0rem;
     border-left: none;
     border-right: none;
+    border-radius: 0;
     overflow: auto;
   }
 }
