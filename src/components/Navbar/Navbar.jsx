@@ -89,6 +89,11 @@ function Navbar({ isLoading }) {
                 <BiIcons.BiChat className="nav-icon" title="Message" />
               </Link>
             </li>
+            <li className="navbar-li">
+              <Link className="nav-link" to="/message">
+                <AiIcons.AiOutlineUser className="nav-icon" title="Message" />
+              </Link>
+            </li>
           </ul>
         </nav>
         <nav className="header">
