@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import diamond from "../../assets/diamond.mp3";
 
 import * as FaIcons from "react-icons/fa";
-import * as HiIcons from "react-icons/hi";
+import * as BsIcons from "react-icons/bs";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
@@ -93,18 +93,6 @@ function Navbar({ isLoading }) {
         </nav>
         <nav className="header">
           <ul className="header-ul">
-            {/* <li className="header-li">
-              <Link
-                className="nav-link"
-                to="/"
-                style={{
-                  fontSize: "1.5rem",
-                  color: "black",
-                }}
-              >
-                <FaIcons.FaExclamation className="nav-icon" />
-              </Link>
-            </li> */}
             <li className="header-li">
               <Link className="nav-link" to="/message">
                 <div className="profile"></div>
@@ -127,7 +115,12 @@ function Navbar({ isLoading }) {
                 </Link>
               </li>
             )} */}
-            <li className="sidebar-li">
+            {/* <li className="header-li">
+              <Link className="nav-link">
+                <AiIcons.AiOutlineStar className="nav-icon" />
+              </Link>
+            </li> */}
+            <li className="header-li">
               <Link
                 className="nav-link"
                 to=""
