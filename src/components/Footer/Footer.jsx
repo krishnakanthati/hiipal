@@ -19,7 +19,7 @@ function Footer() {
 
   return (
     <div className="footer">
-      <div className="email">hiipal.com &copy; 2023</div>
+      <div className="email">dev@hiipal.com</div>
     </div>
   );
 }
