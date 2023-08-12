@@ -50,7 +50,7 @@ input::placeholder {
 
 
 
-/* .form-group .form-input:focus~.form-label,
+.form-group .form-input:focus~.form-label,
 .form-group .form-input:not(:placeholder-shown)~.form-label {
     color: blue;
     transform: translateX(.7rem) translateY(-1.65rem);
@@ -58,16 +58,16 @@ input::placeholder {
     padding: 0 .2rem;
     background-color: white;
     border-radius: 1rem;
-} */
+}
 
-/* .form-group .form-input:invalid:not(:placeholder-shown)~.form-label {
+.form-group .form-input:invalid:not(:placeholder-shown)~.form-label {
     color: red;
     transform: translateX(.7rem) translateY(-1.65rem);
     font-size: .75rem;
     padding: 0 .2rem;
     background-color: white;
     border-radius: 1rem;
-} */
+}
 
 .form-submit-button {
     transform: color white, background green;
