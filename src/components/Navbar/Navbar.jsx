@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import diamond from "../../assets/diamond.mp3";
 
-import * as FaIcons from "react-icons/fa";
+import * as MdIcons from "react-icons/md";
 import * as BsIcons from "react-icons/bs";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons2 from "react-icons/io5";
@@ -167,6 +167,14 @@ function Navbar({ isLoading }) {
                   title="Buy the developer a beer"
                 >
                   <BiIcons.BiLike className="nav-icon" />
+                </Link>
+              </li>
+              <li className="sidebar-li">
+                <Link className="nav-link" to="/">
+                  <MdIcons.MdOutlineHighlightOff
+                    style={{ color: "red" }}
+                    className="nav-icon"
+                  />
                 </Link>
               </li>
             </ul>
