@@ -109,9 +109,9 @@ header {
     height: 2rem;
     border-radius: 5rem;
     font-weight: bolder;
-    border: .15rem solid black;
+    border: .1rem solid black;
 
-    background-image: url('https://www.bing.com/th?id=OIP.aNLYKuWvFEHCNsuvz1_-lQHaJN&pid=3.1&cb=&w=300&h=300&p=0');
+    background-image: url('https://avatars.githubusercontent.com/u/47734964?v=4');
     background-size: cover;
     background-position: center;
 }
