@@ -109,7 +109,7 @@ header {
     height: 2rem;
     border-radius: 5rem;
     font-weight: bolder;
-    /* border: .1rem solid black; */
+    border: .1rem solid black;
 
     background-image: url('https://avatars.githubusercontent.com/u/47734964?v=4');
     background-size: cover;
