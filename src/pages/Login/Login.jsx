@@ -106,9 +106,6 @@ function Login() {
             <Link to="/search">
               <button className="anonymous-btn">Go Anonymous</button>
             </Link>
-            <Link to="/search">
-              <button className="anonymous-btn">Sign in with Google</button>
-            </Link>
           </div>
         </div>
       </div>

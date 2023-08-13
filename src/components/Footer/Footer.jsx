@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   const [palRegisteredCount, setPalRegisteredCount] = useState(null);
@@ -19,7 +20,9 @@ function Footer() {
 
   return (
     <div className="footer">
-      <div className="">Terms and Conditions | Privacy Policy</div>
+      <div className="policy">
+        <Link>Terms and Conditions</Link> | <Link>Privacy Policy</Link>
+      </div>
       <div className="email">dev@hiipal.com</div>
     </div>
   );
