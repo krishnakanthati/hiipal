@@ -11,6 +11,7 @@ import Notifications from "./pages/Notifications/Notifications";
 import Message from "./pages/Message/Message";
 import Transaction from "./pages/Transaction/Transaction";
 import Signup from "./pages/Login/Signup";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/message" element={<Message />} />
         <Route path="/transaction" element={<Transaction />} />
         <Route path="/features" element={<Features />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/page" element={<NavigationLayout />}>
           <Route index element={<Page />} />
           <Route path=":id" element={<Page />} />

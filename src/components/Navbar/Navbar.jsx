@@ -94,7 +94,7 @@ function Navbar({ isLoading }) {
         <nav className="header">
           <ul className="header-ul">
             <li className="header-li">
-              <Link className="nav-link" to="/message">
+              <Link className="nav-link" to="/profile">
                 <div className="profile"></div>
               </Link>
             </li>
