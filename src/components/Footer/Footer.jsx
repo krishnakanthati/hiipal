@@ -19,6 +19,7 @@ function Footer() {
 
   return (
     <div className="footer">
+      <div className="">Terms and Conditions | Privacy Policy</div>
       <div className="email">dev@hiipal.com</div>
     </div>
   );

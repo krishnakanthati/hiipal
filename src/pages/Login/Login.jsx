@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 
 import * as AiIcons from "react-icons/ai";
-import * as BsIcons from "react-icons/bs";
+import * as FcIcons from "react-icons/fc";
 
 import { Link } from "react-router-dom";
 
@@ -105,6 +105,9 @@ function Login() {
             <span className="or">OR</span>
             <Link to="/search">
               <button className="anonymous-btn">Go Anonymous</button>
+            </Link>
+            <Link to="/search">
+              <button className="anonymous-btn">Sign in with Google</button>
             </Link>
           </div>
         </div>
