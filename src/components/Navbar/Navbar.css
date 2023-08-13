@@ -51,6 +51,10 @@ header {
     height: calc(100%);
 }
 
+.sidebar-li:first-child {
+    margin-bottom: auto;
+}
+
 .navbar-li:last-child {
     margin-top: auto;
 }
