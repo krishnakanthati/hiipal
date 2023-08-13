@@ -102,7 +102,9 @@ function Navbar({ isLoading }) {
               <SearchBar className="nav-link" />
             </li>
             <li className="header-li">
-              <Link className="nav-link" to="/"></Link>
+              <Link className="nav-link" to="/">
+                <BiIcons.BiPlus className="nav-icon" />
+              </Link>
             </li>
             {/* {isLoading && (
               <li className="header-li">
