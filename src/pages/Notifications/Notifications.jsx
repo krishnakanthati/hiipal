@@ -33,7 +33,7 @@ function Notifications() {
       <Navbar />
       <div className="main-container">
         <button onClick={test}>Post Test</button>
-        <Link to="http://localhost:8888/get/test">
+        <Link to="http://localhost:8888/get/profile">
           <button>Get Test</button>
         </Link>
       </div>

@@ -18,9 +18,9 @@ function Login() {
       body: JSON.stringify({ palid, password }),
     });
 
-    async function getDataWithToken(token) {
+    async function getDataWithToken(token, pal) {
       // Make the GET request to your backend with the token in the Authorization header
-      const response = await fetch("http://localhost:8888/get/test", {
+      const response = await fetch(`http://localhost:8888/profile/${pal}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -29,14 +29,14 @@ function Login() {
       });
 
       const data = await response.json();
-      // console.log(data[0]);
+      console.log(data);
     }
 
     const data = await response.json();
     if (data.status == "green") {
       // Call the function to make the authenticated GET request with the token
-      console.log(data.pal);
-      await getDataWithToken(data.token);
+      // console.log(data.pal);
+      await getDataWithToken(data.token, data.pal);
       window.location.href = "#/search";
     } else {
       alert("Please check your pal ID and password.");
