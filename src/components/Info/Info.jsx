@@ -1,11 +1,11 @@
 import React from "react";
-import SearchBar from "../SearchBar/SearchBar";
+import * as BsIcons from "react-icons/bs";
+import "./Info.css";
 
 function Info() {
   return (
-    <div>
-      <SearchBar />
-      <p>This is the info</p>
+    <div className="info">
+      <BsIcons.BsInfoCircle />
     </div>
   );
 }

@@ -1,9 +1,12 @@
-.info-button {
-    all: unset;
+.info {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
-}
-
-.info-button:focus {
-    outline: none;
-    color: green;
+    overflow: hidden;
 }

@@ -47,6 +47,10 @@ header {
     align-items: center;
 }
 
+.sidebar-ul {
+    justify-content: center;
+}
+
 .sidebar-ul:active {
     height: calc(100%);
 }
