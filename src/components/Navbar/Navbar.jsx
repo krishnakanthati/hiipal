@@ -151,11 +151,11 @@ function Navbar({ isLoading }) {
                   <IoIcons2.IoSettingsOutline className="nav-icon" />
                 </Link>
               </li>
-              {/* <li className="sidebar-li">
+              <li className="sidebar-li">
                 <Link className="nav-link" to="/">
                   <LuIcons.LuMoon className="nav-icon" />
                 </Link>
-              </li> */}
+              </li>
               <li className="sidebar-li">
                 <Link className="nav-link" to="/">
                   <RxIcons.RxTwitterLogo className="nav-icon" />
