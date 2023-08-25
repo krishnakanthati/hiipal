@@ -34,7 +34,7 @@
 @media only screen and (max-width: 600px) {
     #scrolltotop {
         color: white;
-        right: .5rem;
+        right: .75rem;
         bottom: 3.25rem;
     }
 }
