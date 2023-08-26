@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 
 import * as AiIcons from "react-icons/ai";
-import * as FcIcons from "react-icons/fc";
+import * as FaIcons from "react-icons/fa6";
 
 import { Link } from "react-router-dom";
 
@@ -108,7 +108,9 @@ function Login() {
                 <button className="anonymous-btn">Go Anonymous</button>
               </Link>
               <Link to="/search">
-                <button className="google-btn">G</button>
+                <button className="google-btn">
+                  <FaIcons.FaGoogle />
+                </button>
               </Link>
             </div>
           </div>
