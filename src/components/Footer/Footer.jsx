@@ -21,7 +21,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="policy">
-        <Link>Terms and Conditions</Link> | <Link>Privacy Policy</Link>
+        <Link>Terms and Conditions</Link>
       </div>
       <div className="email">dev@hiipal.com</div>
     </div>
