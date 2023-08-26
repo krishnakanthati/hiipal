@@ -1,0 +1,21 @@
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+}
+
+.div-a, .div-b {
+    background-color: ;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    border: .1rem solid black;
+}
+
+.div-a:active, .div-b:active {
+    transform: scale(0.95);
+}
