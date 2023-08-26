@@ -7,9 +7,9 @@
 }
 
 .div-a, .div-b {
-    min-width: 8rem;
-    min-height: 6rem;
-    border-radius: .1rem;
+    min-width: 10rem;
+    min-height: 7rem;
+    border-radius: .25rem;
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
     border: .1rem solid black;
