@@ -9,7 +9,7 @@
 .div-a, .div-b {
     min-width: 10rem;
     min-height: 7rem;
-    border-radius: .25rem;
+    border-radius: .1rem;
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
     border: .1rem solid black;
@@ -18,6 +18,8 @@
     align-items: center;
     font-size: 1rem;
     font-weight: 700;
+    background-color: lightskyblue;
+    color: white;
 }
 
 .div-a:active, .div-b:active {
