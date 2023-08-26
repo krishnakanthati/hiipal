@@ -9,7 +9,7 @@ import * as BsIcons from "react-icons/bs";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
-import * as LiIcons from "react-icons/lia";
+import * as HiIcons from "react-icons/hi";
 import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
 import * as LuIcons from "react-icons/lu";
@@ -148,7 +148,7 @@ function Navbar({ isLoading }) {
             <ul className="sidebar-ul">
               <li className="sidebar-li">
                 <Link className="nav-link" to="/">
-                  <IoIcons2.IoSettingsOutline className="nav-icon" />
+                  <HiIcons.HiMenu className="nav-icon" />
                 </Link>
               </li>
               <li className="sidebar-li">
