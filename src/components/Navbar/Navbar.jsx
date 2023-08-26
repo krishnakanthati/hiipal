@@ -173,7 +173,7 @@ function Navbar({ isLoading }) {
               </li>
               <li className="sidebar-li">
                 <Link className="nav-link" to="/">
-                  <MdIcons.MdOutlineHighlightOff
+                  <IoIcons2.IoCloseCircleOutline
                     style={{ color: "red" }}
                     className="nav-icon"
                   />
