@@ -103,9 +103,14 @@ function Login() {
               </div>
             </form>
             <span className="or">OR</span>
-            <Link to="/search">
-              <button className="anonymous-btn">Go Anonymous</button>
-            </Link>
+            <div className="alternative-login">
+              <Link to="/search">
+                <button className="anonymous-btn">Go Anonymous</button>
+              </Link>
+              <Link to="/search">
+                <button className="google-btn">G</button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

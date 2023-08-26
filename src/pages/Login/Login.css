@@ -74,18 +74,32 @@ input::placeholder {
     transition: transform 0.5s ease-in-out;
 }
 
-.anonymous-btn {
+.alternative-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+}
+
+.anonymous-btn {
+    width: 10rem;
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
     background-color: white;
 }
 
-.form-submit-button:active, .anonymous-btn:active {
+.google-btn {
+    width: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    background-color: white;
+}
+
+.form-submit-button:active, .anonymous-btn:active, .google-btn:active {
     transform: scale(0.95);
 }
 
-form:valid [type="submit"], .anonymous-btn:active {
+form:valid [type="submit"], .anonymous-btn:active, .google-btn:active {
     background: #00c50b;
     color: white;
 }
