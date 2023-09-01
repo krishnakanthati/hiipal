@@ -12,6 +12,7 @@
     width: 7rem;
     border: .05rem solid black;
     color: black;
+    /* vertical-align: middle; */
 }
 
 .searchbar:focus {
