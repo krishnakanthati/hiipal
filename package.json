@@ -12,6 +12,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "proxy": "http://localhost:8888",
   "dependencies": {
     "gh-pages": "^5.0.0",
     "react": "^18.2.0",

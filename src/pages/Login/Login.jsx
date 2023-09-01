@@ -14,9 +14,13 @@ function Login() {
     event.preventDefault();
     const response = await fetch("http://localhost:8888/api/login", {
       method: "POST",
-      headers: { "content-type": "application/json" },
+      headers: {
+        "content-type": "application/json",
+      },
       body: JSON.stringify({ palid, password }),
     });
+
+    console.log(response.headers.getSetCookie());
 
     async function getDataWithToken(token, pal) {
       // Make the GET request to your backend with the token in the Authorization header
@@ -37,6 +41,7 @@ function Login() {
       // Call the function to make the authenticated GET request with the token
       // console.log(data.pal);
       await getDataWithToken(data.token, data.pal);
+      console.log(document.cookie);
       window.location.href = "#/search";
     } else {
       alert("Please check your pal ID and password.");
