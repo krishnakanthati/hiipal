@@ -33,7 +33,6 @@ function Login() {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
           },
-          credentials: "include",
         }
       );
 
