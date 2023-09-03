@@ -12,12 +12,12 @@ function Login() {
 
   async function connectPal(event) {
     event.preventDefault();
-    const response = await fetch("https://hiipal.netlify.com/api/login", {
+    const response = await fetch("https://hiipal.netlify.app/api/login", {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
-      credentials: "include",
+      // credentials: "include",
       body: JSON.stringify({ palid, password }),
     });
 
@@ -26,14 +26,14 @@ function Login() {
     async function getDataWithToken(token, pal) {
       // Make the GET request to your backend with the token in the Authorization header
       const response = await fetch(
-        `https://hiipal.netlify.com/profile/${pal}`,
+        `https://hiipal.netlify.app/profile/${pal}`,
         {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
             "Content-Type": "application/json",
           },
-          credentials: "include",
+          // credentials: "include",
         }
       );
 
