@@ -23,7 +23,7 @@ function Footer() {
       <div className="policy">
         <Link>Terms | Privacy</Link>
       </div>
-      <div className="email">❤️dev@hiipal.com</div>
+      <div className="email">dev@hiipal.com</div>
     </div>
   );
 }
