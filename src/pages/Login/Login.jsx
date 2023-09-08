@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 
 import * as AiIcons from "react-icons/ai";
-import * as FaIcons from "react-icons/fa6";
+import * as FcIcons from "react-icons/fc";
 
 import { Link } from "react-router-dom";
 
@@ -12,12 +12,12 @@ function Login() {
 
   async function connectPal(event) {
     event.preventDefault();
-    const response = await fetch("https://hiipal.netlify.app/api/login", {
+    const response = await fetch("http://localhost:8888/api/login", {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
-      // credentials: "include",
+      credentials: "include",
       body: JSON.stringify({ palid, password }),
     });
 
@@ -25,16 +25,14 @@ function Login() {
 
     async function getDataWithToken(token, pal) {
       // Make the GET request to your backend with the token in the Authorization header
-      const response = await fetch(
-        `https://hiipal.netlify.app/profile/${pal}`,
-        {
-          method: "GET",
-          headers: {
-            Authorization: `Bearer ${token}`,
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response = await fetch(`http://localhost:8888/profile/${pal}`, {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${token}`,
+          "Content-Type": "application/json",
+        },
+        credentials: "include",
+      });
 
       const data = await response.json();
       console.log(data);
@@ -43,7 +41,7 @@ function Login() {
     const data = await response.json();
     if (data.status == "green") {
       // Call the function to make the authenticated GET request with the token
-      // console.log(data.pal);
+      console.log(data.pal);
       await getDataWithToken(data.token, data.pal);
       console.log(document.cookie);
       window.location.href = "#/search";
@@ -118,7 +116,7 @@ function Login() {
               </Link>
               <Link to="/search">
                 <button className="google-btn">
-                  <FaIcons.FaGoogle />
+                  <FcIcons.FcGoogle />
                 </button>
               </Link>
             </div>
