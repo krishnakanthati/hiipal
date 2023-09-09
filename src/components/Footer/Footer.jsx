@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
+import * as LiaIcons from "react-icons/lia";
 
 function Footer() {
   const [palRegisteredCount, setPalRegisteredCount] = useState(null);
@@ -21,7 +22,8 @@ function Footer() {
   return (
     <div className="footer">
       <div className="policy">
-        <Link>Terms | Privacy</Link>
+        <Link style={{ color: "black" }}>Terms.</Link>{" "}
+        <Link style={{ color: "black" }}>Privacy.</Link>
       </div>
       <div className="email">dev@hiipal.com</div>
     </div>
