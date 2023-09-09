@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import diamond from "../../assets/diamond.mp3";
 
 import * as MdIcons from "react-icons/md";
-import * as BsIcons from "react-icons/bs";
+import * as LiaIcons from "react-icons/lia";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
@@ -148,7 +148,7 @@ function Navbar({ isLoading }) {
             <ul className="sidebar-ul">
               <li className="sidebar-li">
                 <Link className="nav-link" to="/">
-                  <HiIcons.HiMenu className="nav-icon" />
+                  <LiaIcons.LiaCookieSolid className="nav-icon" />
                 </Link>
               </li>
               <li className="sidebar-li">
