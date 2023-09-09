@@ -148,7 +148,7 @@ function Navbar({ isLoading }) {
             <ul className="sidebar-ul">
               <li className="sidebar-li">
                 <Link className="nav-link" to="/">
-                  <LiaIcons.LiaCookieSolid className="nav-icon" />
+                  <BiIcons.BiShare className="nav-icon" />
                 </Link>
               </li>
               <li className="sidebar-li">
