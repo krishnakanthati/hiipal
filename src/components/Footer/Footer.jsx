@@ -21,9 +21,9 @@ function Footer() {
 
   return (
     <div className="footer">
-      <div className="policy">
-        <Link style={{ color: "black" }}>Terms.</Link>{" "}
-        <Link style={{ color: "black" }}>Privacy.</Link>
+      <div className="policy" style={{ color: "red" }}>
+        <Link style={{ color: "black" }}>Terms</Link>.{" "}
+        <Link style={{ color: "black" }}>Privacy</Link>.
       </div>
       <div className="email">dev@hiipal.com</div>
     </div>
