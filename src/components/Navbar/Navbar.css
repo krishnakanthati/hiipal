@@ -27,9 +27,10 @@ header {
     right: 0;
     width: 3rem;
     position: fixed;
-    height: calc(100%);
+    height: calc(100% - 3rem);
     z-index: 1;
     overflow: hidden;
+    /* border: .1rem solid red; */
 }
 
 .navbar-ul, .sidebar-ul {
@@ -48,7 +49,7 @@ header {
 }
 
 .sidebar-ul {
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .sidebar-ul:active {
