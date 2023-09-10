@@ -46,6 +46,7 @@ input::placeholder {
     pointer-events: none;
     font-size: 1rem;
     transition: ease-in 0.5s;
+    color: #5a5a5a;
 }
 
 

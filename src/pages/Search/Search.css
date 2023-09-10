@@ -27,13 +27,13 @@
     right: 3.75rem;
     z-index: 1;
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     color: white;
 }
 
 @media only screen and (max-width: 600px) {
     #scrolltotop {
-        color: black;
+        color: white;
         right: .75rem;
         bottom: 3.25rem;
     }
