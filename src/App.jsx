@@ -12,14 +12,18 @@ import Message from "./pages/Message/Message";
 import Transaction from "./pages/Transaction/Transaction";
 import Signup from "./pages/Login/Signup";
 import Profile from "./pages/Profile/Profile";
+import PrivateRoutes from "./utils/PrivateRoutes";
 
 function App() {
   return (
     <>
       <Routes>
+        <Route element={<PrivateRoutes />}>
+          <Route path="/search" element={<Search />} />
+        </Route>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/search" element={<Search />} />
+
         <Route path="/notifications" element={<Notifications />} />
         <Route path="/message" element={<Message />} />
         <Route path="/transaction" element={<Transaction />} />
