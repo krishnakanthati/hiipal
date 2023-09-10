@@ -29,6 +29,7 @@
     border-right: none;
     border-radius: 0;
     overflow: auto;
+    scroll-behavior: smooth;
   }
 }
 
@@ -63,6 +64,14 @@ input {
   background-color: white;
   /* background: white; */
 }
+
+/* Change the color of the clear button in the search input to white */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-clear-button,
+input[type="search"]::-ms-clear {
+  display: none;
+}
+
 
 a {
   text-decoration: none;
