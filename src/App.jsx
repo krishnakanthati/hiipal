@@ -13,29 +13,33 @@ import Transaction from "./pages/Transaction/Transaction";
 import Signup from "./pages/Login/Signup";
 import Profile from "./pages/Profile/Profile";
 import PrivateRoutes from "./utils/PrivateRoutes";
+import TestProvider from "./utils/TestProvider";
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route element={<PrivateRoutes />}>
-          <Route path="/search" element={<Search />} />
-        </Route>
-        <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<Signup />} />
+      <TestProvider>
+        <Routes>
+          <Route element={<PrivateRoutes />}>
+            <Route path="/search" element={<Search />} />
+          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/signup" element={<Signup />} />
 
-        <Route path="/notifications" element={<Notifications />} />
-        <Route path="/message" element={<Message />} />
-        <Route path="/transaction" element={<Transaction />} />
-        <Route path="/features" element={<Features />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/page" element={<NavigationLayout />}>
-          <Route index element={<Page />} />
-          <Route path=":id" element={<Page />} />
-        </Route>
+          <Route path="/notifications" element={<Notifications />} />
+          <Route path="/message" element={<Message />} />
 
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+          <Route path="/transaction" element={<Transaction />} />
+
+          <Route path="/features" element={<Features />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/page" element={<NavigationLayout />}>
+            <Route index element={<Page />} />
+            <Route path=":id" element={<Page />} />
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </TestProvider>
     </>
   );
 }
