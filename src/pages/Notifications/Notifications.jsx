@@ -8,12 +8,7 @@ function Notifications() {
   return (
     <>
       <Navbar />
-      <div className="main-container">
-        <div className="choice">
-          <div className="div-a">A</div>
-          <div className="div-b">B</div>
-        </div>
-      </div>
+      <div className="main-container"></div>
     </>
   );
 }
