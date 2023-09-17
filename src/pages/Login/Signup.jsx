@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import "./Login.css";
 import * as AiIcons from "react-icons/ai";
+import * as MdIcons from "react-icons/md";
 import { Link } from "react-router-dom";
 import SignupStep1 from "./SignupStep1";
 import SignupStep2 from "./SignupStep2";
@@ -54,7 +55,7 @@ function Signup() {
                 }}
                 className="form-submit-button continue"
               >
-                Continue..
+                Continue <MdIcons.MdDoubleArrow className="login-icon" />
               </button>
             ) : (
               <div className="signup-button-div">
