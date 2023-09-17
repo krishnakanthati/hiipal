@@ -7,9 +7,9 @@ function SignupStep1({ formData, setFormData }) {
   const [palid, setPalid] = useState("");
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
+
   const handlePalidChange = (e) => {
     const { value } = e.target;
-    setPalid(value);
     checkUsernameRealtime(value);
     setFormData({ ...formData, palid: value });
   };

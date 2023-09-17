@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import "./Login.css";
 import * as AiIcons from "react-icons/ai";
@@ -20,6 +20,35 @@ function Signup() {
     bio: "",
     pic: "",
   });
+
+  // const areAllFieldsFilled = () => {
+  //   const requiredFields = ["palid", "password", "confirmPassword"];
+  //   return requiredFields.every((field) => formData[field].trim() !== "");
+  // };
+
+  // useEffect(() => {
+  //   if (step === 1) {
+  //     if (areAllFieldsFilled()) {
+  //       document.querySelector(".continue-text").textContent = "Continue";
+  //     } else {
+  //       document.querySelector(".continue-text").textContent = "Register";
+  //     }
+  //   }
+  // }, [step, formData]);
+
+  async function registerPal(event) {
+    event.preventDefault();
+    const response = await fetch("https://hiipal.netlify.app/api/register", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ palid, password, phone }),
+    });
+
+    const data = await response.json();
+    if (data.status === "green") {
+      window.location.href = "#/";
+    }
+  }
 
   const handleNext = () => {
     setStep(step + 1);
@@ -44,7 +73,7 @@ function Signup() {
       <Navbar />
       <div className="main-container">
         <div className="login-form-div">
-          <form action="" className="form-container">
+          <form action="" method="" className="form-container">
             {/* <div className="progressbar"></div> */}
             {StepForm()}
             {step === 1 ? (
@@ -55,7 +84,8 @@ function Signup() {
                 }}
                 className="form-submit-button continue"
               >
-                Continue <MdIcons.MdDoubleArrow className="login-icon" />
+                <span className="continue-text">Continue</span>{" "}
+                <MdIcons.MdDoubleArrow className="login-icon" />
               </button>
             ) : (
               <div className="signup-button-div">
@@ -68,7 +98,11 @@ function Signup() {
                   Previous
                 </button>
                 {step === 3 ? (
-                  <button type="submit" className="form-submit-button submit">
+                  <button
+                    type="submit"
+                    onClick={registerPal}
+                    className="form-submit-button submit"
+                  >
                     Register{" "}
                     <AiIcons.AiFillThunderbolt className="login-icon" />
                   </button>
