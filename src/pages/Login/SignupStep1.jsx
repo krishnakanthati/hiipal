@@ -39,20 +39,6 @@ function SignupStep1({ formData, setFormData }) {
     }
   };
 
-  async function registerPal(event) {
-    event.preventDefault();
-    const response = await fetch("https://hiipal.netlify.app/api/register", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ palid, password, phone }),
-    });
-
-    const data = await response.json();
-    if (data.status === "green") {
-      window.location.href = "#/";
-    }
-  }
-
   return (
     <div className="form-container">
       <div className="form-group">
