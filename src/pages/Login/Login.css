@@ -129,6 +129,11 @@ form:valid [type="submit"], .anonymous-btn:active, .google-btn:active {
     color: white;
 }
 
+form:valid [type="signup"] {
+    background: #00c50b;
+    color: white;
+}
+
 .or {
     text-align: center;
     font-weight: bolder;

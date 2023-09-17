@@ -41,7 +41,7 @@ function Signup() {
     const response = await fetch("https://hiipal.netlify.app/api/register", {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ palid, password, phone }),
+      body: JSON.stringify(formData),
     });
 
     const data = await response.json();
@@ -73,12 +73,17 @@ function Signup() {
       <Navbar />
       <div className="main-container">
         <div className="login-form-div">
-          <form action="" method="" className="form-container">
+          <form
+            action=""
+            method=""
+            onSubmit={registerPal}
+            className="form-container"
+          >
             {/* <div className="progressbar"></div> */}
             {StepForm()}
             {step === 1 ? (
               <button
-                type="submit"
+                type="signup"
                 onClick={() => {
                   handleNext();
                 }}
@@ -90,6 +95,7 @@ function Signup() {
             ) : (
               <div className="signup-button-div">
                 <button
+                  type="button"
                   onClick={() => {
                     handlePrevious();
                   }}
@@ -108,7 +114,7 @@ function Signup() {
                   </button>
                 ) : (
                   <button
-                    type="submit"
+                    type="signup"
                     onClick={() => {
                       handleNext();
                     }}
