@@ -68,7 +68,8 @@ function Signup() {
                 </button>
                 {step === 3 ? (
                   <button type="submit" className="form-submit-button submit">
-                    Submit <AiIcons.AiFillThunderbolt className="login-icon" />
+                    Register{" "}
+                    <AiIcons.AiFillThunderbolt className="login-icon" />
                   </button>
                 ) : (
                   <button
