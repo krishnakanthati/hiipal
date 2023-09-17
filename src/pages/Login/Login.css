@@ -1,6 +1,7 @@
 .login-form-div {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100%;
     flex: 1;
@@ -15,6 +16,11 @@
 .form-container {
     display: grid;
     gap: 1rem;
+}
+
+.progressbar {
+    border: .1rem solid red;
+    border-radius: 5rem;
 }
 
 .login-icon:hover {
@@ -75,6 +81,14 @@ input::placeholder {
     transition: transform 0.5s ease-in-out;
 }
 
+.form-submit-button.next, .form-submit-button.prev, .form-submit-button.submit {
+    width: 48%;
+}
+
+.form-submit-button.prev, .form-submit-button.continue {
+    background-color: #e8f0fe;
+}
+
 .alternative-login {
     display: flex;
     justify-content: space-between;
@@ -98,6 +112,12 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.signup-button-div {
+    display: flex;
+    justify-content: space-between;
+    gap: .1rem;
 }
 
 .form-submit-button:active, .anonymous-btn:active, .google-btn:active {
