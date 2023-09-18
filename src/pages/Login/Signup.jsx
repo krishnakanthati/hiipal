@@ -63,11 +63,14 @@ function Signup() {
   }
 
   const handleNext = () => {
-    if (
-      (areAllFieldsFilledInStep1() && step === 1) ||
-      (areAllFieldsFilledInStep2() && step === 2)
-    ) {
-      setStep(step + 1);
+    if (step === 1) {
+      if (areAllFieldsFilledInStep1()) {
+        setStep(step + 1);
+      }
+    } else if (step === 2) {
+      if (areAllFieldsFilledInStep2()) {
+        setStep(step + 1);
+      }
     }
   };
 
