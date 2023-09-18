@@ -4,8 +4,8 @@ import * as IoIcons from "react-icons/io";
 import { Link } from "react-router-dom";
 
 function SignupStep1({ formData, setFormData }) {
-  const [isUsernameAvailable, setIsUsernameAvailable] = useState(null);
-
+  const [isUsernameAvailable, setIsUsernameAvailable] = useState(false);
+  console.log(isUsernameAvailable);
   useEffect(() => {
     const passwordInput = document.getElementById("password");
     const confirmPasswordInput = document.getElementById("confirmPassword");
@@ -43,7 +43,6 @@ function SignupStep1({ formData, setFormData }) {
   }, [formData.palid]);
 
   const checkUsernameRealtime = async (value) => {
-    console.log(value);
     try {
       const response = await fetch(
         "https://hiipal.netlify.app/api/check-username",
@@ -80,7 +79,7 @@ function SignupStep1({ formData, setFormData }) {
         />
         <label htmlFor="palid" className="form-label">
           pal ID
-        </label>{" "}
+        </label>
         {isUsernameAvailable === false ? (
           <span className="checkmark">
             <IoIcons.IoIosCheckmark style={{ color: "green" }} />
