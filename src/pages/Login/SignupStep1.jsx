@@ -4,7 +4,7 @@ import * as IoIcons from "react-icons/io";
 import { Link } from "react-router-dom";
 
 function SignupStep1({ formData, setFormData }) {
-  const [isUsernameAvailable, setIsUsernameAvailable] = useState(null);
+  const [isUsernameAvailable, setIsUsernameAvailable] = useState(false);
 
   const passwordInput = document.getElementById("password");
   const confirmPasswordInput = document.getElementById("confirmPassword");
