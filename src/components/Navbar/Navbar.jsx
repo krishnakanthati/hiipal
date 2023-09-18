@@ -158,10 +158,15 @@ function Navbar({ isLoading }) {
               </li> */}
               <li className="sidebar-li">
                 <Link className="nav-link" to="/">
-                  <RxIcons.RxTwitterLogo className="nav-icon" />
+                  <AiIcons.AiOutlineUser className="nav-icon" />
                 </Link>
               </li>
               <li className="sidebar-li">
+                <Link className="nav-link" to="/">
+                  <RxIcons.RxTwitterLogo className="nav-icon" />
+                </Link>
+              </li>
+              {/* <li className="sidebar-li">
                 <Link
                   className="nav-link"
                   // to="https://www.buymeacoffee.com/krishnakanthati"
@@ -170,7 +175,7 @@ function Navbar({ isLoading }) {
                 >
                   <BiIcons.BiLike className="nav-icon" />
                 </Link>
-              </li>
+              </li> */}
               <li className="sidebar-li">
                 <Link className="nav-link" to="/">
                   <IoIcons2.IoClose
