@@ -9,7 +9,7 @@ import * as PiIcons from "react-icons/pi";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
-import * as HiIcons from "react-icons/hi2";
+import * as HiIcons from "react-icons/hi";
 import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
 
@@ -85,7 +85,10 @@ function Navbar({ isLoading }) {
             </li>
             <li className="navbar-li">
               <Link className="nav-link" to="/message">
-                <BiIcons.BiChat className="nav-icon" title="Message" />
+                <PiIcons.PiChatTeardropText
+                  className="nav-icon"
+                  title="Message"
+                />
               </Link>
             </li>
           </ul>
