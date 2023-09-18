@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import diamond from "../../assets/diamond.mp3";
 
 import * as MdIcons from "react-icons/md";
-import * as LiaIcons from "react-icons/lia";
+import * as PiIcons from "react-icons/pi";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
