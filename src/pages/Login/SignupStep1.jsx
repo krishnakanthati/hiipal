@@ -36,7 +36,8 @@ function SignupStep1({ formData, setFormData }) {
         }
       );
       const data = await response.json();
-      setIsUsernameAvailable(data.exists);
+      await setIsUsernameAvailable(data.exists);
+      console.log(value, data.exists);
     } catch (error) {
       console.error("Error checking username availability:", error);
       // Handle error and display an appropriate message
