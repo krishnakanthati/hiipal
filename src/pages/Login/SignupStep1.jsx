@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./Login.css";
-import * as AiIcons from "react-icons/ai";
+import * as IoIcons from "react-icons/io";
 import { Link } from "react-router-dom";
 
 function SignupStep1({ formData, setFormData }) {
+  const [isUsernameAvailable, setIsUsernameAvailable] = useState(null);
+
   const passwordInput = document.getElementById("password");
   const confirmPasswordInput = document.getElementById("confirmPassword");
 
@@ -34,11 +36,7 @@ function SignupStep1({ formData, setFormData }) {
         }
       );
       const data = await response.json();
-      if (data.exists) {
-        console.log(data);
-      } else {
-        console.log(data);
-      }
+      setIsUsernameAvailable(data.exists);
     } catch (error) {
       console.error("Error checking username availability:", error);
       // Handle error and display an appropriate message
@@ -59,10 +57,20 @@ function SignupStep1({ formData, setFormData }) {
           // onChange={(e) => setPalid(e.target.value)}
           title="Enter valid pal ID"
           placeholder="Enter valid pal ID"
+          style={{ paddingRight: "1rem" }}
         />
-        <label htmlFor="email" className="form-label">
+        <label htmlFor="palid" className="form-label">
           pal ID
-        </label>
+        </label>{" "}
+        {isUsernameAvailable === false ? (
+          <span className="checkmark">
+            <IoIcons.IoIosCheckmark style={{ color: "green" }} />
+          </span>
+        ) : (
+          <span className="checkmark">
+            <IoIcons.IoIosClose style={{ color: "red" }} />
+          </span>
+        )}
       </div>
       <div className="form-group">
         <div className="form-group__input">

@@ -21,8 +21,6 @@ function Signup() {
     pic: "",
   });
 
-  console.log(formData);
-
   const areAllFieldsFilledInStep1 = () => {
     const requiredFields = ["palid", "password", "confirmPassword"];
     const passwordInput = document.getElementById("password");
