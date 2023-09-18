@@ -23,7 +23,12 @@ function Signup() {
 
   const areAllFieldsFilledInStep1 = () => {
     const requiredFields = ["palid", "password", "confirmPassword"];
-    return requiredFields.every((field) => formData[field].trim() !== "");
+    const passwordInput = document.getElementById("password");
+    const confirmPasswordInput = document.getElementById("confirmPassword");
+    return (
+      requiredFields.every((field) => formData[field].trim() !== "") &&
+      passwordInput === confirmPasswordInput
+    );
   };
 
   const areAllFieldsFilledInStep2 = () => {

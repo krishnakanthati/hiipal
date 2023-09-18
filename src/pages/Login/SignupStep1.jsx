@@ -8,6 +8,14 @@ function SignupStep1({ formData, setFormData }) {
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
 
+  const passwordInput = document.getElementById("password");
+  const confirmPasswordInput = document.getElementById("confirmPassword");
+
+  passwordInput.addEventListener("input", () => {
+    const passwordValue = passwordInput.value;
+    confirmPasswordInput.pattern = passwordValue;
+  });
+
   const handlePalidChange = (e) => {
     const { value } = e.target;
     checkUsernameRealtime(value);
