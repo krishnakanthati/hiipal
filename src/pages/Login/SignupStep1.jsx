@@ -22,26 +22,25 @@ function SignupStep1({ formData, setFormData }) {
     setFormData({ ...formData, palid: value });
   };
 
-  const checkUsernameRealtime = async (value) => {
+  const checkUsernameRealtime = (value) => {
     console.log(value);
-    try {
-      const response = await fetch(
-        "https://hiipal.netlify.app/api/check-username",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ value }),
-        }
-      );
-      const data = await response.json();
-      await setIsUsernameAvailable(data.exists);
-      console.log(value, data.exists);
-    } catch (error) {
-      console.error("Error checking username availability:", error);
-      // Handle error and display an appropriate message
-    }
+
+    fetch("https://hiipal.netlify.app/api/check-username", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ value }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setIsUsernameAvailable(data.exists);
+        console.log(value, data.exists);
+      })
+      .catch((error) => {
+        console.error("Error checking username availability:", error);
+        // Handle error and display an appropriate message
+      });
   };
 
   return (
