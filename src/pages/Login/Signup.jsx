@@ -21,20 +21,25 @@ function Signup() {
     pic: "",
   });
 
-  // const areAllFieldsFilled = () => {
-  //   const requiredFields = ["palid", "password", "confirmPassword"];
-  //   return requiredFields.every((field) => formData[field].trim() !== "");
-  // };
+  const areAllFieldsFilledInStep1 = () => {
+    const requiredFields = ["palid", "password", "confirmPassword"];
+    return requiredFields.every((field) => formData[field].trim() !== "");
+  };
 
-  // useEffect(() => {
-  //   if (step === 1) {
-  //     if (areAllFieldsFilled()) {
-  //       document.querySelector(".continue-text").textContent = "Continue";
-  //     } else {
-  //       document.querySelector(".continue-text").textContent = "Register";
-  //     }
-  //   }
-  // }, [step, formData]);
+  const areAllFieldsFilledInStep2 = () => {
+    const requiredFields = ["phone", "dob", "country"];
+    return requiredFields.every((field) => formData[field].trim() !== "");
+  };
+
+  useEffect(() => {
+    if (step === 1) {
+      if (areAllFieldsFilledInStep1()) {
+        document.querySelector(".continue-text").textContent = "Continue";
+      } else {
+        document.querySelector(".continue-text").textContent = "Register";
+      }
+    }
+  }, [step, formData]);
 
   async function registerPal(event) {
     event.preventDefault();
@@ -51,7 +56,12 @@ function Signup() {
   }
 
   const handleNext = () => {
-    setStep(step + 1);
+    if (
+      (areAllFieldsFilledInStep1() && step === 1) ||
+      (areAllFieldsFilledInStep2() && step === 2)
+    ) {
+      setStep(step + 1);
+    }
   };
 
   const handlePrevious = () => {
