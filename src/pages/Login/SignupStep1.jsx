@@ -4,10 +4,6 @@ import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 function SignupStep1({ formData, setFormData }) {
-  const [palid, setPalid] = useState("");
-  const [password, setPassword] = useState("");
-  const [phone, setPhone] = useState("");
-
   const passwordInput = document.getElementById("password");
   const confirmPasswordInput = document.getElementById("confirmPassword");
 
@@ -17,7 +13,7 @@ function SignupStep1({ formData, setFormData }) {
   });
 
   const handlePalidChange = (e) => {
-    const { value } = e.target;
+    const { value } = e.target.toLowerCase();
     checkUsernameRealtime(value);
     setFormData({ ...formData, palid: value });
   };
