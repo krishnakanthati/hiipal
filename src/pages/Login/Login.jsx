@@ -65,7 +65,7 @@ function Login() {
                   title="Enter valid pal ID"
                   placeholder="Enter valid pal ID"
                   value={palid}
-                  onChange={(e) => setPalid(e.target.value)}
+                  onChange={(e) => setPalid(e.target.value.toLowerCase())}
                 />
                 <label htmlFor="palid" className="form-label">
                   pal ID
