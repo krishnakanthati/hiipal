@@ -21,13 +21,15 @@ function Signup() {
     pic: "",
   });
 
+  console.log(formData);
+
   const areAllFieldsFilledInStep1 = () => {
     const requiredFields = ["palid", "password", "confirmPassword"];
     const passwordInput = document.getElementById("password");
     const confirmPasswordInput = document.getElementById("confirmPassword");
     return (
       requiredFields.every((field) => formData[field].trim() !== "") &&
-      passwordInput === confirmPasswordInput
+      passwordInput.value === confirmPasswordInput.value
     );
   };
 
