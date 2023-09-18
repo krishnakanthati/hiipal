@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import "./Transaction.css";
 import ExampleComponent from "../../components/ExampleComponent/ExampleComponent";
-import TestContext from "../../context/TestContext";
+import AuthContext from "../../context/AuthContext";
 
 function Transaction() {
-  const data = useContext(TestContext);
+  const data = useContext(AuthContext);
   return (
     <>
       <Navbar />

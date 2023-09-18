@@ -13,12 +13,12 @@ import Transaction from "./pages/Transaction/Transaction";
 import Signup from "./pages/Login/Signup";
 import Profile from "./pages/Profile/Profile";
 import PrivateRoutes from "./utils/PrivateRoutes";
-import TestProvider from "./utils/TestProvider";
+import AuthProvider from "./utils/AuthProvider";
 
 function App() {
   return (
     <>
-      <TestProvider>
+      <AuthProvider>
         <Routes>
           <Route element={<PrivateRoutes />}>
             <Route path="/search" element={<Search />} />
@@ -39,7 +39,7 @@ function App() {
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </TestProvider>
+      </AuthProvider>
     </>
   );
 }

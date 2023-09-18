@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./Login.css";
+
+import AuthContext from "../../context/AuthContext";
 
 import * as AiIcons from "react-icons/ai";
 import * as FcIcons from "react-icons/fc";
@@ -10,43 +12,11 @@ function Login() {
   const [palid, setPalid] = useState("");
   const [password, setPassword] = useState("");
 
+  const { login } = useContext(AuthContext);
+
   async function connectPal(event) {
     event.preventDefault();
-    const response = await fetch("https://hiipal.netlify.app/api/login", {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-      },
-      credentials: "include",
-      body: JSON.stringify({ palid, password }),
-    });
-
-    async function getDataWithToken(pal) {
-      // Make the GET request to your backend with the token in the Authorization header
-      const response = await fetch(
-        `https://hiipal.netlify.app/profile/${pal}`,
-        {
-          method: "GET",
-          headers: {
-            // Authorization: `Bearer ${token}`,
-            "Content-Type": "application/json",
-          },
-          credentials: "include",
-        }
-      );
-      const data = await response.json();
-      console.log("DATA FROM COOKIE TOKEN", data);
-    }
-
-    const data = await response.json();
-    if (data.status == "green") {
-      // Call the function to make the authenticated GET request with the token
-      console.log(data.pal);
-      await getDataWithToken(data.pal);
-      window.location.href = "#/search";
-    } else {
-      alert("Please check your pal ID and password.");
-    }
+    login(palid, password);
   }
 
   return (
