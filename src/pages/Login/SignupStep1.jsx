@@ -63,10 +63,6 @@ function SignupStep1({ formData, setFormData }) {
     }
   };
 
-  // useEffect(() => {
-  //   console.log(formData.palid, isUsernameAvailable);
-  // }, [formData.palid, isUsernameAvailable]);
-
   return (
     <div className="form-container">
       <div className="form-group">
@@ -78,7 +74,6 @@ function SignupStep1({ formData, setFormData }) {
           pattern="^(?=.*[A-Za-z])[A-Za-z0-9_]{4,15}$"
           value={formData.palid}
           onChange={handlePalidChange}
-          // onChange={(e) => setPalid(e.target.value)}
           title="Enter valid pal ID"
           placeholder="Enter valid pal ID"
           style={{ paddingRight: "1rem" }}
