@@ -12,7 +12,6 @@ import * as TbIcons from "react-icons/tb";
 import * as HiIcons from "react-icons/hi2";
 import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
-import * as LuIcons from "react-icons/lu";
 
 import SearchBar from "../SearchBar/SearchBar";
 
@@ -158,14 +157,15 @@ function Navbar({ isLoading }) {
               </li> */}
               <li className="sidebar-li">
                 <Link className="nav-link" to="/">
-                  <HiIcons.HiOutlineUserCircle className="nav-icon" />
+                  <RxIcons.RxTwitterLogo className="nav-icon" />
                 </Link>
               </li>
               <li className="sidebar-li">
                 <Link className="nav-link" to="/">
-                  <RxIcons.RxTwitterLogo className="nav-icon" />
+                  <AiIcons.AiOutlineUser className="nav-icon" />
                 </Link>
               </li>
+
               {/* <li className="sidebar-li">
                 <Link
                   className="nav-link"
