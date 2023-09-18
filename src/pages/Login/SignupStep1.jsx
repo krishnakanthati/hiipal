@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Login.css";
 import * as IoIcons from "react-icons/io";
 import { Link } from "react-router-dom";
@@ -6,42 +6,66 @@ import { Link } from "react-router-dom";
 function SignupStep1({ formData, setFormData }) {
   const [isUsernameAvailable, setIsUsernameAvailable] = useState(false);
 
-  const passwordInput = document.getElementById("password");
-  const confirmPasswordInput = document.getElementById("confirmPassword");
+  useEffect(() => {
+    const passwordInput = document.getElementById("password");
+    const confirmPasswordInput = document.getElementById("confirmPassword");
 
-  if (passwordInput && confirmPasswordInput) {
-    passwordInput.addEventListener("input", () => {
-      const passwordValue = passwordInput.value;
-      confirmPasswordInput.pattern = passwordValue;
-    });
-  }
+    if (passwordInput && confirmPasswordInput) {
+      passwordInput.addEventListener("input", () => {
+        const passwordValue = passwordInput.value;
+        confirmPasswordInput.pattern = passwordValue;
+      });
+    }
+
+    return () => {
+      // Clean up event listeners when the component unmounts
+      if (passwordInput && confirmPasswordInput) {
+        passwordInput.removeEventListener("input", () => {
+          const passwordValue = passwordInput.value;
+          confirmPasswordInput.pattern = passwordValue;
+        });
+      }
+    };
+  }, []);
 
   const handlePalidChange = (e) => {
     const value = e.target.value.toLowerCase();
-    checkUsernameRealtime(value);
     setFormData({ ...formData, palid: value });
   };
 
-  const checkUsernameRealtime = (value) => {
-    console.log(value);
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      checkUsernameRealtime(formData.palid);
+    }, 500);
+    return () => {
+      clearTimeout(timerId); // Clear the timer when the component unmounts
+    };
+  }, [formData.palid]);
 
-    fetch("https://hiipal.netlify.app/api/check-username", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ value }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setIsUsernameAvailable(data.exists);
-        console.log(value, data.exists);
-      })
-      .catch((error) => {
-        console.error("Error checking username availability:", error);
-        // Handle error and display an appropriate message
-      });
+  const checkUsernameRealtime = async (value) => {
+    console.log(value);
+    try {
+      const response = await fetch(
+        "https://hiipal.netlify.app/api/check-username",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ value }),
+        }
+      );
+      const data = await response.json();
+      setIsUsernameAvailable(data.exists);
+    } catch (error) {
+      console.error("Error checking username availability:", error);
+      // Handle error and display an appropriate message
+    }
   };
+
+  // useEffect(() => {
+  //   console.log(formData.palid, isUsernameAvailable);
+  // }, [formData.palid, isUsernameAvailable]);
 
   return (
     <div className="form-container">
