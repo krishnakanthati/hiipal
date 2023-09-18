@@ -22,12 +22,11 @@ function App() {
         <Routes>
           <Route element={<PrivateRoutes />}>
             <Route path="/search" element={<Search />} />
+            <Route path="/notifications" element={<Notifications />} />
+            <Route path="/message" element={<Message />} />
           </Route>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
-
-          <Route path="/notifications" element={<Notifications />} />
-          <Route path="/message" element={<Message />} />
 
           <Route path="/transaction" element={<Transaction />} />
 
