@@ -105,9 +105,7 @@ function Signup() {
             {step === 1 ? (
               <button
                 type="signup"
-                onClick={() => {
-                  handleNext();
-                }}
+                onClick={handleNext}
                 className="form-submit-button continue"
               >
                 <span className="continue-text">Continue</span>{" "}
@@ -136,9 +134,7 @@ function Signup() {
                 ) : (
                   <button
                     type="signup"
-                    onClick={() => {
-                      handleNext();
-                    }}
+                    onClick={handleNext}
                     className="form-submit-button next"
                   >
                     Next
