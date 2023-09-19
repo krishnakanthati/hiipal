@@ -55,7 +55,7 @@ function Navbar({ isLoading }) {
           <ul className="navbar-ul">
             <li className="navbar-li">
               <Link className="nav-link" to="/">
-                <BiIcons.BiHomeHeart className="nav-icon" title="Home" />
+                <BiIcons.BiHomeAlt2 className="nav-icon" title="Home" />
               </Link>
             </li>
             <li className="navbar-li">
