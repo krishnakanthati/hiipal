@@ -22,8 +22,7 @@ function Navbar({ isLoading }) {
 
   const handleLogout = async () => {
     try {
-      // Make an API request to log the user out
-      const response = await fetch("http://hiipal.netlify.app/api/logout", {
+      const response = await fetch("https://hiipal.netlify.app/api/logout", {
         method: "POST",
         credentials: "include",
       });
