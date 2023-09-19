@@ -36,6 +36,8 @@ function Signup() {
     return requiredFields.every((field) => formData[field].trim() !== "");
   };
 
+  console.log(step);
+
   useEffect(() => {
     if (step === 1) {
       if (areAllFieldsFilledInStep1()) {
@@ -123,7 +125,7 @@ function Signup() {
                 </button>
                 {step === 3 ? (
                   <button
-                    type="submit"
+                    type="button"
                     onClick={registerPal}
                     className="form-submit-button submit"
                   >

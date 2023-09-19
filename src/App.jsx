@@ -27,9 +27,7 @@ function App() {
           </Route>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<Signup />} />
-
           <Route path="/transaction" element={<Transaction />} />
-
           <Route path="/features" element={<Features />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/page" element={<NavigationLayout />}>
