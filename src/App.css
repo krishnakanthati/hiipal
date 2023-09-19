@@ -1,6 +1,9 @@
 #root {
   max-width: 1280px;
-  font-size: 10px;
+}
+
+:root {
+  font-size: 15px;
 }
 
 .main-container {
