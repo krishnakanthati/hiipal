@@ -23,7 +23,7 @@ function Navbar({ isLoading }) {
   const handleLogout = async () => {
     try {
       // Make an API request to log the user out
-      const response = await fetch("https://hiipal.netlify.app/api/logout", {
+      const response = await fetch("http://hiipal.netlify.app/api/logout", {
         method: "POST",
         credentials: "include",
       });
@@ -197,7 +197,7 @@ function Navbar({ isLoading }) {
                 </Link>
               </li> */}
               <li className="sidebar-li">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="">
                   <IoIcons2.IoClose
                     style={{ color: "red" }}
                     className="nav-icon"
