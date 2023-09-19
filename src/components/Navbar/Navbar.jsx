@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 import diamond from "../../assets/diamond.mp3";
 
-import * as GoIcons from "react-icons/go";
 import * as PiIcons from "react-icons/pi";
 import * as BiIcons from "react-icons/bi";
 import * as IoIcons2 from "react-icons/io5";
@@ -56,7 +55,7 @@ function Navbar({ isLoading }) {
           <ul className="navbar-ul">
             <li className="navbar-li">
               <Link className="nav-link" to="/">
-                <HiIcons.HiOutlineHome className="nav-icon" title="Home" />
+                <BiIcons.BiHomeHeart className="nav-icon" title="Home" />
               </Link>
             </li>
             <li className="navbar-li">
