@@ -125,7 +125,7 @@ function Signup() {
                 </button>
                 {step === 3 ? (
                   <button
-                    type="button"
+                    type="submit"
                     onClick={registerPal}
                     className="form-submit-button submit"
                   >

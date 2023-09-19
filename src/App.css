@@ -2,10 +2,6 @@
   max-width: 1280px;
 }
 
-:root {
-  font-size: 15px;
-}
-
 .main-container {
   box-sizing: border-box;
   position: fixed;
