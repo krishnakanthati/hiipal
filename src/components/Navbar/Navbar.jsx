@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
 
 import diamond from "../../assets/diamond.mp3";
+
+import SearchBar from "../SearchBar/SearchBar";
 
 import * as PiIcons from "react-icons/pi";
 import * as BiIcons from "react-icons/bi";
@@ -12,13 +14,29 @@ import * as HiIcons from "react-icons/hi";
 import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
 
-import SearchBar from "../SearchBar/SearchBar";
-
 function Navbar({ isLoading }) {
   const [toggleMenu, setToggleMenu] = useState(false);
   const sidebarRef = useRef();
-
+  const navigate = useNavigate();
   let audio = new Audio(diamond);
+
+  const handleLogout = async () => {
+    try {
+      // Make an API request to log the user out
+      const response = await fetch("https://hiipal.netlify.app/api/logout", {
+        method: "POST",
+        credentials: "include",
+      });
+
+      if (response.status === 200) {
+        navigate("/");
+      } else {
+        console.error("Logout failed");
+      }
+    } catch (error) {
+      console.error("Error during logout:", error);
+    }
+  };
 
   const handleKeyDown = (e) => {
     if (e.key === "s" && e.target.tagName.toLowerCase() !== "input") {
@@ -183,6 +201,7 @@ function Navbar({ isLoading }) {
                   <IoIcons2.IoClose
                     style={{ color: "red" }}
                     className="nav-icon"
+                    onClick={handleLogout}
                   />
                 </Link>
               </li>
