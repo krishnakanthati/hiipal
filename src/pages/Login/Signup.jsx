@@ -62,7 +62,8 @@ function Signup() {
     }
   }
 
-  const handleNext = () => {
+  const handleNext = (event) => {
+    event.preventDefault();
     if (step === 1) {
       if (areAllFieldsFilledInStep1()) {
         setStep(step + 1);
