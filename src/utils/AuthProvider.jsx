@@ -6,6 +6,28 @@ function AuthProvider({ children }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const navigate = useNavigate();
 
+  // const logout = () => {
+  //   setIsAuthenticated(false);
+  // };
+
+  const logout = async () => {
+    try {
+      const response = await fetch("https://hiipal.netlify.app/api/logout", {
+        method: "POST",
+        credentials: "include",
+      });
+
+      if (response.status === 200) {
+        setIsAuthenticated(false);
+        navigate("/");
+      } else {
+        console.error("Logout failed");
+      }
+    } catch (error) {
+      console.error("Error during logout:", error);
+    }
+  };
+
   const login = async (palid, password) => {
     try {
       const response = await fetch("https://hiipal.netlify.app/api/login", {
@@ -48,7 +70,7 @@ function AuthProvider({ children }) {
 
   return (
     <AuthContext.Provider
-      value={{ isAuthenticated, setIsAuthenticated, login }}
+      value={{ isAuthenticated, setIsAuthenticated, login, logout }}
     >
       {children}
     </AuthContext.Provider>

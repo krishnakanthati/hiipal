@@ -21,7 +21,7 @@ const PrivateRoutes = () => {
           }
         );
         const data = await response.json();
-        console.log("...............", data.isAuthenticated);
+        console.log("x", data.isAuthenticated);
 
         if (data.isAuthenticated) {
           // Update the isAuthenticated state
@@ -46,7 +46,7 @@ const PrivateRoutes = () => {
       </div>
     );
   }
-
+  console.log(isAuthenticated);
   return isAuthenticated ? <Outlet /> : <Navigate to="/" />;
 };
 
