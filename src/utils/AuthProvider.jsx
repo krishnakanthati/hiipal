@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AuthContext from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 function AuthProvider({ children }) {
-  const [authenticated, setAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const navigate = useNavigate();
-
   const login = async (palid, password) => {
     try {
       const response = await fetch("https://hiipal.netlify.app/api/login", {
@@ -37,7 +36,7 @@ function AuthProvider({ children }) {
       const data = await response.json();
       if (data.status === "green") {
         await getDataWithToken(data.pal);
-        setAuthenticated(true); // Set authenticated state after successful authentication
+        setIsAuthenticated(true);
         navigate("/search");
       } else {
         alert("Incorrect pal ID and password.");
@@ -48,7 +47,7 @@ function AuthProvider({ children }) {
   };
 
   return (
-    <AuthContext.Provider value={{ authenticated, login }}>
+    <AuthContext.Provider value={{ isAuthenticated, login }}>
       {children}
     </AuthContext.Provider>
   );
