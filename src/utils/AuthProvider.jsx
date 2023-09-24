@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 function AuthProvider({ children }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const navigate = useNavigate();
+
   const login = async (palid, password) => {
     try {
       const response = await fetch("https://hiipal.netlify.app/api/login", {
@@ -17,7 +18,6 @@ function AuthProvider({ children }) {
       });
 
       async function getDataWithToken(pal) {
-        // Make the GET request to your backend with the token in the Authorization header
         const response = await fetch(
           `https://hiipal.netlify.app/profile/${pal}`,
           {
@@ -47,7 +47,9 @@ function AuthProvider({ children }) {
   };
 
   return (
-    <AuthContext.Provider value={{ isAuthenticated, login }}>
+    <AuthContext.Provider
+      value={{ isAuthenticated, setIsAuthenticated, login }}
+    >
       {children}
     </AuthContext.Provider>
   );
