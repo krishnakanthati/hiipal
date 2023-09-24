@@ -21,7 +21,9 @@ const PrivateRoutes = () => {
           }
         );
         const data = await response.json();
-        console.log("x", data.isAuthenticated);
+        if (response.status === 401) {
+          console.log("Unathorized Access.");
+        }
 
         if (data.isAuthenticated) {
           // Update the isAuthenticated state
@@ -42,7 +44,7 @@ const PrivateRoutes = () => {
   if (loading) {
     return (
       <div className="loading">
-        <div>loading..</div>
+        <div>🪸 initializing..</div>
       </div>
     );
   }
