@@ -40,7 +40,11 @@ const PrivateRoutes = () => {
 
   // Render a loading indicator while checking authentication
   if (loading) {
-    return <div className="loading">loading...</div>;
+    return (
+      <div className="loading">
+        <div>loading..</div>
+      </div>
+    );
   }
 
   return isAuthenticated ? <Outlet /> : <Navigate to="/" />;
