@@ -22,6 +22,12 @@ function Navbar({ isLoading }) {
   const navigate = useNavigate();
   let audio = new Audio(diamond);
 
+  const [variable, setVariable] = useState("");
+
+  const handleVariableChange = (value) => {
+    setVariable(value);
+  };
+
   const handleKeyDown = (e) => {
     if (e.key === "s" && e.target.tagName.toLowerCase() !== "input") {
       setToggleMenu((prevToggleMenu) => !prevToggleMenu);
@@ -102,7 +108,10 @@ function Navbar({ isLoading }) {
               </Link>
             </li>
             <li className="header-li">
-              <SearchBar className="nav-link" />
+              <SearchBar
+                onVariableChange={handleVariableChange}
+                className="nav-link"
+              />
             </li>
             {/* <li className="header-li">
               <Link className="nav-link" to="/">

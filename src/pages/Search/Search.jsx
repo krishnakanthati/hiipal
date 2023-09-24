@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import SearchBar from "../../components/SearchBar/SearchBar";
 import * as IoIcons from "react-icons/io";
 import "./Search.css";
 
