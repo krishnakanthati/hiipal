@@ -208,7 +208,7 @@ function Navbar({ isLoading }) {
                 ) : (
                   <Link className="nav-link" to="/">
                     <IoIcons2.IoPower
-                      style={{ color: "	#0eff00" }}
+                      style={{ color: "	#00c50b" }}
                       className="nav-icon"
                     />
                   </Link>
