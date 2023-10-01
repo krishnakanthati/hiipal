@@ -107,17 +107,17 @@ function Navbar({ isLoading }) {
                 <div className="profile"></div>
               </Link>
             </li>
-            <li className="header-li">
+            {/* <li className="header-li">
               <SearchBar
                 onVariableChange={handleVariableChange}
                 className="nav-link"
               />
-            </li>
-            {/* <li className="header-li">
+            </li> */}
+            <li className="header-li">
               <Link className="nav-link" to="/">
                 <BiIcons.BiPlus className="nav-icon" />
               </Link>
-            </li> */}
+            </li>
             {/* {isLoading && (
               <li className="header-li">
                 <Link
