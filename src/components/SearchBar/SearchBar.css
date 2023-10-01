@@ -13,6 +13,11 @@
     border: .1rem solid black;
     color: black;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.searchbar:disabled:active {
+    background-color: red;
 }
 
 .searchbar:focus,

@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
 import "./SearchBar.css";
+import AuthContext from "../../context/AuthContext";
 
 function SearchBar({ onVariableChange }) {
+  const { isAuthenticated } = useContext(AuthContext);
   const [query, setQuery] = useState("");
 
   return (
@@ -15,6 +17,7 @@ function SearchBar({ onVariableChange }) {
           setQuery(e.target.value);
           onVariableChange(e.target.value);
         }}
+        disabled={!isAuthenticated}
         placeholder="search.."
       />
     </div>
