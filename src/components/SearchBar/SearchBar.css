@@ -18,9 +18,9 @@
 .searchbar:focus,
 .searchbar:not(:placeholder-shown) {
     border: none;
-    border: .1rem solid white;
-    background-color: #555555;
+    border: .05rem solid white;
+    background-color: #444444;
     color: white;
     width: 7rem;
-    height: 1.8rem;
+    height: 1.75rem;
 }

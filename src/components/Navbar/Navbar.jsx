@@ -24,6 +24,10 @@ function Navbar({ isLoading }) {
 
   const [variable, setVariable] = useState("");
 
+  const handleSearchInputClick = () => {
+    navigate("/search");
+  };
+
   const handleVariableChange = (value) => {
     setVariable(value);
   };
@@ -110,6 +114,7 @@ function Navbar({ isLoading }) {
             <li className="header-li">
               <SearchBar
                 onVariableChange={handleVariableChange}
+                onClick={handleSearchInputClick}
                 className="nav-link"
               />
             </li>
