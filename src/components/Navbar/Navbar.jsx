@@ -22,6 +22,8 @@ function Navbar({ isLoading }) {
   const navigate = useNavigate();
   let audio = new Audio(diamond);
 
+  const { isAuthenticated } = useContext(AuthContext);
+
   const [variable, setVariable] = useState("");
 
   const handleSearchInputClick = () => {
@@ -195,13 +197,22 @@ function Navbar({ isLoading }) {
                 </Link>
               </li> */}
               <li className="sidebar-li">
-                <Link className="nav-link" to="">
-                  <IoIcons2.IoClose
-                    style={{ color: "red" }}
-                    className="nav-icon"
-                    onClick={logout}
-                  />
-                </Link>
+                {isAuthenticated ? (
+                  <Link className="nav-link" to="">
+                    <IoIcons2.IoClose
+                      style={{ color: "red" }}
+                      className="nav-icon"
+                      onClick={logout}
+                    />
+                  </Link>
+                ) : (
+                  <Link className="nav-link" to="/">
+                    <IoIcons2.IoPower
+                      style={{ color: "	#0eff00" }}
+                      className="nav-icon"
+                    />
+                  </Link>
+                )}
               </li>
             </ul>
           </nav>
