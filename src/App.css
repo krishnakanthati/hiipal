@@ -80,8 +80,6 @@ input {
 input[type="search"]::-webkit-search-cancel-button {
   /* display: none; */
   font-size: .5rem;
-  background-color: red;
-  border-color: red;
 }
 
 a {
