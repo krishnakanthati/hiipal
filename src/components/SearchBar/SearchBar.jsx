@@ -1,19 +1,25 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect, useRef } from "react";
 
 import "./SearchBar.css";
 import AuthContext from "../../context/AuthContext";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function SearchBar({ onVariableChange }) {
   const { isAuthenticated } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const searchInputRef = useRef(null);
+  const location = useLocation();
   const [query, setQuery] = useState("");
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("searchbar");
+  const handleSearchInputFocus = () => {
+    navigate("/search");
+  };
 
-    searchInput.addEventListener("focus", function () {
-      window.location.href = "#/search";
-    });
-  });
+  useEffect(() => {
+    if (location.pathname === "/search" && searchInputRef.current) {
+      searchInputRef.current.focus();
+    }
+  }, [location.pathname]);
 
   return (
     <div className="searchbar-div">
@@ -28,6 +34,8 @@ function SearchBar({ onVariableChange }) {
         }}
         disabled={!isAuthenticated}
         placeholder="search.."
+        onFocus={handleSearchInputFocus}
+        ref={searchInputRef}
       />
     </div>
   );
