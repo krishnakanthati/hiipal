@@ -10,15 +10,16 @@
     width: 1.4rem;
     text-transform: lowercase;
     flex: 1;
-    border: .1rem solid black;
+    border: .05rem solid black;
     color: black;
     /* vertical-align: middle; */
 }
 
-.searchbar:focus {
+.searchbar:focus,
+.searchbar:not(:placeholder-shown) {
     border: none;
     border: .1rem solid white;
-    background-color: #333333;
+    background-color: #555555;
     color: white;
     width: 7rem;
     height: 1.8rem;
