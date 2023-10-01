@@ -44,7 +44,7 @@ const PrivateRoutes = () => {
   if (loading) {
     return (
       <div className="loading">
-        <div>🪸 initializing..</div>
+        <div>🪸 waymint..</div>
       </div>
     );
   }
