@@ -10,7 +10,7 @@
     width: 1.4rem;
     text-transform: lowercase;
     flex: 1;
-    border: .05rem solid black;
+    border: .1rem solid black;
     color: black;
     /* vertical-align: middle; */
 }

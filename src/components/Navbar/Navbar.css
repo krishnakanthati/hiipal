@@ -69,7 +69,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    gap: .5rem;
+    gap: .6rem;
 }
 
 .header-ul li:nth-child(2) {
