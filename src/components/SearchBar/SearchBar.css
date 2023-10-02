@@ -12,7 +12,7 @@
     flex: 1;
     border: .1rem solid black;
     color: black;
-    font-weight: 600;
+    font-weight: 550;
     cursor: pointer;
     transition: background-color .1s linear;
 }
@@ -26,8 +26,8 @@
 .searchbar:not(:placeholder-shown) {
     border: none;
     border: .05rem solid white;
-    background-color: #999999;
-    color: white;
+    background-color: black;
+    color: #1fc600;
     width: 7rem;
     height: 1.75rem;
 }
