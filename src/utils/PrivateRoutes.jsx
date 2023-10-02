@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Navigate, Outlet } from "react-router-dom";
 import AuthContext from "../context/AuthContext";
+import Navbar from "../components/Navbar/Navbar";
 
 const PrivateRoutes = () => {
   const { isAuthenticated, setIsAuthenticated } = useContext(AuthContext);
@@ -43,9 +44,12 @@ const PrivateRoutes = () => {
   // Render a loading indicator while checking authentication
   if (loading) {
     return (
-      <div className="loading">
-        <div>🪸 waymint..</div>
-      </div>
+      <>
+        <Navbar />
+        <div className="loading">
+          <div>🪸 waymint..</div>
+        </div>
+      </>
     );
   }
   console.log(isAuthenticated);
