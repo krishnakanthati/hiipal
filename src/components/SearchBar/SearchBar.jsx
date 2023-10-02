@@ -2,17 +2,23 @@ import React, { useState, useContext, useEffect, useRef } from "react";
 
 import "./SearchBar.css";
 import AuthContext from "../../context/AuthContext";
+import QueryContext from "../../context/QueryContext";
 import { useLocation, useNavigate } from "react-router-dom";
 
-function SearchBar({ onVariableChange }) {
+function SearchBar() {
+  const { query, updateQuery } = useContext(QueryContext);
   const { isAuthenticated } = useContext(AuthContext);
   const navigate = useNavigate();
   const searchInputRef = useRef(null);
   const location = useLocation();
-  const [query, setQuery] = useState("");
 
   const handleSearchInputFocus = () => {
     navigate("/search");
+  };
+
+  const handleQueryInputChange = (e) => {
+    const newQuery = e.target.value;
+    updateQuery(newQuery);
   };
 
   useEffect(() => {
@@ -28,10 +34,7 @@ function SearchBar({ onVariableChange }) {
         value={query}
         className="searchbar"
         id="searchbar"
-        onChange={(e) => {
-          setQuery(e.target.value);
-          onVariableChange(e.target.value);
-        }}
+        onChange={handleQueryInputChange}
         disabled={!isAuthenticated}
         placeholder="search.."
         onFocus={handleSearchInputFocus}

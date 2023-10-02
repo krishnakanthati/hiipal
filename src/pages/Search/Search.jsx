@@ -1,13 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo, useContext } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import * as IoIcons from "react-icons/io";
 import "./Search.css";
+import QueryContext from "../../context/QueryContext";
 
 function Search() {
+  const { query } = useContext(QueryContext);
   const [users, setUsers] = useState([]);
   const [isVisible, setIsVisible] = useState(false);
 
   const [isLoading, setLoading] = useState(true);
+
+  const filteredItems = useMemo(() => {
+    return users.filter((user) => {
+      return user.id
+        .toString()
+        .toLowerCase()
+        .includes(query.toString().toLowerCase());
+    });
+  }, [users, query]);
 
   useEffect(() => {
     const scrollableDiv = document.getElementById("main-container");
@@ -63,7 +74,7 @@ function Search() {
         </div>
 
         <div className="search-container">
-          {users.map((user) => (
+          {filteredItems.map((user) => (
             <div key={user.id} className="card">
               {user.id}
             </div>

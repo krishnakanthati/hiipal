@@ -9,6 +9,7 @@ function Transaction() {
   return (
     <>
       <Navbar />
+
       <div className="main-container">{data.message}</div>
     </>
   );

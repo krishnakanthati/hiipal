@@ -14,29 +14,32 @@ import Signup from "./pages/Login/Signup";
 import Profile from "./pages/Profile/Profile";
 import PrivateRoutes from "./utils/PrivateRoutes";
 import AuthProvider from "./utils/AuthProvider";
+import QueryProvider from "./utils/QueryProvider";
 
 function App() {
   return (
     <>
       <AuthProvider>
-        <Routes>
-          <Route element={<PrivateRoutes />}>
-            <Route path="/search" element={<Search />} />
-            <Route path="/transaction" element={<Transaction />} />
-            <Route path="/notifications" element={<Notifications />} />
-            <Route path="/message" element={<Message />} />
-          </Route>
-          <Route path="/" element={<Home />} />
-          <Route path="/signup" element={<Signup />} />
+        <QueryProvider>
+          <Routes>
+            <Route element={<PrivateRoutes />}>
+              <Route path="/search" element={<Search />} />
+              <Route path="/transaction" element={<Transaction />} />
+              <Route path="/notifications" element={<Notifications />} />
+              <Route path="/message" element={<Message />} />
+            </Route>
+            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<Signup />} />
 
-          <Route path="/features" element={<Features />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/page" element={<NavigationLayout />}>
-            <Route index element={<Page />} />
-            <Route path=":id" element={<Page />} />
-          </Route>
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+            <Route path="/features" element={<Features />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/page" element={<NavigationLayout />}>
+              <Route index element={<Page />} />
+              <Route path=":id" element={<Page />} />
+            </Route>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </QueryProvider>
       </AuthProvider>
     </>
   );
