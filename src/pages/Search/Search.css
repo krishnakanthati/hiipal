@@ -36,7 +36,7 @@
 @media only screen and (max-width: 600px) {
     #scrolltotop {
         font-size: 1.75rem;
-        color: black;
+        color: #999999;
         right: .75rem;
         bottom: 3.25rem;
     }
