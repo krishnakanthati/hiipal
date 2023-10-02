@@ -14,10 +14,12 @@
     color: black;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color .2s linear;
 }
 
 .searchbar:disabled:active {
     background-color: red;
+    /* transition-delay: 0.1s; */
 }
 
 .searchbar:focus,
