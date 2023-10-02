@@ -9,6 +9,7 @@ import AuthContext from "../../context/AuthContext";
 
 import * as PiIcons from "react-icons/pi";
 import * as BiIcons from "react-icons/bi";
+import * as RiIcons from "react-icons/ri";
 import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
 import * as LiaIcons from "react-icons/lia";
@@ -106,7 +107,9 @@ function Navbar({ isLoading }) {
           <ul className="header-ul">
             <li className="header-li">
               <Link className="nav-link" to="/profile">
-                <div className="profile"></div>
+                <div className="profile">
+                  <RiIcons.RiLeafFill />
+                </div>
               </Link>
             </li>
             <li className="header-li">
