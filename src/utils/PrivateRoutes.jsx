@@ -46,8 +46,8 @@ const PrivateRoutes = () => {
     return (
       <>
         <Navbar />
-        <div className="loading">
-          <div>🪸 waymint..</div>
+        <div className="main-container">
+          <div className="loading">🪸 waymint..</div>
         </div>
       </>
     );
