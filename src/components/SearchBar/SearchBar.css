@@ -26,7 +26,7 @@
 .searchbar:not(:placeholder-shown) {
     border: none;
     border: .05rem solid white;
-    background-color: #eff3f4;
+    background-color: #eef7fa;
     color: #2f88ff;
     width: 7rem;
     height: 1.75rem;
