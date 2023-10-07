@@ -4,10 +4,10 @@ import Navbar from "../../components/Navbar/Navbar";
 
 function Profile() {
   const user = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 25,
-    bio: "Frontend Developer passionate about creating user-friendly web experiences.",
+    firstName: "Blue",
+    lastName: "Kiwi",
+    age: 1,
+    bio: "I am Blue Kiwi, a quirky and whimsical character, just like the bird I'm named after. I'm here to add a splash of humor and lightheartedness to your day. If life gives you lemons, I'd probably turn them into kiwi-shaped watermelons and juggle them while riding a unicycle. So, join me on this zany adventure, and let's laugh our way through the ups and downs of life. Remember, when in doubt, just be a Blue Kiwi!",
     profileImage:
       "https://th.bing.com/th/id/OIP.CtJX8JsV6P3lFVNdGCAyBQHaHa?pid=ImgDet&rs=1", // Replace with actual image URL
   };
