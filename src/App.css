@@ -79,7 +79,8 @@ input {
 
 input[type="search"]::-webkit-search-cancel-button {
   /* display: none; */
-  font-size: .5rem;
+  font-size: .75rem;
+
 }
 
 a {
