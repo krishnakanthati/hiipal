@@ -1,0 +1,40 @@
+.sticky-bar {
+    width: 3rem;
+    height: 3rem;
+    border: .1rem solid #999999;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 3rem;
+    right: 4.5rem;
+    background-color: #ffffff;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.options-icon {
+    font-size: 1.5rem;
+    color: #2f88ff;
+    transition: transform 0.3s;
+}
+
+.options-icon:active {
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 600px) {
+    .sticky-bar {
+        border: none;
+        right: 10%;
+        bottom: 4rem;
+        transform: translateX(50%);
+    }
+
+    .options-icon {
+        font-size: 2.25rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {}
