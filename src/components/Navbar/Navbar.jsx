@@ -15,6 +15,7 @@ import * as TbIcons from "react-icons/tb";
 import * as LiaIcons from "react-icons/lia";
 import * as RxIcons from "react-icons/rx";
 import * as AiIcons from "react-icons/ai";
+import * as RiIcons from "react-icons/ri";
 
 function Navbar({ isLoading }) {
   const { logout } = useContext(AuthContext);
@@ -87,7 +88,7 @@ function Navbar({ isLoading }) {
             </li>
             <li className="navbar-li">
               <Link className="nav-link" to="/notifications">
-                <AiIcons.AiOutlineFire
+                <RiIcons.RiFireLine
                   className="nav-icon"
                   title="Notifications"
                 />
