@@ -87,7 +87,7 @@ function Navbar({ isLoading }) {
             </li>
             <li className="navbar-li">
               <Link className="nav-link" to="/notifications">
-                <PiIcons.PiFireSimpleBold
+                <AiIcons.AiOutlineFire
                   className="nav-icon"
                   title="Notifications"
                 />
