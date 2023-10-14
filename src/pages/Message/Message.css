@@ -19,18 +19,21 @@
     width: auto;
     height: 2.25rem;
     /* font-weight: bolder; */
+    box-shadow: none;
     font-size: large;
+    outline: none;
+    border: none;
+    /* border: .1rem solid whitesmoke; */
 }
 
 .message-mic {
-    border: .1rem solid black;
     width: 2.25rem;
     height: 2.25rem;
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: large;
+    font-size: medium;
     background-color: white;
 }
 

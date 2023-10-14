@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import "./Message.css";
 
-import * as IoIcons from "react-icons/io";
+import * as HiIcons from "react-icons/hi2";
 
 function Message() {
   return (
@@ -10,9 +10,9 @@ function Message() {
       <Navbar />
       <div className="main-container">
         <div className="message-container">
-          <input className="message-input" />
+          <input className="message-input" placeholder="Message" />
           <div className="message-mic">
-            <IoIcons.IoMdMic />
+            <HiIcons.HiMiniMicrophone />
           </div>
         </div>
       </div>
