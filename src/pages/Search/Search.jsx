@@ -62,7 +62,6 @@ function Search() {
     <>
       <Navbar isLoading={isLoading} />
       <div className="main-container" id="main-container">
-        {/* <SearchBar className="searchbar" /> */}
         <div className="scrolltotop-div">
           {isVisible && (
             <IoIcons.IoIosArrowUp

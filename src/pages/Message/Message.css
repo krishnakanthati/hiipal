@@ -1,0 +1,38 @@
+.message-container {
+    margin: 0;
+    padding: .5rem 0;
+    position: absolute;
+    box-sizing: border-box;
+    /* border: .1rem solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    width: calc(100% - .5rem);
+    bottom: 0rem;
+}
+
+.message-input {
+    color: #2f88ff;
+    border-radius: 5rem;
+    width: 30%;
+    height: 2.5rem;
+    /* font-weight: bolder; */
+    font-size: larger;
+}
+
+.message-mic {
+    border: .1rem solid black;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    background-color: white;
+}
+
+.message-mic:active {
+    color: #2f88ff;
+}
