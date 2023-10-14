@@ -28,7 +28,7 @@ function Footer() {
       <div className="email">
         dev@hiipal.com{" "}
         <span>
-          <BsIcons.BsFillCaretDownFill />
+          <BsIcons.BsArrowDownShort />
         </span>
       </div>
     </div>
