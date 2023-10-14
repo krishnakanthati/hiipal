@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .75rem;
+    gap: .5rem;
     width: calc(100%);
     bottom: 0rem;
     background-color: #f0f2f5;
@@ -16,7 +16,7 @@
 .message-input {
     color: #2f88ff;
     border-radius: 5rem;
-    width: 30%;
+    width: auto;
     height: 2.5rem;
     /* font-weight: bolder; */
     font-size: larger;
