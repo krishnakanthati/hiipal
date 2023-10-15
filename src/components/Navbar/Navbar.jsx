@@ -8,14 +8,12 @@ import SearchBar from "../SearchBar/SearchBar";
 import AuthContext from "../../context/AuthContext";
 
 import * as PiIcons from "react-icons/pi";
-import * as HiIcons from "react-icons/hi";
 import * as BiIcons from "react-icons/bi";
 import * as GiIcons from "react-icons/gi";
 import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
 import * as LiaIcons from "react-icons/lia";
 import * as RxIcons from "react-icons/rx";
-import * as LuIcons from "react-icons/lu";
 import * as AiIcons from "react-icons/ai";
 
 function Navbar({ isLoading }) {
@@ -167,7 +165,7 @@ function Navbar({ isLoading }) {
             <ul className="sidebar-ul">
               <li className="sidebar-li">
                 <Link className="nav-link" to="/">
-                  <HiIcons.HiOutlineShare className="nav-icon" />
+                  <PiIcons.PiShareFat className="nav-icon" />
                 </Link>
               </li>
               {/* <li className="sidebar-li">
