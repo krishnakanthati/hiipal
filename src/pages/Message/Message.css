@@ -40,3 +40,20 @@
 .message-mic:active, .message-emoji:active {
     color: #2f88ff;
 }
+
+.message-send {
+    position: absolute;
+    transform-style: preserve-3d;
+    pointer-events: none;
+    font-size: small;
+    transition: ease-in 0.5s;
+    color: black;
+    height: 2.25rem;
+    width: 2.25rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 58%;
+    transform: translateX(-50%);
+}
