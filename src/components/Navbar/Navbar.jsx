@@ -8,7 +8,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import AuthContext from "../../context/AuthContext";
 
 import * as PiIcons from "react-icons/pi";
-import * as HiIcons from "react-icons/hi2";
+import * as HiIcons from "react-icons/hi";
 import * as BiIcons from "react-icons/bi";
 import * as GiIcons from "react-icons/gi";
 import * as IoIcons2 from "react-icons/io5";
