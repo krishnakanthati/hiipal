@@ -11,7 +11,6 @@ import * as PiIcons from "react-icons/pi";
 import * as BiIcons from "react-icons/bi";
 import * as GiIcons from "react-icons/gi";
 import * as IoIcons2 from "react-icons/io5";
-import * as IoIcons from "react-icons/io";
 import * as TbIcons from "react-icons/tb";
 import * as LiaIcons from "react-icons/lia";
 import * as RxIcons from "react-icons/rx";
@@ -206,7 +205,7 @@ function Navbar({ isLoading }) {
                   </Link>
                 ) : (
                   <Link className="nav-link" to="/">
-                    <PiIcons.PiPowerBold
+                    <IoIcons2.IoPower
                       style={{ color: "	#00c50b" }}
                       className="nav-icon"
                     />
