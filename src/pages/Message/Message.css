@@ -41,7 +41,13 @@
     color: #2f88ff;
 }
 
+.message-div {
+    position: relative;
+    box-sizing: border-box;
+}
+
 .message-send {
+    /* border: .1rem solid black; */
     position: absolute;
     transform-style: preserve-3d;
     pointer-events: none;
@@ -54,6 +60,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 58%;
-    transform: translateX(-50%);
+    top: 50%;
+    left: 76%;
+    transform: translate(50%, -50%);
 }
