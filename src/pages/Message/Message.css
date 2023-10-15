@@ -26,7 +26,7 @@
     /* border: .1rem solid whitesmoke; */
 }
 
-.message-mic {
+.message-mic, .message-emoji {
     width: 2.25rem;
     height: 2.25rem;
     border-radius: 100%;
@@ -37,6 +37,6 @@
     background-color: white;
 }
 
-.message-mic:active {
+.message-mic:active, .message-emoji:active {
     color: #2f88ff;
 }

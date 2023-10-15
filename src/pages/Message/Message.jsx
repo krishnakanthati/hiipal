@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import "./Message.css";
 
 import * as HiIcons from "react-icons/hi2";
+import * as BsIcons from "react-icons/bs";
 
 function Message() {
   return (
@@ -10,6 +11,9 @@ function Message() {
       <Navbar />
       <div className="main-container">
         <div className="message-container">
+          <div className="message-emoji">
+            <BsIcons.BsEmojiLaughing />
+          </div>
           <input className="message-input" placeholder="Message" />
           <div className="message-mic">
             <HiIcons.HiMiniMicrophone />
