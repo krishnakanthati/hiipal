@@ -8,12 +8,14 @@ import SearchBar from "../SearchBar/SearchBar";
 import AuthContext from "../../context/AuthContext";
 
 import * as PiIcons from "react-icons/pi";
+import * as HiIcons from "react-icons/hi2";
 import * as BiIcons from "react-icons/bi";
 import * as GiIcons from "react-icons/gi";
 import * as IoIcons2 from "react-icons/io5";
 import * as TbIcons from "react-icons/tb";
 import * as LiaIcons from "react-icons/lia";
 import * as RxIcons from "react-icons/rx";
+import * as FiIcons from "react-icons/fi";
 import * as AiIcons from "react-icons/ai";
 
 function Navbar({ isLoading }) {
@@ -66,12 +68,12 @@ function Navbar({ isLoading }) {
           <ul className="navbar-ul">
             <li className="navbar-li">
               <Link className="nav-link" to="/">
-                <BiIcons.BiHomeAlt2 className="nav-icon" title="Home" />
+                <HiIcons.HiOutlineHome className="nav-icon" title="Home" />
               </Link>
             </li>
             <li className="navbar-li">
               <Link className="nav-link" to="/search">
-                <IoIcons2.IoSearch className="nav-icon" title="Search" />
+                <FiIcons.FiSearch className="nav-icon" title="Search" />
               </Link>
             </li>
             <li className="navbar-li">
