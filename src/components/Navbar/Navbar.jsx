@@ -8,7 +8,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import AuthContext from "../../context/AuthContext";
 
 import * as PiIcons from "react-icons/pi";
-import * as HiIcons from "react-icons/hi";
+import * as HiIcons from "react-icons/hi2";
 import * as BiIcons from "react-icons/bi";
 import * as GiIcons from "react-icons/gi";
 import * as IoIcons2 from "react-icons/io5";
@@ -68,7 +68,7 @@ function Navbar({ isLoading }) {
           <ul className="navbar-ul">
             <li className="navbar-li">
               <Link className="nav-link" to="/">
-                <HiIcons.HiOutlineHome className="nav-icon" title="Home" />
+                <BiIcons.BiHomeAlt2 className="nav-icon" title="Home" />
               </Link>
             </li>
             <li className="navbar-li">
